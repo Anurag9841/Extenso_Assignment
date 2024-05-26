@@ -1,0 +1,20 @@
+[2024-05-25T05:37:21.530+0000] {processor.py:161} INFO - Started process (PID=165) to work on /opt/airflow/dags/merging_data.py
+[2024-05-25T05:37:21.531+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/merging_data.py for tasks to queue
+[2024-05-25T05:37:21.533+0000] {logging_mixin.py:188} INFO - [2024-05-25T05:37:21.532+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/merging_data.py
+[2024-05-25T05:37:25.563+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/merging_data.py
+[2024-05-25T05:37:25.576+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/merging_data.py took 4.057 seconds
+[2024-05-25T05:37:55.894+0000] {processor.py:161} INFO - Started process (PID=189) to work on /opt/airflow/dags/merging_data.py
+[2024-05-25T05:37:55.896+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/merging_data.py for tasks to queue
+[2024-05-25T05:37:55.898+0000] {logging_mixin.py:188} INFO - [2024-05-25T05:37:55.897+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/merging_data.py
+[2024-05-25T05:37:56.319+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/merging_data.py
+[2024-05-25T05:37:56.353+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/merging_data.py took 0.470 seconds
+[2024-05-25T05:38:27.227+0000] {processor.py:161} INFO - Started process (PID=213) to work on /opt/airflow/dags/merging_data.py
+[2024-05-25T05:38:27.228+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/merging_data.py for tasks to queue
+[2024-05-25T05:38:27.229+0000] {logging_mixin.py:188} INFO - [2024-05-25T05:38:27.229+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/merging_data.py
+[2024-05-25T05:38:28.633+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/merging_data.py
+[2024-05-25T05:38:28.750+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/merging_data.py took 1.532 seconds
+[2024-05-25T10:40:22.080+0000] {processor.py:161} INFO - Started process (PID=178) to work on /opt/airflow/dags/merging_data.py
+[2024-05-25T10:40:22.081+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/merging_data.py for tasks to queue
+[2024-05-25T10:40:22.083+0000] {logging_mixin.py:188} INFO - [2024-05-25T10:40:22.083+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/merging_data.py
+[2024-05-25T10:40:22.790+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/merging_data.py
+[2024-05-25T10:40:22.826+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/merging_data.py took 0.755 seconds

@@ -1,0 +1,29 @@
+use transaction_detail;
+
+SELECT * FROM `encoded-transaction_summary`;
+ALTER TABLE `encoded-transaction_summary` MODIFY COLUMN `DEPOSIT AMT` DOUBLE(10,2);
+
+SELECT *,
+CASE 
+    WHEN `WITHDRAWAL AMT` IS NULL AND `DEPOSIT AMT` IS NOT NULL THEN `DEPOSIT AMT`
+    WHEN `DEPOSIT AMT` IS NULL AND `WITHDRAWAL AMT` IS NOT NULL THEN -`WITHDRAWAL AMT`
+    ELSE `DEPOSIT AMT` - `WITHDRAWAL AMT`
+END AS Calculated_Revenue;
+
+CREATE TABLE New_TR AS
+SELECT * FROM(
+SELECT 
+	REPLACE(`DEPOSIT AMT`, ',', '') AS DEPOSIT_AMT,
+    REPLACE(`WITHDRAWAL AMT`, ',', '') AS WITHDRAWAL_AMT
+FROM `encoded-transaction_summary`) as alias;
+
+select * from new_tr;
+CREATE TABLE New_Transaction AS
+SELECT * FROM(SELECT *,
+CASE 
+    WHEN `WITHDRAWAL_AMT` IS NULL AND `DEPOSIT_AMT` IS NOT NULL THEN `DEPOSIT_AMT`
+    WHEN `DEPOSIT_AMT` IS NULL AND `WITHDRAWAL_AMT` IS NOT NULL THEN -`WITHDRAWAL_AMT`
+    ELSE `DEPOSIT_AMT` - `WITHDRAWAL_AMT`
+END AS Calculated_Revenue from new_tr) as anurag;
+
+select * from New_Transaction;

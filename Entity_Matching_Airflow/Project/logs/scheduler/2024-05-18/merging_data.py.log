@@ -1,0 +1,500 @@
+[2024-05-18T13:28:25.800+0000] {processor.py:161} INFO - Started process (PID=531) to work on /opt/airflow/dags/merging_data.py
+[2024-05-18T13:28:25.801+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/merging_data.py for tasks to queue
+[2024-05-18T13:28:25.803+0000] {logging_mixin.py:188} INFO - [2024-05-18T13:28:25.803+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/merging_data.py
+[2024-05-18T13:28:26.510+0000] {logging_mixin.py:188} INFO - [2024-05-18T13:28:26.502+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/merging_data.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/merging_data.py", line 3, in <module>
+    reward_point = pd.read_csv("/opt/airflow/dags/reward_point.csv", index=False)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: read_csv() got an unexpected keyword argument 'index'
+[2024-05-18T13:28:26.512+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/merging_data.py
+[2024-05-18T13:28:26.531+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/merging_data.py took 0.740 seconds
+[2024-05-18T13:28:56.617+0000] {processor.py:161} INFO - Started process (PID=555) to work on /opt/airflow/dags/merging_data.py
+[2024-05-18T13:28:56.618+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/merging_data.py for tasks to queue
+[2024-05-18T13:28:56.619+0000] {logging_mixin.py:188} INFO - [2024-05-18T13:28:56.618+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/merging_data.py
+[2024-05-18T13:28:57.328+0000] {logging_mixin.py:188} INFO - [2024-05-18T13:28:57.323+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/merging_data.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/merging_data.py", line 3, in <module>
+    reward_point = pd.read_csv("/opt/airflow/dags/reward_point.csv", index=False)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: read_csv() got an unexpected keyword argument 'index'
+[2024-05-18T13:28:57.329+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/merging_data.py
+[2024-05-18T13:28:57.347+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/merging_data.py took 0.737 seconds
+[2024-05-18T13:29:27.420+0000] {processor.py:161} INFO - Started process (PID=579) to work on /opt/airflow/dags/merging_data.py
+[2024-05-18T13:29:27.421+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/merging_data.py for tasks to queue
+[2024-05-18T13:29:27.422+0000] {logging_mixin.py:188} INFO - [2024-05-18T13:29:27.422+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/merging_data.py
+[2024-05-18T13:29:27.839+0000] {logging_mixin.py:188} INFO - [2024-05-18T13:29:27.833+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/merging_data.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/merging_data.py", line 3, in <module>
+    reward_point = pd.read_csv("/opt/airflow/dags/reward_point.csv", index=False)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: read_csv() got an unexpected keyword argument 'index'
+[2024-05-18T13:29:27.840+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/merging_data.py
+[2024-05-18T13:29:27.856+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/merging_data.py took 0.443 seconds
+[2024-05-18T13:30:00.278+0000] {processor.py:161} INFO - Started process (PID=601) to work on /opt/airflow/dags/merging_data.py
+[2024-05-18T13:30:00.279+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/merging_data.py for tasks to queue
+[2024-05-18T13:30:00.281+0000] {logging_mixin.py:188} INFO - [2024-05-18T13:30:00.280+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/merging_data.py
+[2024-05-18T13:30:00.814+0000] {logging_mixin.py:188} INFO - [2024-05-18T13:30:00.809+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/merging_data.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/merging_data.py", line 3, in <module>
+    reward_point = pd.read_csv("/opt/airflow/dags/reward_point.csv", index=False)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: read_csv() got an unexpected keyword argument 'index'
+[2024-05-18T13:30:00.816+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/merging_data.py
+[2024-05-18T13:30:00.833+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/merging_data.py took 0.563 seconds
+[2024-05-18T13:30:31.431+0000] {processor.py:161} INFO - Started process (PID=624) to work on /opt/airflow/dags/merging_data.py
+[2024-05-18T13:30:31.432+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/merging_data.py for tasks to queue
+[2024-05-18T13:30:31.433+0000] {logging_mixin.py:188} INFO - [2024-05-18T13:30:31.432+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/merging_data.py
+[2024-05-18T13:30:31.916+0000] {logging_mixin.py:188} INFO - [2024-05-18T13:30:31.912+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/merging_data.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/merging_data.py", line 3, in <module>
+    reward_point = pd.read_csv("/opt/airflow/dags/reward_point.csv", index=False)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: read_csv() got an unexpected keyword argument 'index'
+[2024-05-18T13:30:31.918+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/merging_data.py
+[2024-05-18T13:30:31.932+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/merging_data.py took 0.512 seconds
+[2024-05-18T13:31:02.727+0000] {processor.py:161} INFO - Started process (PID=648) to work on /opt/airflow/dags/merging_data.py
+[2024-05-18T13:31:02.729+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/merging_data.py for tasks to queue
+[2024-05-18T13:31:02.730+0000] {logging_mixin.py:188} INFO - [2024-05-18T13:31:02.729+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/merging_data.py
+[2024-05-18T13:31:03.177+0000] {logging_mixin.py:188} INFO - [2024-05-18T13:31:03.171+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/merging_data.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/merging_data.py", line 3, in <module>
+    reward_point = pd.read_csv("/opt/airflow/dags/reward_point.csv", index=False)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: read_csv() got an unexpected keyword argument 'index'
+[2024-05-18T13:31:03.178+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/merging_data.py
+[2024-05-18T13:31:03.193+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/merging_data.py took 0.478 seconds
+[2024-05-18T13:31:33.279+0000] {processor.py:161} INFO - Started process (PID=662) to work on /opt/airflow/dags/merging_data.py
+[2024-05-18T13:31:33.281+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/merging_data.py for tasks to queue
+[2024-05-18T13:31:33.283+0000] {logging_mixin.py:188} INFO - [2024-05-18T13:31:33.282+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/merging_data.py
+[2024-05-18T13:31:35.056+0000] {logging_mixin.py:188} INFO - [2024-05-18T13:31:35.038+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/merging_data.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/merging_data.py", line 3, in <module>
+    reward_point = pd.read_csv("/opt/airflow/dags/reward_point.csv", index=False)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: read_csv() got an unexpected keyword argument 'index'
+[2024-05-18T13:31:35.058+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/merging_data.py
+[2024-05-18T13:31:35.551+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/merging_data.py took 2.281 seconds
+[2024-05-18T13:32:05.691+0000] {processor.py:161} INFO - Started process (PID=686) to work on /opt/airflow/dags/merging_data.py
+[2024-05-18T13:32:05.692+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/merging_data.py for tasks to queue
+[2024-05-18T13:32:05.693+0000] {logging_mixin.py:188} INFO - [2024-05-18T13:32:05.693+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/merging_data.py
+[2024-05-18T13:32:06.320+0000] {logging_mixin.py:188} INFO - [2024-05-18T13:32:06.315+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/merging_data.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/merging_data.py", line 3, in <module>
+    reward_point = pd.read_csv("/opt/airflow/dags/reward_point.csv", index=False)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: read_csv() got an unexpected keyword argument 'index'
+[2024-05-18T13:32:06.321+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/merging_data.py
+[2024-05-18T13:32:06.352+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/merging_data.py took 0.674 seconds
+[2024-05-18T13:32:36.920+0000] {processor.py:161} INFO - Started process (PID=710) to work on /opt/airflow/dags/merging_data.py
+[2024-05-18T13:32:36.922+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/merging_data.py for tasks to queue
+[2024-05-18T13:32:36.927+0000] {logging_mixin.py:188} INFO - [2024-05-18T13:32:36.925+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/merging_data.py
+[2024-05-18T13:32:37.780+0000] {logging_mixin.py:188} INFO - [2024-05-18T13:32:37.775+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/merging_data.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/merging_data.py", line 3, in <module>
+    reward_point = pd.read_csv("/opt/airflow/dags/reward_point.csv", index=False)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: read_csv() got an unexpected keyword argument 'index'
+[2024-05-18T13:32:37.781+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/merging_data.py
+[2024-05-18T13:32:37.797+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/merging_data.py took 0.896 seconds
+[2024-05-18T13:33:08.041+0000] {processor.py:161} INFO - Started process (PID=734) to work on /opt/airflow/dags/merging_data.py
+[2024-05-18T13:33:08.042+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/merging_data.py for tasks to queue
+[2024-05-18T13:33:08.043+0000] {logging_mixin.py:188} INFO - [2024-05-18T13:33:08.043+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/merging_data.py
+[2024-05-18T13:33:09.109+0000] {logging_mixin.py:188} INFO - [2024-05-18T13:33:09.103+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/merging_data.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/merging_data.py", line 3, in <module>
+    reward_point = pd.read_csv("/opt/airflow/dags/reward_point.csv", index=False)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: read_csv() got an unexpected keyword argument 'index'
+[2024-05-18T13:33:09.110+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/merging_data.py
+[2024-05-18T13:33:09.144+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/merging_data.py took 1.112 seconds
+[2024-05-18T13:33:39.583+0000] {processor.py:161} INFO - Started process (PID=758) to work on /opt/airflow/dags/merging_data.py
+[2024-05-18T13:33:39.585+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/merging_data.py for tasks to queue
+[2024-05-18T13:33:39.587+0000] {logging_mixin.py:188} INFO - [2024-05-18T13:33:39.586+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/merging_data.py
+[2024-05-18T13:33:40.886+0000] {logging_mixin.py:188} INFO - [2024-05-18T13:33:40.881+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/merging_data.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/merging_data.py", line 3, in <module>
+    reward_point = pd.read_csv("/opt/airflow/dags/reward_point.csv", index=False)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: read_csv() got an unexpected keyword argument 'index'
+[2024-05-18T13:33:40.887+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/merging_data.py
+[2024-05-18T13:33:40.947+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/merging_data.py took 1.374 seconds
+[2024-05-18T13:34:11.460+0000] {processor.py:161} INFO - Started process (PID=788) to work on /opt/airflow/dags/merging_data.py
+[2024-05-18T13:34:11.467+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/merging_data.py for tasks to queue
+[2024-05-18T13:34:11.469+0000] {logging_mixin.py:188} INFO - [2024-05-18T13:34:11.468+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/merging_data.py
+[2024-05-18T13:34:12.355+0000] {logging_mixin.py:188} INFO - [2024-05-18T13:34:12.351+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/merging_data.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/merging_data.py", line 3, in <module>
+    reward_point = pd.read_csv("/opt/airflow/dags/reward_point.csv", index=False)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: read_csv() got an unexpected keyword argument 'index'
+[2024-05-18T13:34:12.356+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/merging_data.py
+[2024-05-18T13:34:12.372+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/merging_data.py took 0.925 seconds
+[2024-05-18T13:34:42.725+0000] {processor.py:161} INFO - Started process (PID=812) to work on /opt/airflow/dags/merging_data.py
+[2024-05-18T13:34:42.726+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/merging_data.py for tasks to queue
+[2024-05-18T13:34:42.728+0000] {logging_mixin.py:188} INFO - [2024-05-18T13:34:42.727+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/merging_data.py
+[2024-05-18T13:34:43.727+0000] {logging_mixin.py:188} INFO - [2024-05-18T13:34:43.723+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/merging_data.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/merging_data.py", line 3, in <module>
+    reward_point = pd.read_csv("/opt/airflow/dags/reward_point.csv", index=False)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: read_csv() got an unexpected keyword argument 'index'
+[2024-05-18T13:34:43.728+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/merging_data.py
+[2024-05-18T13:34:43.744+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/merging_data.py took 1.029 seconds
+[2024-05-18T13:35:14.365+0000] {processor.py:161} INFO - Started process (PID=835) to work on /opt/airflow/dags/merging_data.py
+[2024-05-18T13:35:14.373+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/merging_data.py for tasks to queue
+[2024-05-18T13:35:14.394+0000] {logging_mixin.py:188} INFO - [2024-05-18T13:35:14.394+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/merging_data.py
+[2024-05-18T13:35:15.191+0000] {logging_mixin.py:188} INFO - [2024-05-18T13:35:15.187+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/merging_data.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/merging_data.py", line 3, in <module>
+    reward_point = pd.read_csv("/opt/airflow/dags/reward_point.csv", index=False)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: read_csv() got an unexpected keyword argument 'index'
+[2024-05-18T13:35:15.193+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/merging_data.py
+[2024-05-18T13:35:15.212+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/merging_data.py took 0.866 seconds
+[2024-05-18T13:35:45.375+0000] {processor.py:161} INFO - Started process (PID=859) to work on /opt/airflow/dags/merging_data.py
+[2024-05-18T13:35:45.377+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/merging_data.py for tasks to queue
+[2024-05-18T13:35:45.379+0000] {logging_mixin.py:188} INFO - [2024-05-18T13:35:45.378+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/merging_data.py
+[2024-05-18T13:35:46.107+0000] {logging_mixin.py:188} INFO - [2024-05-18T13:35:46.103+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/merging_data.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/merging_data.py", line 3, in <module>
+    reward_point = pd.read_csv("/opt/airflow/dags/reward_point.csv", index=False)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: read_csv() got an unexpected keyword argument 'index'
+[2024-05-18T13:35:46.108+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/merging_data.py
+[2024-05-18T13:35:46.127+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/merging_data.py took 0.765 seconds
+[2024-05-18T13:36:16.477+0000] {processor.py:161} INFO - Started process (PID=883) to work on /opt/airflow/dags/merging_data.py
+[2024-05-18T13:36:16.478+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/merging_data.py for tasks to queue
+[2024-05-18T13:36:16.479+0000] {logging_mixin.py:188} INFO - [2024-05-18T13:36:16.479+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/merging_data.py
+[2024-05-18T13:36:17.155+0000] {logging_mixin.py:188} INFO - [2024-05-18T13:36:17.151+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/merging_data.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/merging_data.py", line 3, in <module>
+    reward_point = pd.read_csv("/opt/airflow/dags/reward_point.csv", index=False)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: read_csv() got an unexpected keyword argument 'index'
+[2024-05-18T13:36:17.156+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/merging_data.py
+[2024-05-18T13:36:17.169+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/merging_data.py took 0.702 seconds
+[2024-05-18T13:36:43.339+0000] {processor.py:161} INFO - Started process (PID=910) to work on /opt/airflow/dags/merging_data.py
+[2024-05-18T13:36:43.342+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/merging_data.py for tasks to queue
+[2024-05-18T13:36:43.345+0000] {logging_mixin.py:188} INFO - [2024-05-18T13:36:43.344+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/merging_data.py
+[2024-05-18T13:36:48.066+0000] {logging_mixin.py:188} INFO - [2024-05-18T13:36:48.059+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/merging_data.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/merging_data.py", line 3, in <module>
+    reward_point = pd.read_csv("/opt/airflow/dags/input/reward_point.csv", index=False)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: read_csv() got an unexpected keyword argument 'index'
+[2024-05-18T13:36:48.069+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/merging_data.py
+[2024-05-18T13:36:48.186+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/merging_data.py took 4.868 seconds
+[2024-05-18T13:37:19.175+0000] {processor.py:161} INFO - Started process (PID=933) to work on /opt/airflow/dags/merging_data.py
+[2024-05-18T13:37:19.177+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/merging_data.py for tasks to queue
+[2024-05-18T13:37:19.184+0000] {logging_mixin.py:188} INFO - [2024-05-18T13:37:19.182+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/merging_data.py
+[2024-05-18T13:37:22.240+0000] {logging_mixin.py:188} INFO - [2024-05-18T13:37:22.212+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/merging_data.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/merging_data.py", line 3, in <module>
+    reward_point = pd.read_csv("/opt/airflow/dags/input/reward_point.csv", index=False)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: read_csv() got an unexpected keyword argument 'index'
+[2024-05-18T13:37:22.247+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/merging_data.py
+[2024-05-18T13:37:22.816+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/merging_data.py took 3.748 seconds
+[2024-05-18T13:37:54.156+0000] {processor.py:161} INFO - Started process (PID=958) to work on /opt/airflow/dags/merging_data.py
+[2024-05-18T13:37:54.158+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/merging_data.py for tasks to queue
+[2024-05-18T13:37:54.159+0000] {logging_mixin.py:188} INFO - [2024-05-18T13:37:54.159+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/merging_data.py
+[2024-05-18T13:37:55.092+0000] {logging_mixin.py:188} INFO - [2024-05-18T13:37:55.079+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/merging_data.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/merging_data.py", line 3, in <module>
+    reward_point = pd.read_csv("/opt/airflow/dags/input/reward_point.csv", index=False)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: read_csv() got an unexpected keyword argument 'index'
+[2024-05-18T13:37:55.093+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/merging_data.py
+[2024-05-18T13:37:55.152+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/merging_data.py took 1.015 seconds
+[2024-05-18T13:38:26.850+0000] {processor.py:161} INFO - Started process (PID=981) to work on /opt/airflow/dags/merging_data.py
+[2024-05-18T13:38:26.853+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/merging_data.py for tasks to queue
+[2024-05-18T13:38:26.864+0000] {logging_mixin.py:188} INFO - [2024-05-18T13:38:26.862+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/merging_data.py
+[2024-05-18T13:38:29.716+0000] {logging_mixin.py:188} INFO - [2024-05-18T13:38:29.710+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/merging_data.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/merging_data.py", line 3, in <module>
+    reward_point = pd.read_csv("/opt/airflow/dags/input/reward_point.csv", index=False)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: read_csv() got an unexpected keyword argument 'index'
+[2024-05-18T13:38:29.717+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/merging_data.py
+[2024-05-18T13:38:29.762+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/merging_data.py took 3.021 seconds
+[2024-05-18T13:39:00.200+0000] {processor.py:161} INFO - Started process (PID=1007) to work on /opt/airflow/dags/merging_data.py
+[2024-05-18T13:39:00.218+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/merging_data.py for tasks to queue
+[2024-05-18T13:39:00.236+0000] {logging_mixin.py:188} INFO - [2024-05-18T13:39:00.236+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/merging_data.py
+[2024-05-18T13:39:02.235+0000] {logging_mixin.py:188} INFO - [2024-05-18T13:39:02.224+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/merging_data.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/merging_data.py", line 3, in <module>
+    reward_point = pd.read_csv("/opt/airflow/dags/input/reward_point.csv", index=False)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: read_csv() got an unexpected keyword argument 'index'
+[2024-05-18T13:39:02.238+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/merging_data.py
+[2024-05-18T13:39:03.562+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/merging_data.py took 3.393 seconds
+[2024-05-18T13:39:13.584+0000] {processor.py:161} INFO - Started process (PID=1029) to work on /opt/airflow/dags/merging_data.py
+[2024-05-18T13:39:13.586+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/merging_data.py for tasks to queue
+[2024-05-18T13:39:13.588+0000] {logging_mixin.py:188} INFO - [2024-05-18T13:39:13.588+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/merging_data.py
+[2024-05-18T13:39:18.191+0000] {logging_mixin.py:188} INFO - [2024-05-18T13:39:18.183+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/merging_data.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/merging_data.py", line 3, in <module>
+    reward_point = pd.read_csv("/opt/airflow/dags/input/reward_point.csv")
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 948, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 611, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1448, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1705, in _make_engine
+    self.handles = get_handle(
+                   ^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/io/common.py", line 863, in get_handle
+    handle = open(
+             ^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/opt/airflow/dags/input/reward_point.csv'
+[2024-05-18T13:39:18.192+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/merging_data.py
+[2024-05-18T13:39:18.226+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/merging_data.py took 4.674 seconds
+[2024-05-18T13:39:49.296+0000] {processor.py:161} INFO - Started process (PID=1053) to work on /opt/airflow/dags/merging_data.py
+[2024-05-18T13:39:49.297+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/merging_data.py for tasks to queue
+[2024-05-18T13:39:49.299+0000] {logging_mixin.py:188} INFO - [2024-05-18T13:39:49.298+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/merging_data.py
+[2024-05-18T13:39:50.456+0000] {logging_mixin.py:188} INFO - [2024-05-18T13:39:50.450+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/merging_data.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/merging_data.py", line 3, in <module>
+    reward_point = pd.read_csv("/opt/airflow/dags/input/reward_point.csv")
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 948, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 611, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1448, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1705, in _make_engine
+    self.handles = get_handle(
+                   ^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/io/common.py", line 863, in get_handle
+    handle = open(
+             ^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/opt/airflow/dags/input/reward_point.csv'
+[2024-05-18T13:39:50.457+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/merging_data.py
+[2024-05-18T13:39:50.473+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/merging_data.py took 1.194 seconds
+[2024-05-18T13:40:20.620+0000] {processor.py:161} INFO - Started process (PID=1077) to work on /opt/airflow/dags/merging_data.py
+[2024-05-18T13:40:20.621+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/merging_data.py for tasks to queue
+[2024-05-18T13:40:20.623+0000] {logging_mixin.py:188} INFO - [2024-05-18T13:40:20.623+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/merging_data.py
+[2024-05-18T13:40:21.286+0000] {logging_mixin.py:188} INFO - [2024-05-18T13:40:21.282+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/merging_data.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/merging_data.py", line 3, in <module>
+    reward_point = pd.read_csv("/opt/airflow/dags/input/reward_point.csv")
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 948, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 611, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1448, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1705, in _make_engine
+    self.handles = get_handle(
+                   ^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/io/common.py", line 863, in get_handle
+    handle = open(
+             ^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/opt/airflow/dags/input/reward_point.csv'
+[2024-05-18T13:40:21.287+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/merging_data.py
+[2024-05-18T13:40:21.341+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/merging_data.py took 0.736 seconds
+[2024-05-18T13:40:51.962+0000] {processor.py:161} INFO - Started process (PID=1100) to work on /opt/airflow/dags/merging_data.py
+[2024-05-18T13:40:51.967+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/merging_data.py for tasks to queue
+[2024-05-18T13:40:51.972+0000] {logging_mixin.py:188} INFO - [2024-05-18T13:40:51.969+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/merging_data.py
+[2024-05-18T13:40:57.003+0000] {logging_mixin.py:188} INFO - [2024-05-18T13:40:56.994+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/merging_data.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/merging_data.py", line 3, in <module>
+    reward_point = pd.read_csv("/opt/airflow/dags/input/reward_point.csv")
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 948, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 611, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1448, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1705, in _make_engine
+    self.handles = get_handle(
+                   ^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/io/common.py", line 863, in get_handle
+    handle = open(
+             ^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/opt/airflow/dags/input/reward_point.csv'
+[2024-05-18T13:40:57.004+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/merging_data.py
+[2024-05-18T13:40:57.049+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/merging_data.py took 5.152 seconds
+[2024-05-18T13:41:27.517+0000] {processor.py:161} INFO - Started process (PID=1123) to work on /opt/airflow/dags/merging_data.py
+[2024-05-18T13:41:27.519+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/merging_data.py for tasks to queue
+[2024-05-18T13:41:27.522+0000] {logging_mixin.py:188} INFO - [2024-05-18T13:41:27.520+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/merging_data.py
+[2024-05-18T13:41:28.684+0000] {logging_mixin.py:188} INFO - [2024-05-18T13:41:28.679+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/merging_data.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/merging_data.py", line 3, in <module>
+    reward_point = pd.read_csv("/opt/airflow/dags/input/reward_point.csv")
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 948, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 611, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1448, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1705, in _make_engine
+    self.handles = get_handle(
+                   ^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/io/common.py", line 863, in get_handle
+    handle = open(
+             ^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/opt/airflow/dags/input/reward_point.csv'
+[2024-05-18T13:41:28.685+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/merging_data.py
+[2024-05-18T13:41:28.707+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/merging_data.py took 1.214 seconds
+[2024-05-18T13:41:46.579+0000] {processor.py:161} INFO - Started process (PID=1141) to work on /opt/airflow/dags/merging_data.py
+[2024-05-18T13:41:46.581+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/merging_data.py for tasks to queue
+[2024-05-18T13:41:46.582+0000] {logging_mixin.py:188} INFO - [2024-05-18T13:41:46.582+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/merging_data.py
+[2024-05-18T13:41:49.302+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/merging_data.py
+[2024-05-18T13:41:49.412+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/merging_data.py took 2.846 seconds
+[2024-05-18T13:42:19.988+0000] {processor.py:161} INFO - Started process (PID=1170) to work on /opt/airflow/dags/merging_data.py
+[2024-05-18T13:42:19.988+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/merging_data.py for tasks to queue
+[2024-05-18T13:42:19.991+0000] {logging_mixin.py:188} INFO - [2024-05-18T13:42:19.990+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/merging_data.py
+[2024-05-18T13:42:20.538+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/merging_data.py
+[2024-05-18T13:42:20.553+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/merging_data.py took 0.575 seconds
+[2024-05-18T13:42:58.334+0000] {processor.py:161} INFO - Started process (PID=1192) to work on /opt/airflow/dags/merging_data.py
+[2024-05-18T13:42:58.337+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/merging_data.py for tasks to queue
+[2024-05-18T13:42:58.344+0000] {logging_mixin.py:188} INFO - [2024-05-18T13:42:58.343+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/merging_data.py
+[2024-05-18T13:42:59.303+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/merging_data.py
+[2024-05-18T13:42:59.319+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/merging_data.py took 1.007 seconds
+[2024-05-18T13:43:30.000+0000] {processor.py:161} INFO - Started process (PID=1222) to work on /opt/airflow/dags/merging_data.py
+[2024-05-18T13:43:30.001+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/merging_data.py for tasks to queue
+[2024-05-18T13:43:30.003+0000] {logging_mixin.py:188} INFO - [2024-05-18T13:43:30.002+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/merging_data.py
+[2024-05-18T13:43:30.524+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/merging_data.py
+[2024-05-18T13:43:30.536+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/merging_data.py took 0.551 seconds
+[2024-05-18T13:44:01.192+0000] {processor.py:161} INFO - Started process (PID=1245) to work on /opt/airflow/dags/merging_data.py
+[2024-05-18T13:44:01.194+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/merging_data.py for tasks to queue
+[2024-05-18T13:44:01.195+0000] {logging_mixin.py:188} INFO - [2024-05-18T13:44:01.195+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/merging_data.py
+[2024-05-18T13:44:01.659+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/merging_data.py
+[2024-05-18T13:44:01.670+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/merging_data.py took 0.490 seconds
+[2024-05-18T13:44:31.996+0000] {processor.py:161} INFO - Started process (PID=1258) to work on /opt/airflow/dags/merging_data.py
+[2024-05-18T13:44:31.997+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/merging_data.py for tasks to queue
+[2024-05-18T13:44:32.001+0000] {logging_mixin.py:188} INFO - [2024-05-18T13:44:32.000+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/merging_data.py
+[2024-05-18T13:44:33.445+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/merging_data.py
+[2024-05-18T13:44:33.510+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/merging_data.py took 1.539 seconds
+[2024-05-18T13:45:04.179+0000] {processor.py:161} INFO - Started process (PID=1282) to work on /opt/airflow/dags/merging_data.py
+[2024-05-18T13:45:04.180+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/merging_data.py for tasks to queue
+[2024-05-18T13:45:04.182+0000] {logging_mixin.py:188} INFO - [2024-05-18T13:45:04.181+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/merging_data.py
+[2024-05-18T13:45:04.945+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/merging_data.py
+[2024-05-18T13:45:04.959+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/merging_data.py took 0.795 seconds
