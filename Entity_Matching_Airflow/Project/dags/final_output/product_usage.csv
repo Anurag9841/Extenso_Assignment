@@ -1,8 +1,0 @@
-payer_account_id,reward_point,Monthly_Inflow_Amount,Monthly_OutFlow_Amount,Monthly_Value_Chain,Total_inflow_amount,Total_outflow_amount,Total_value_chain_amount,total_Inflow_Count,total_Outflow_Count,total_Value_Chain_count,Monthly_Inflow_Count,Monthly_Outflow_Count,Monthly_Value_Chain_count,latest_transaction_date_x,latest_transaction_date_y,latest_used_product,total_revenue,monthly_revenue,most_used_product,second_most_used_product,third_most_used_product,product_usage
-26,0.0,34340.0,51340.0,9235.5,34340.0,51340.0,18471.0,12.0,15.0,53.0,12.0,15.0,26.5,2023-01-06,2023-01-06,Prepaid Topup,40.85999999999999,20.43,NT Prepaid Topup,Prepaid Topup,Prepaid Topup,15
-34,68.0,1108175.0,1242485.0,125544.0,2216350.0,2484970.0,251088.0,126.0,143.0,80.0,63.0,71.5,40.0,2023-01-06,2023-01-06,Electricity,516.43,258.215,Send Money,Electricity,Electricity,33
-56,39.0,12737.5,73937.5,43252.5,25475.0,147875.0,86505.0,15.0,22.0,193.0,7.5,11.0,96.5,2023-01-06,2023-01-06,Ncell Topup,202.11,101.055,Ncell Topup,Electricity,Electricity,19
-222,0.0,,,255.0,0.0,0.0,510.0,0.0,0.0,4.0,,,2.0,2023-01-01,2023-01-01,Ncell Topup,3.82,1.91,Ncell Topup,,,1
-471,14.0,700.0,700.0,10949.0,700.0,700.0,21898.0,2.0,2.0,116.0,2.0,2.0,58.0,2023-01-06,2023-01-06,Ncell Topup,99.78,49.88999999999999,Ncell Topup,NT Prepaid Topup,NT Prepaid Topup,8
-531,0.0,,,625082.3333333334,0.0,0.0,1875247.0,0.0,0.0,9995.0,,,3331.6666666666665,2023-03-29,2023-03-29,TOPUP VIA BANK DIRECT,2274.04,758.0133333333333,NT Topup via Bank,Ncell Topup via Bank,Ncell Topup via Bank,88
-1056,8.0,,,400.0,0.0,0.0,400.0,0.0,0.0,2.0,,,2.0,2022-12-01,2022-12-01,Prepaid Topup,14.0,14.0,NT Prepaid Topup,Prepaid Topup,Prepaid Topup,2

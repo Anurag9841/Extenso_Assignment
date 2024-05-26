@@ -1,3 +1,0 @@
-from read_data import reward_point,monthly_amount,total_amount,Count_pivot_table_total_amt,monthly_count,latest_transaction,\
-latest_product,total_revenue,most_used_product,second_most_used_product,third_most_used_product,product_usage
-
