@@ -109,7 +109,10 @@ group by payer_account_id,product_name order by payer_account_id desc,cnt desc;
 
 select * from most_used_pr;
 
+drop table most_used_prod;
+create table most_used_prod
 select * ,row_number() over(partition by payer_account_id order by cnt desc) as row_num from most_used_pr;
+
 
 drop table most_used_product;
 create table most_used_product as
@@ -166,3 +169,5 @@ left join total_reward_point using (payer_account_id)
 left join product_usage using (payer_account_id);
 
 select * from final_table;
+select * from most_used_pr;
+select * from most_used_prod;
