@@ -1,0 +1,84 @@
+[2024-05-30T07:57:06.013+0000] {processor.py:161} INFO - Started process (PID=169) to work on /opt/airflow/dags/dags/dump_load_dag.py
+[2024-05-30T07:57:06.022+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dags/dump_load_dag.py for tasks to queue
+[2024-05-30T07:57:06.036+0000] {logging_mixin.py:188} INFO - [2024-05-30T07:57:06.035+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dags/dump_load_dag.py
+[2024-05-30T07:57:06.454+0000] {logging_mixin.py:188} INFO - [2024-05-30T07:57:06.443+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/dags/dump_load_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dags/dump_load_dag.py", line 6, in <module>
+    from read_data import read_datas
+ModuleNotFoundError: No module named 'read_data'
+[2024-05-30T07:57:06.456+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/dags/dump_load_dag.py
+[2024-05-30T07:57:06.545+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dags/dump_load_dag.py took 0.608 seconds
+[2024-05-30T07:57:36.831+0000] {processor.py:161} INFO - Started process (PID=182) to work on /opt/airflow/dags/dags/dump_load_dag.py
+[2024-05-30T07:57:36.853+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dags/dump_load_dag.py for tasks to queue
+[2024-05-30T07:57:36.867+0000] {logging_mixin.py:188} INFO - [2024-05-30T07:57:36.866+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dags/dump_load_dag.py
+[2024-05-30T07:57:36.976+0000] {logging_mixin.py:188} INFO - [2024-05-30T07:57:36.971+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/dags/dump_load_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dags/dump_load_dag.py", line 6, in <module>
+    from read_data import read_datas
+ModuleNotFoundError: No module named 'read_data'
+[2024-05-30T07:57:36.977+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/dags/dump_load_dag.py
+[2024-05-30T07:57:37.039+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dags/dump_load_dag.py took 0.266 seconds
+[2024-05-30T07:58:08.254+0000] {processor.py:161} INFO - Started process (PID=194) to work on /opt/airflow/dags/dags/dump_load_dag.py
+[2024-05-30T07:58:08.271+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dags/dump_load_dag.py for tasks to queue
+[2024-05-30T07:58:08.305+0000] {logging_mixin.py:188} INFO - [2024-05-30T07:58:08.300+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dags/dump_load_dag.py
+[2024-05-30T07:58:08.679+0000] {logging_mixin.py:188} INFO - [2024-05-30T07:58:08.663+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/dags/dump_load_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dags/dump_load_dag.py", line 6, in <module>
+    from read_data import read_datas
+ModuleNotFoundError: No module named 'read_data'
+[2024-05-30T07:58:08.687+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/dags/dump_load_dag.py
+[2024-05-30T07:58:08.787+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dags/dump_load_dag.py took 0.570 seconds
+[2024-05-30T07:58:39.050+0000] {processor.py:161} INFO - Started process (PID=205) to work on /opt/airflow/dags/dags/dump_load_dag.py
+[2024-05-30T07:58:39.052+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dags/dump_load_dag.py for tasks to queue
+[2024-05-30T07:58:39.055+0000] {logging_mixin.py:188} INFO - [2024-05-30T07:58:39.054+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dags/dump_load_dag.py
+[2024-05-30T07:58:39.098+0000] {logging_mixin.py:188} INFO - [2024-05-30T07:58:39.094+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/dags/dump_load_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dags/dump_load_dag.py", line 6, in <module>
+    from read_data import read_datas
+ModuleNotFoundError: No module named 'read_data'
+[2024-05-30T07:58:39.099+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/dags/dump_load_dag.py
+[2024-05-30T07:58:39.124+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dags/dump_load_dag.py took 0.080 seconds
+[2024-05-30T07:59:09.352+0000] {processor.py:161} INFO - Started process (PID=216) to work on /opt/airflow/dags/dags/dump_load_dag.py
+[2024-05-30T07:59:09.353+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dags/dump_load_dag.py for tasks to queue
+[2024-05-30T07:59:09.355+0000] {logging_mixin.py:188} INFO - [2024-05-30T07:59:09.355+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dags/dump_load_dag.py
+[2024-05-30T07:59:09.410+0000] {logging_mixin.py:188} INFO - [2024-05-30T07:59:09.405+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/dags/dump_load_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dags/dump_load_dag.py", line 6, in <module>
+    from read_data import read_datas
+ModuleNotFoundError: No module named 'read_data'
+[2024-05-30T07:59:09.412+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/dags/dump_load_dag.py
+[2024-05-30T07:59:09.444+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dags/dump_load_dag.py took 0.100 seconds
+[2024-05-30T07:59:39.700+0000] {processor.py:161} INFO - Started process (PID=227) to work on /opt/airflow/dags/dags/dump_load_dag.py
+[2024-05-30T07:59:39.701+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dags/dump_load_dag.py for tasks to queue
+[2024-05-30T07:59:39.703+0000] {logging_mixin.py:188} INFO - [2024-05-30T07:59:39.702+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dags/dump_load_dag.py
+[2024-05-30T07:59:39.740+0000] {logging_mixin.py:188} INFO - [2024-05-30T07:59:39.735+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/dags/dump_load_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dags/dump_load_dag.py", line 6, in <module>
+    from read_data import read_datas
+ModuleNotFoundError: No module named 'read_data'
+[2024-05-30T07:59:39.741+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/dags/dump_load_dag.py
+[2024-05-30T07:59:39.760+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dags/dump_load_dag.py took 0.066 seconds

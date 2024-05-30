@@ -757,3 +757,499 @@
 [2024-05-30T04:40:43.652+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
 [2024-05-30T04:40:43.686+0000] {taskinstance.py:3498} INFO - 1 downstream tasks scheduled from follow-on schedule check
 [2024-05-30T04:40:43.688+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2024-05-30T08:03:53.470+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-05-30T08:03:53.536+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: extenso_assignment.reader scheduled__2024-03-14T00:00:00+00:00 [queued]>
+[2024-05-30T08:03:53.550+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: extenso_assignment.reader scheduled__2024-03-14T00:00:00+00:00 [queued]>
+[2024-05-30T08:03:53.550+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-05-30T08:03:53.571+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): reader> on 2024-03-14 00:00:00+00:00
+[2024-05-30T08:03:53.621+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'extenso_assignment', 'reader', 'scheduled__2024-03-14T00:00:00+00:00', '--job-id', '5', '--raw', '--subdir', 'DAGS_FOLDER/dump_load_dag.py', '--cfg-path', '/tmp/tmpafymlyes']
+[2024-05-30T08:03:53.625+0000] {standard_task_runner.py:91} INFO - Job 5: Subtask reader
+[2024-05-30T08:03:53.629+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61 DeprecationWarning: This process (pid=184) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-05-30T08:03:53.630+0000] {standard_task_runner.py:63} INFO - Started process 193 to run task
+[2024-05-30T08:03:53.779+0000] {task_command.py:426} INFO - Running <TaskInstance: extenso_assignment.reader scheduled__2024-03-14T00:00:00+00:00 [running]> on host d78d325bbf3e
+[2024-05-30T08:03:54.046+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='extenso_assignment' AIRFLOW_CTX_TASK_ID='reader' AIRFLOW_CTX_EXECUTION_DATE='2024-03-14T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-03-14T00:00:00+00:00'
+[2024-05-30T08:03:54.050+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-05-30T08:03:54.255+0000] {logging_mixin.py:188} WARNING - /opt/***/dags/Load_DF.py:6 FutureWarning: DataFrame.applymap has been deprecated. Use DataFrame.map instead.
+[2024-05-30T08:03:54.270+0000] {logging_mixin.py:188} WARNING - /opt/***/dags/Load_DF.py:6 FutureWarning: DataFrame.applymap has been deprecated. Use DataFrame.map instead.
+[2024-05-30T08:03:54.273+0000] {logging_mixin.py:188} WARNING - /opt/***/dags/Load_DF.py:6 FutureWarning: DataFrame.applymap has been deprecated. Use DataFrame.map instead.
+[2024-05-30T08:03:54.276+0000] {logging_mixin.py:188} WARNING - /opt/***/dags/Load_DF.py:6 FutureWarning: DataFrame.applymap has been deprecated. Use DataFrame.map instead.
+[2024-05-30T08:03:54.281+0000] {logging_mixin.py:188} WARNING - /opt/***/dags/Load_DF.py:6 FutureWarning: DataFrame.applymap has been deprecated. Use DataFrame.map instead.
+[2024-05-30T08:03:54.285+0000] {logging_mixin.py:188} WARNING - /opt/***/dags/Load_DF.py:6 FutureWarning: DataFrame.applymap has been deprecated. Use DataFrame.map instead.
+[2024-05-30T08:03:54.289+0000] {logging_mixin.py:188} WARNING - /opt/***/dags/Load_DF.py:6 FutureWarning: DataFrame.applymap has been deprecated. Use DataFrame.map instead.
+[2024-05-30T08:03:54.291+0000] {logging_mixin.py:188} WARNING - /opt/***/dags/Load_DF.py:6 FutureWarning: DataFrame.applymap has been deprecated. Use DataFrame.map instead.
+[2024-05-30T08:03:54.295+0000] {logging_mixin.py:188} WARNING - /opt/***/dags/Load_DF.py:6 FutureWarning: DataFrame.applymap has been deprecated. Use DataFrame.map instead.
+[2024-05-30T08:03:54.299+0000] {logging_mixin.py:188} WARNING - /opt/***/dags/Load_DF.py:6 FutureWarning: DataFrame.applymap has been deprecated. Use DataFrame.map instead.
+[2024-05-30T08:03:54.302+0000] {python.py:237} INFO - Done. Returned value was: ([    Customer Code             Name  ...            source              modified_date
+0        21216874        Ram Thapa  ...  ABC_layout_1.csv 2024-05-30 08:03:54.225181
+1        22359363    Sita Shrestha  ...  ABC_layout_1.csv 2024-05-30 08:03:54.225181
+2        33485241      Hari Gurung  ...  ABC_layout_1.csv 2024-05-30 08:03:54.225181
+3        45475489      Gita Tamang  ...  ABC_layout_1.csv 2024-05-30 08:03:54.225181
+4        56562139       Mohan Lama  ...  ABC_layout_1.csv 2024-05-30 08:03:54.225181
+5        67698214      Radha Magar  ...  ABC_layout_1.csv 2024-05-30 08:03:54.225181
+6        78714635      Krishna Rai  ...  ABC_layout_1.csv 2024-05-30 08:03:54.225181
+7        89847326    Sarita Sherpa  ...  ABC_layout_1.csv 2024-05-30 08:03:54.225181
+8        91953421     Bikash Karki  ...  ABC_layout_1.csv 2024-05-30 08:03:54.225181
+9        10203847   Nisha Bhandari  ...  ABC_layout_1.csv 2024-05-30 08:03:54.225181
+10       12113982   Aarav Adhikari  ...  ABC_layout_1.csv 2024-05-30 08:03:54.225181
+11       13122547      Sneha Joshi  ...  ABC_layout_1.csv 2024-05-30 08:03:54.225181
+12       13235698     Pratik Shahi  ...  ABC_layout_1.csv 2024-05-30 08:03:54.225181
+13       14247652   Anju Bhattarai  ...  ABC_layout_1.csv 2024-05-30 08:03:54.225181
+14       15158964  Manish Maharjan  ...  ABC_layout_1.csv 2024-05-30 08:03:54.225181
+15       16169853          Puja KC  ...  ABC_layout_1.csv 2024-05-30 08:03:54.225181
+16       17375246      Anil Khadka  ...  ABC_layout_1.csv 2024-05-30 08:03:54.225181
+17       18383569       Rita Rimal  ...  ABC_layout_1.csv 2024-05-30 08:03:54.225181
+18       19294258  Pratiksha Dahal  ...  ABC_layout_1.csv 2024-05-30 08:03:54.225181
+19       20305417  Dipesh Pokharel  ...  ABC_layout_1.csv 2024-05-30 08:03:54.225181
+
+[20 rows x 11 columns],                Name  Mobile Number  ...            source              modified_date
+0         Ram Thapa     1234567890  ...  KLM_layout_4.csv 2024-05-30 08:03:54.239990
+1     Sita Shrestha     2345678901  ...  KLM_layout_4.csv 2024-05-30 08:03:54.239990
+2       Hari Gurung     3456789012  ...  KLM_layout_4.csv 2024-05-30 08:03:54.239990
+3       Gita Tamang     4567890123  ...  KLM_layout_4.csv 2024-05-30 08:03:54.239990
+4        Mohan Lama     5678901234  ...  KLM_layout_4.csv 2024-05-30 08:03:54.239990
+5       Radha Magar     6789012345  ...  KLM_layout_4.csv 2024-05-30 08:03:54.239990
+6       Krishna Rai     7890123456  ...  KLM_layout_4.csv 2024-05-30 08:03:54.239990
+7     Sarita Sherpa     8901234567  ...  KLM_layout_4.csv 2024-05-30 08:03:54.239990
+8      Bikash Karki     9012345678  ...  KLM_layout_4.csv 2024-05-30 08:03:54.239990
+9    Nisha Bhandari      123456789  ...  KLM_layout_4.csv 2024-05-30 08:03:54.239990
+10   Aarav Adhikari     1234567800  ...  KLM_layout_4.csv 2024-05-30 08:03:54.239990
+11      Sneha Joshi     2345678902  ...  KLM_layout_4.csv 2024-05-30 08:03:54.239990
+12     Pratik Shahi     3456789013  ...  KLM_layout_4.csv 2024-05-30 08:03:54.239990
+13   Anju Bhattarai     4567890124  ...  KLM_layout_4.csv 2024-05-30 08:03:54.239990
+14  Manish Maharjan     5678901235  ...  KLM_layout_4.csv 2024-05-30 08:03:54.239990
+15          Puja KC     6789012346  ...  KLM_layout_4.csv 2024-05-30 08:03:54.239990
+16      Anil Khadka     7890123457  ...  KLM_layout_4.csv 2024-05-30 08:03:54.239990
+17       Rita Rimal     8901234568  ...  KLM_layout_4.csv 2024-05-30 08:03:54.239990
+18  Pratiksha Dahal     9012345679  ...  KLM_layout_4.csv 2024-05-30 08:03:54.239990
+19  Dipesh Pokharel      123456790  ...  KLM_layout_4.csv 2024-05-30 08:03:54.239990
+
+[20 rows x 8 columns],     votersID             Name  ...               source              modified_date
+0   11116874        Ram Thapa  ...  layout_3_voters.csv 2024-05-30 08:03:54.240365
+1   22259363    Sita Shrestha  ...  layout_3_voters.csv 2024-05-30 08:03:54.240365
+2   33385241      Hari Gurung  ...  layout_3_voters.csv 2024-05-30 08:03:54.240365
+3   44475489      Gita Tamang  ...  layout_3_voters.csv 2024-05-30 08:03:54.240365
+4   55562139       Mohan Lama  ...  layout_3_voters.csv 2024-05-30 08:03:54.240365
+5   66698214      Radha Magar  ...  layout_3_voters.csv 2024-05-30 08:03:54.240365
+6   77714635      Krishna Rai  ...  layout_3_voters.csv 2024-05-30 08:03:54.240365
+7   88847326    Sarita Sherpa  ...  layout_3_voters.csv 2024-05-30 08:03:54.240365
+8   99953421     Bikash Karki  ...  layout_3_voters.csv 2024-05-30 08:03:54.240365
+9   10103847   Nisha Bhandari  ...  layout_3_voters.csv 2024-05-30 08:03:54.240365
+10  11113982   Aarav Adhikari  ...  layout_3_voters.csv 2024-05-30 08:03:54.240365
+11  12122547      Sneha Joshi  ...  layout_3_voters.csv 2024-05-30 08:03:54.240365
+12  13135698     Pratik Shahi  ...  layout_3_voters.csv 2024-05-30 08:03:54.240365
+13  14147652   Anju Bhattarai  ...  layout_3_voters.csv 2024-05-30 08:03:54.240365
+14  15158963  Manish Maharjan  ...  layout_3_voters.csv 2024-05-30 08:03:54.240365
+15  16169852          Puja KC  ...  layout_3_voters.csv 2024-05-30 08:03:54.240365
+16  17175246      Anil Khadka  ...  layout_3_voters.csv 2024-05-30 08:03:54.240365
+17  18183569       Rita Rimal  ...  layout_3_voters.csv 2024-05-30 08:03:54.240365
+18  19194258  Pratiksha Dahal  ...  layout_3_voters.csv 2024-05-30 08:03:54.240365
+19  20205417  Dipesh Pokharel  ...  layout_3_voters.csv 2024-05-30 08:03:54.240365
+
+[20 rows x 11 columns],     License Number Blood Group  ...                source              modified_date
+0   15-05-58353205         AB+  ...  layout_5_license.csv 2024-05-30 08:03:54.240742
+1   21-08-00435579         AB-  ...  layout_5_license.csv 2024-05-30 08:03:54.240742
+2   93-12-35351480          B-  ...  layout_5_license.csv 2024-05-30 08:03:54.240742
+3   65-03-68139881          A-  ...  layout_5_license.csv 2024-05-30 08:03:54.240742
+4   14-11-40056582          A+  ...  layout_5_license.csv 2024-05-30 08:03:54.240742
+5   82-09-81734599          B-  ...  layout_5_license.csv 2024-05-30 08:03:54.240742
+6   26-03-50185868         AB+  ...  layout_5_license.csv 2024-05-30 08:03:54.240742
+7   98-03-72394228          A-  ...  layout_5_license.csv 2024-05-30 08:03:54.240742
+8   68-01-80388982          B-  ...  layout_5_license.csv 2024-05-30 08:03:54.240742
+9   42-08-02614125          A-  ...  layout_5_license.csv 2024-05-30 08:03:54.240742
+10  15-06-41273848          O+  ...  layout_5_license.csv 2024-05-30 08:03:54.240742
+11  31-01-32329238         AB+  ...  layout_5_license.csv 2024-05-30 08:03:54.240742
+12  73-02-11496212          O-  ...  layout_5_license.csv 2024-05-30 08:03:54.240742
+13  94-08-09289547         AB-  ...  layout_5_license.csv 2024-05-30 08:03:54.240742
+14  98-09-16879291          B+  ...  layout_5_license.csv 2024-05-30 08:03:54.240742
+15  17-11-63791321         AB-  ...  layout_5_license.csv 2024-05-30 08:03:54.240742
+16  71-03-35575299         AB-  ...  layout_5_license.csv 2024-05-30 08:03:54.240742
+17  68-10-56792613          B-  ...  layout_5_license.csv 2024-05-30 08:03:54.240742
+18  28-09-97969690         AB+  ...  layout_5_license.csv 2024-05-30 08:03:54.240742
+19  89-04-95690392          A-  ...  layout_5_license.csv 2024-05-30 08:03:54.240742
+
+[20 rows x 11 columns],     Mobile Number             Name  ...            source              modified_date
+0      1234567890        Ram Thapa  ...  PQR_layout_2.csv 2024-05-30 08:03:54.241124
+1      2345678901    Sita Shrestha  ...  PQR_layout_2.csv 2024-05-30 08:03:54.241124
+2      3456789012      Hari Gurung  ...  PQR_layout_2.csv 2024-05-30 08:03:54.241124
+3      4567890123      Gita Tamang  ...  PQR_layout_2.csv 2024-05-30 08:03:54.241124
+4      5678901234       Mohan Lama  ...  PQR_layout_2.csv 2024-05-30 08:03:54.241124
+5      6789012345      Radha Magar  ...  PQR_layout_2.csv 2024-05-30 08:03:54.241124
+6      7890123456      Krishna Rai  ...  PQR_layout_2.csv 2024-05-30 08:03:54.241124
+7      8901234567    Sarita Sherpa  ...  PQR_layout_2.csv 2024-05-30 08:03:54.241124
+8      9012345678     Bikash Karki  ...  PQR_layout_2.csv 2024-05-30 08:03:54.241124
+9       123456789   Nisha Bhandari  ...  PQR_layout_2.csv 2024-05-30 08:03:54.241124
+10     1234567800   Aarav Adhikari  ...  PQR_layout_2.csv 2024-05-30 08:03:54.241124
+11     2345678902      Sneha Joshi  ...  PQR_layout_2.csv 2024-05-30 08:03:54.241124
+12     3456789013     Pratik Shahi  ...  PQR_layout_2.csv 2024-05-30 08:03:54.241124
+13     4567890124   Anju Bhattarai  ...  PQR_layout_2.csv 2024-05-30 08:03:54.241124
+14     5678901235  Manish Maharjan  ...  PQR_layout_2.csv 2024-05-30 08:03:54.241124
+15     6789012346          Puja KC  ...  PQR_layout_2.csv 2024-05-30 08:03:54.241124
+16     7890123457      Anil Khadka  ...  PQR_layout_2.csv 2024-05-30 08:03:54.241124
+17     8901234568       Rita Rimal  ...  PQR_layout_2.csv 2024-05-30 08:03:54.241124
+18     9012345679  Pratiksha Dahal  ...  PQR_layout_2.csv 2024-05-30 08:03:54.241124
+19      123456790  Dipesh Pokharel  ...  PQR_layout_2.csv 2024-05-30 08:03:54.241124
+
+[20 rows x 8 columns]], [    Customer Code            Name  ...            source              modified_date
+0        21216874        RamThapa  ...  ABC_layout_1.csv 2024-05-30 08:03:54.225181
+1        22359363    SitaShrestha  ...  ABC_layout_1.csv 2024-05-30 08:03:54.225181
+2        33485241      HariGurung  ...  ABC_layout_1.csv 2024-05-30 08:03:54.225181
+3        45475489      GitaTamang  ...  ABC_layout_1.csv 2024-05-30 08:03:54.225181
+4        56562139       MohanLama  ...  ABC_layout_1.csv 2024-05-30 08:03:54.225181
+5        67698214      RadhaMagar  ...  ABC_layout_1.csv 2024-05-30 08:03:54.225181
+6        78714635      KrishnaRai  ...  ABC_layout_1.csv 2024-05-30 08:03:54.225181
+7        89847326    SaritaSherpa  ...  ABC_layout_1.csv 2024-05-30 08:03:54.225181
+8        91953421     BikashKarki  ...  ABC_layout_1.csv 2024-05-30 08:03:54.225181
+9        10203847   NishaBhandari  ...  ABC_layout_1.csv 2024-05-30 08:03:54.225181
+10       12113982   AaravAdhikari  ...  ABC_layout_1.csv 2024-05-30 08:03:54.225181
+11       13122547      SnehaJoshi  ...  ABC_layout_1.csv 2024-05-30 08:03:54.225181
+12       13235698     PratikShahi  ...  ABC_layout_1.csv 2024-05-30 08:03:54.225181
+13       14247652   AnjuBhattarai  ...  ABC_layout_1.csv 2024-05-30 08:03:54.225181
+14       15158964  ManishMaharjan  ...  ABC_layout_1.csv 2024-05-30 08:03:54.225181
+15       16169853          PujaKC  ...  ABC_layout_1.csv 2024-05-30 08:03:54.225181
+16       17375246      AnilKhadka  ...  ABC_layout_1.csv 2024-05-30 08:03:54.225181
+17       18383569       RitaRimal  ...  ABC_layout_1.csv 2024-05-30 08:03:54.225181
+18       19294258  PratikshaDahal  ...  ABC_layout_1.csv 2024-05-30 08:03:54.225181
+19       20305417  DipeshPokharel  ...  ABC_layout_1.csv 2024-05-30 08:03:54.225181
+
+[20 rows x 11 columns],               Name  Mobile Number  ...            source              modified_date
+0         RamThapa     1234567890  ...  KLM_layout_4.csv 2024-05-30 08:03:54.239990
+1     SitaShrestha     2345678901  ...  KLM_layout_4.csv 2024-05-30 08:03:54.239990
+2       HariGurung     3456789012  ...  KLM_layout_4.csv 2024-05-30 08:03:54.239990
+3       GitaTamang     4567890123  ...  KLM_layout_4.csv 2024-05-30 08:03:54.239990
+4        MohanLama     5678901234  ...  KLM_layout_4.csv 2024-05-30 08:03:54.239990
+5       RadhaMagar     6789012345  ...  KLM_layout_4.csv 2024-05-30 08:03:54.239990
+6       KrishnaRai     7890123456  ...  KLM_layout_4.csv 2024-05-30 08:03:54.239990
+7     SaritaSherpa     8901234567  ...  KLM_layout_4.csv 2024-05-30 08:03:54.239990
+8      BikashKarki     9012345678  ...  KLM_layout_4.csv 2024-05-30 08:03:54.239990
+9    NishaBhandari      123456789  ...  KLM_layout_4.csv 2024-05-30 08:03:54.239990
+10   AaravAdhikari     1234567800  ...  KLM_layout_4.csv 2024-05-30 08:03:54.239990
+11      SnehaJoshi     2345678902  ...  KLM_layout_4.csv 2024-05-30 08:03:54.239990
+12     PratikShahi     3456789013  ...  KLM_layout_4.csv 2024-05-30 08:03:54.239990
+13   AnjuBhattarai     4567890124  ...  KLM_layout_4.csv 2024-05-30 08:03:54.239990
+14  ManishMaharjan     5678901235  ...  KLM_layout_4.csv 2024-05-30 08:03:54.239990
+15          PujaKC     6789012346  ...  KLM_layout_4.csv 2024-05-30 08:03:54.239990
+16      AnilKhadka     7890123457  ...  KLM_layout_4.csv 2024-05-30 08:03:54.239990
+17       RitaRimal     8901234568  ...  KLM_layout_4.csv 2024-05-30 08:03:54.239990
+18  PratikshaDahal     9012345679  ...  KLM_layout_4.csv 2024-05-30 08:03:54.239990
+19  DipeshPokharel      123456790  ...  KLM_layout_4.csv 2024-05-30 08:03:54.239990
+
+[20 rows x 8 columns],     votersID            Name  ...               source              modified_date
+0   11116874        RamThapa  ...  layout_3_voters.csv 2024-05-30 08:03:54.240365
+1   22259363    SitaShrestha  ...  layout_3_voters.csv 2024-05-30 08:03:54.240365
+2   33385241      HariGurung  ...  layout_3_voters.csv 2024-05-30 08:03:54.240365
+3   44475489      GitaTamang  ...  layout_3_voters.csv 2024-05-30 08:03:54.240365
+4   55562139       MohanLama  ...  layout_3_voters.csv 2024-05-30 08:03:54.240365
+5   66698214      RadhaMagar  ...  layout_3_voters.csv 2024-05-30 08:03:54.240365
+6   77714635      KrishnaRai  ...  layout_3_voters.csv 2024-05-30 08:03:54.240365
+7   88847326    SaritaSherpa  ...  layout_3_voters.csv 2024-05-30 08:03:54.240365
+8   99953421     BikashKarki  ...  layout_3_voters.csv 2024-05-30 08:03:54.240365
+9   10103847   NishaBhandari  ...  layout_3_voters.csv 2024-05-30 08:03:54.240365
+10  11113982   AaravAdhikari  ...  layout_3_voters.csv 2024-05-30 08:03:54.240365
+11  12122547      SnehaJoshi  ...  layout_3_voters.csv 2024-05-30 08:03:54.240365
+12  13135698     PratikShahi  ...  layout_3_voters.csv 2024-05-30 08:03:54.240365
+13  14147652   AnjuBhattarai  ...  layout_3_voters.csv 2024-05-30 08:03:54.240365
+14  15158963  ManishMaharjan  ...  layout_3_voters.csv 2024-05-30 08:03:54.240365
+15  16169852          PujaKC  ...  layout_3_voters.csv 2024-05-30 08:03:54.240365
+16  17175246      AnilKhadka  ...  layout_3_voters.csv 2024-05-30 08:03:54.240365
+17  18183569       RitaRimal  ...  layout_3_voters.csv 2024-05-30 08:03:54.240365
+18  19194258  PratikshaDahal  ...  layout_3_voters.csv 2024-05-30 08:03:54.240365
+19  20205417  DipeshPokharel  ...  layout_3_voters.csv 2024-05-30 08:03:54.240365
+
+[20 rows x 11 columns],     License Number Blood Group  ...                source              modified_date
+0   15-05-58353205         AB+  ...  layout_5_license.csv 2024-05-30 08:03:54.240742
+1   21-08-00435579         AB-  ...  layout_5_license.csv 2024-05-30 08:03:54.240742
+2   93-12-35351480          B-  ...  layout_5_license.csv 2024-05-30 08:03:54.240742
+3   65-03-68139881          A-  ...  layout_5_license.csv 2024-05-30 08:03:54.240742
+4   14-11-40056582          A+  ...  layout_5_license.csv 2024-05-30 08:03:54.240742
+5   82-09-81734599          B-  ...  layout_5_license.csv 2024-05-30 08:03:54.240742
+6   26-03-50185868         AB+  ...  layout_5_license.csv 2024-05-30 08:03:54.240742
+7   98-03-72394228          A-  ...  layout_5_license.csv 2024-05-30 08:03:54.240742
+8   68-01-80388982          B-  ...  layout_5_license.csv 2024-05-30 08:03:54.240742
+9   42-08-02614125          A-  ...  layout_5_license.csv 2024-05-30 08:03:54.240742
+10  15-06-41273848          O+  ...  layout_5_license.csv 2024-05-30 08:03:54.240742
+11  31-01-32329238         AB+  ...  layout_5_license.csv 2024-05-30 08:03:54.240742
+12  73-02-11496212          O-  ...  layout_5_license.csv 2024-05-30 08:03:54.240742
+13  94-08-09289547         AB-  ...  layout_5_license.csv 2024-05-30 08:03:54.240742
+14  98-09-16879291          B+  ...  layout_5_license.csv 2024-05-30 08:03:54.240742
+15  17-11-63791321         AB-  ...  layout_5_license.csv 2024-05-30 08:03:54.240742
+16  71-03-35575299         AB-  ...  layout_5_license.csv 2024-05-30 08:03:54.240742
+17  68-10-56792613          B-  ...  layout_5_license.csv 2024-05-30 08:03:54.240742
+18  28-09-97969690         AB+  ...  layout_5_license.csv 2024-05-30 08:03:54.240742
+19  89-04-95690392          A-  ...  layout_5_license.csv 2024-05-30 08:03:54.240742
+
+[20 rows x 11 columns],     Mobile Number            Name  ...            source              modified_date
+0      1234567890        RamThapa  ...  PQR_layout_2.csv 2024-05-30 08:03:54.241124
+1      2345678901    SitaShrestha  ...  PQR_layout_2.csv 2024-05-30 08:03:54.241124
+2      3456789012      HariGurung  ...  PQR_layout_2.csv 2024-05-30 08:03:54.241124
+3      4567890123      GitaTamang  ...  PQR_layout_2.csv 2024-05-30 08:03:54.241124
+4      5678901234       MohanLama  ...  PQR_layout_2.csv 2024-05-30 08:03:54.241124
+5      6789012345      RadhaMagar  ...  PQR_layout_2.csv 2024-05-30 08:03:54.241124
+6      7890123456      KrishnaRai  ...  PQR_layout_2.csv 2024-05-30 08:03:54.241124
+7      8901234567    SaritaSherpa  ...  PQR_layout_2.csv 2024-05-30 08:03:54.241124
+8      9012345678     BikashKarki  ...  PQR_layout_2.csv 2024-05-30 08:03:54.241124
+9       123456789   NishaBhandari  ...  PQR_layout_2.csv 2024-05-30 08:03:54.241124
+10     1234567800   AaravAdhikari  ...  PQR_layout_2.csv 2024-05-30 08:03:54.241124
+11     2345678902      SnehaJoshi  ...  PQR_layout_2.csv 2024-05-30 08:03:54.241124
+12     3456789013     PratikShahi  ...  PQR_layout_2.csv 2024-05-30 08:03:54.241124
+13     4567890124   AnjuBhattarai  ...  PQR_layout_2.csv 2024-05-30 08:03:54.241124
+14     5678901235  ManishMaharjan  ...  PQR_layout_2.csv 2024-05-30 08:03:54.241124
+15     6789012346          PujaKC  ...  PQR_layout_2.csv 2024-05-30 08:03:54.241124
+16     7890123457      AnilKhadka  ...  PQR_layout_2.csv 2024-05-30 08:03:54.241124
+17     8901234568       RitaRimal  ...  PQR_layout_2.csv 2024-05-30 08:03:54.241124
+18     9012345679  PratikshaDahal  ...  PQR_layout_2.csv 2024-05-30 08:03:54.241124
+19      123456790  DipeshPokharel  ...  PQR_layout_2.csv 2024-05-30 08:03:54.241124
+
+[20 rows x 8 columns]])
+[2024-05-30T08:03:54.452+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-05-30T08:03:54.998+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=extenso_assignment, task_id=reader, run_id=scheduled__2024-03-14T00:00:00+00:00, execution_date=20240314T000000, start_date=20240530T080353, end_date=20240530T080354
+[2024-05-30T08:03:55.053+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-05-30T08:03:55.072+0000] {taskinstance.py:3498} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-05-30T08:03:55.074+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2024-05-30T08:12:58.408+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-05-30T08:12:58.559+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: extenso_assignment.reader scheduled__2024-03-14T00:00:00+00:00 [queued]>
+[2024-05-30T08:12:58.571+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: extenso_assignment.reader scheduled__2024-03-14T00:00:00+00:00 [queued]>
+[2024-05-30T08:12:58.571+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-05-30T08:12:58.596+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): reader> on 2024-03-14 00:00:00+00:00
+[2024-05-30T08:12:58.644+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61 DeprecationWarning: This process (pid=203) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-05-30T08:12:58.630+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'extenso_assignment', 'reader', 'scheduled__2024-03-14T00:00:00+00:00', '--job-id', '9', '--raw', '--subdir', 'DAGS_FOLDER/dump_load_dag.py', '--cfg-path', '/tmp/tmpn438jqm0']
+[2024-05-30T08:12:58.648+0000] {standard_task_runner.py:63} INFO - Started process 212 to run task
+[2024-05-30T08:12:58.648+0000] {standard_task_runner.py:91} INFO - Job 9: Subtask reader
+[2024-05-30T08:12:58.793+0000] {task_command.py:426} INFO - Running <TaskInstance: extenso_assignment.reader scheduled__2024-03-14T00:00:00+00:00 [running]> on host d78d325bbf3e
+[2024-05-30T08:12:58.959+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='extenso_assignment' AIRFLOW_CTX_TASK_ID='reader' AIRFLOW_CTX_EXECUTION_DATE='2024-03-14T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-03-14T00:00:00+00:00'
+[2024-05-30T08:12:58.964+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-05-30T08:12:59.097+0000] {logging_mixin.py:188} WARNING - /opt/***/dags/Load_DF.py:6 FutureWarning: DataFrame.applymap has been deprecated. Use DataFrame.map instead.
+[2024-05-30T08:12:59.105+0000] {logging_mixin.py:188} WARNING - /opt/***/dags/Load_DF.py:6 FutureWarning: DataFrame.applymap has been deprecated. Use DataFrame.map instead.
+[2024-05-30T08:12:59.108+0000] {logging_mixin.py:188} WARNING - /opt/***/dags/Load_DF.py:6 FutureWarning: DataFrame.applymap has been deprecated. Use DataFrame.map instead.
+[2024-05-30T08:12:59.110+0000] {logging_mixin.py:188} WARNING - /opt/***/dags/Load_DF.py:6 FutureWarning: DataFrame.applymap has been deprecated. Use DataFrame.map instead.
+[2024-05-30T08:12:59.112+0000] {logging_mixin.py:188} WARNING - /opt/***/dags/Load_DF.py:6 FutureWarning: DataFrame.applymap has been deprecated. Use DataFrame.map instead.
+[2024-05-30T08:12:59.114+0000] {logging_mixin.py:188} WARNING - /opt/***/dags/Load_DF.py:6 FutureWarning: DataFrame.applymap has been deprecated. Use DataFrame.map instead.
+[2024-05-30T08:12:59.116+0000] {logging_mixin.py:188} WARNING - /opt/***/dags/Load_DF.py:6 FutureWarning: DataFrame.applymap has been deprecated. Use DataFrame.map instead.
+[2024-05-30T08:12:59.119+0000] {logging_mixin.py:188} WARNING - /opt/***/dags/Load_DF.py:6 FutureWarning: DataFrame.applymap has been deprecated. Use DataFrame.map instead.
+[2024-05-30T08:12:59.121+0000] {logging_mixin.py:188} WARNING - /opt/***/dags/Load_DF.py:6 FutureWarning: DataFrame.applymap has been deprecated. Use DataFrame.map instead.
+[2024-05-30T08:12:59.124+0000] {logging_mixin.py:188} WARNING - /opt/***/dags/Load_DF.py:6 FutureWarning: DataFrame.applymap has been deprecated. Use DataFrame.map instead.
+[2024-05-30T08:12:59.125+0000] {python.py:237} INFO - Done. Returned value was: ([    Customer Code             Name  ...            source              modified_date
+0        21216874        Ram Thapa  ...  ABC_layout_1.csv 2024-05-30 08:12:59.084534
+1        22359363    Sita Shrestha  ...  ABC_layout_1.csv 2024-05-30 08:12:59.084534
+2        33485241      Hari Gurung  ...  ABC_layout_1.csv 2024-05-30 08:12:59.084534
+3        45475489      Gita Tamang  ...  ABC_layout_1.csv 2024-05-30 08:12:59.084534
+4        56562139       Mohan Lama  ...  ABC_layout_1.csv 2024-05-30 08:12:59.084534
+5        67698214      Radha Magar  ...  ABC_layout_1.csv 2024-05-30 08:12:59.084534
+6        78714635      Krishna Rai  ...  ABC_layout_1.csv 2024-05-30 08:12:59.084534
+7        89847326    Sarita Sherpa  ...  ABC_layout_1.csv 2024-05-30 08:12:59.084534
+8        91953421     Bikash Karki  ...  ABC_layout_1.csv 2024-05-30 08:12:59.084534
+9        10203847   Nisha Bhandari  ...  ABC_layout_1.csv 2024-05-30 08:12:59.084534
+10       12113982   Aarav Adhikari  ...  ABC_layout_1.csv 2024-05-30 08:12:59.084534
+11       13122547      Sneha Joshi  ...  ABC_layout_1.csv 2024-05-30 08:12:59.084534
+12       13235698     Pratik Shahi  ...  ABC_layout_1.csv 2024-05-30 08:12:59.084534
+13       14247652   Anju Bhattarai  ...  ABC_layout_1.csv 2024-05-30 08:12:59.084534
+14       15158964  Manish Maharjan  ...  ABC_layout_1.csv 2024-05-30 08:12:59.084534
+15       16169853          Puja KC  ...  ABC_layout_1.csv 2024-05-30 08:12:59.084534
+16       17375246      Anil Khadka  ...  ABC_layout_1.csv 2024-05-30 08:12:59.084534
+17       18383569       Rita Rimal  ...  ABC_layout_1.csv 2024-05-30 08:12:59.084534
+18       19294258  Pratiksha Dahal  ...  ABC_layout_1.csv 2024-05-30 08:12:59.084534
+19       20305417  Dipesh Pokharel  ...  ABC_layout_1.csv 2024-05-30 08:12:59.084534
+
+[20 rows x 11 columns],                Name  Mobile Number  ...            source              modified_date
+0         Ram Thapa     1234567890  ...  KLM_layout_4.csv 2024-05-30 08:12:59.091142
+1     Sita Shrestha     2345678901  ...  KLM_layout_4.csv 2024-05-30 08:12:59.091142
+2       Hari Gurung     3456789012  ...  KLM_layout_4.csv 2024-05-30 08:12:59.091142
+3       Gita Tamang     4567890123  ...  KLM_layout_4.csv 2024-05-30 08:12:59.091142
+4        Mohan Lama     5678901234  ...  KLM_layout_4.csv 2024-05-30 08:12:59.091142
+5       Radha Magar     6789012345  ...  KLM_layout_4.csv 2024-05-30 08:12:59.091142
+6       Krishna Rai     7890123456  ...  KLM_layout_4.csv 2024-05-30 08:12:59.091142
+7     Sarita Sherpa     8901234567  ...  KLM_layout_4.csv 2024-05-30 08:12:59.091142
+8      Bikash Karki     9012345678  ...  KLM_layout_4.csv 2024-05-30 08:12:59.091142
+9    Nisha Bhandari      123456789  ...  KLM_layout_4.csv 2024-05-30 08:12:59.091142
+10   Aarav Adhikari     1234567800  ...  KLM_layout_4.csv 2024-05-30 08:12:59.091142
+11      Sneha Joshi     2345678902  ...  KLM_layout_4.csv 2024-05-30 08:12:59.091142
+12     Pratik Shahi     3456789013  ...  KLM_layout_4.csv 2024-05-30 08:12:59.091142
+13   Anju Bhattarai     4567890124  ...  KLM_layout_4.csv 2024-05-30 08:12:59.091142
+14  Manish Maharjan     5678901235  ...  KLM_layout_4.csv 2024-05-30 08:12:59.091142
+15          Puja KC     6789012346  ...  KLM_layout_4.csv 2024-05-30 08:12:59.091142
+16      Anil Khadka     7890123457  ...  KLM_layout_4.csv 2024-05-30 08:12:59.091142
+17       Rita Rimal     8901234568  ...  KLM_layout_4.csv 2024-05-30 08:12:59.091142
+18  Pratiksha Dahal     9012345679  ...  KLM_layout_4.csv 2024-05-30 08:12:59.091142
+19  Dipesh Pokharel      123456790  ...  KLM_layout_4.csv 2024-05-30 08:12:59.091142
+
+[20 rows x 8 columns],     votersID             Name  ...               source              modified_date
+0   11116874        Ram Thapa  ...  layout_3_voters.csv 2024-05-30 08:12:59.091584
+1   22259363    Sita Shrestha  ...  layout_3_voters.csv 2024-05-30 08:12:59.091584
+2   33385241      Hari Gurung  ...  layout_3_voters.csv 2024-05-30 08:12:59.091584
+3   44475489      Gita Tamang  ...  layout_3_voters.csv 2024-05-30 08:12:59.091584
+4   55562139       Mohan Lama  ...  layout_3_voters.csv 2024-05-30 08:12:59.091584
+5   66698214      Radha Magar  ...  layout_3_voters.csv 2024-05-30 08:12:59.091584
+6   77714635      Krishna Rai  ...  layout_3_voters.csv 2024-05-30 08:12:59.091584
+7   88847326    Sarita Sherpa  ...  layout_3_voters.csv 2024-05-30 08:12:59.091584
+8   99953421     Bikash Karki  ...  layout_3_voters.csv 2024-05-30 08:12:59.091584
+9   10103847   Nisha Bhandari  ...  layout_3_voters.csv 2024-05-30 08:12:59.091584
+10  11113982   Aarav Adhikari  ...  layout_3_voters.csv 2024-05-30 08:12:59.091584
+11  12122547      Sneha Joshi  ...  layout_3_voters.csv 2024-05-30 08:12:59.091584
+12  13135698     Pratik Shahi  ...  layout_3_voters.csv 2024-05-30 08:12:59.091584
+13  14147652   Anju Bhattarai  ...  layout_3_voters.csv 2024-05-30 08:12:59.091584
+14  15158963  Manish Maharjan  ...  layout_3_voters.csv 2024-05-30 08:12:59.091584
+15  16169852          Puja KC  ...  layout_3_voters.csv 2024-05-30 08:12:59.091584
+16  17175246      Anil Khadka  ...  layout_3_voters.csv 2024-05-30 08:12:59.091584
+17  18183569       Rita Rimal  ...  layout_3_voters.csv 2024-05-30 08:12:59.091584
+18  19194258  Pratiksha Dahal  ...  layout_3_voters.csv 2024-05-30 08:12:59.091584
+19  20205417  Dipesh Pokharel  ...  layout_3_voters.csv 2024-05-30 08:12:59.091584
+
+[20 rows x 11 columns],     License Number Blood Group  ...                source              modified_date
+0   15-05-58353205         AB+  ...  layout_5_license.csv 2024-05-30 08:12:59.091908
+1   21-08-00435579         AB-  ...  layout_5_license.csv 2024-05-30 08:12:59.091908
+2   93-12-35351480          B-  ...  layout_5_license.csv 2024-05-30 08:12:59.091908
+3   65-03-68139881          A-  ...  layout_5_license.csv 2024-05-30 08:12:59.091908
+4   14-11-40056582          A+  ...  layout_5_license.csv 2024-05-30 08:12:59.091908
+5   82-09-81734599          B-  ...  layout_5_license.csv 2024-05-30 08:12:59.091908
+6   26-03-50185868         AB+  ...  layout_5_license.csv 2024-05-30 08:12:59.091908
+7   98-03-72394228          A-  ...  layout_5_license.csv 2024-05-30 08:12:59.091908
+8   68-01-80388982          B-  ...  layout_5_license.csv 2024-05-30 08:12:59.091908
+9   42-08-02614125          A-  ...  layout_5_license.csv 2024-05-30 08:12:59.091908
+10  15-06-41273848          O+  ...  layout_5_license.csv 2024-05-30 08:12:59.091908
+11  31-01-32329238         AB+  ...  layout_5_license.csv 2024-05-30 08:12:59.091908
+12  73-02-11496212          O-  ...  layout_5_license.csv 2024-05-30 08:12:59.091908
+13  94-08-09289547         AB-  ...  layout_5_license.csv 2024-05-30 08:12:59.091908
+14  98-09-16879291          B+  ...  layout_5_license.csv 2024-05-30 08:12:59.091908
+15  17-11-63791321         AB-  ...  layout_5_license.csv 2024-05-30 08:12:59.091908
+16  71-03-35575299         AB-  ...  layout_5_license.csv 2024-05-30 08:12:59.091908
+17  68-10-56792613          B-  ...  layout_5_license.csv 2024-05-30 08:12:59.091908
+18  28-09-97969690         AB+  ...  layout_5_license.csv 2024-05-30 08:12:59.091908
+19  89-04-95690392          A-  ...  layout_5_license.csv 2024-05-30 08:12:59.091908
+
+[20 rows x 11 columns],     Mobile Number             Name  ...            source              modified_date
+0      1234567890        Ram Thapa  ...  PQR_layout_2.csv 2024-05-30 08:12:59.092212
+1      2345678901    Sita Shrestha  ...  PQR_layout_2.csv 2024-05-30 08:12:59.092212
+2      3456789012      Hari Gurung  ...  PQR_layout_2.csv 2024-05-30 08:12:59.092212
+3      4567890123      Gita Tamang  ...  PQR_layout_2.csv 2024-05-30 08:12:59.092212
+4      5678901234       Mohan Lama  ...  PQR_layout_2.csv 2024-05-30 08:12:59.092212
+5      6789012345      Radha Magar  ...  PQR_layout_2.csv 2024-05-30 08:12:59.092212
+6      7890123456      Krishna Rai  ...  PQR_layout_2.csv 2024-05-30 08:12:59.092212
+7      8901234567    Sarita Sherpa  ...  PQR_layout_2.csv 2024-05-30 08:12:59.092212
+8      9012345678     Bikash Karki  ...  PQR_layout_2.csv 2024-05-30 08:12:59.092212
+9       123456789   Nisha Bhandari  ...  PQR_layout_2.csv 2024-05-30 08:12:59.092212
+10     1234567800   Aarav Adhikari  ...  PQR_layout_2.csv 2024-05-30 08:12:59.092212
+11     2345678902      Sneha Joshi  ...  PQR_layout_2.csv 2024-05-30 08:12:59.092212
+12     3456789013     Pratik Shahi  ...  PQR_layout_2.csv 2024-05-30 08:12:59.092212
+13     4567890124   Anju Bhattarai  ...  PQR_layout_2.csv 2024-05-30 08:12:59.092212
+14     5678901235  Manish Maharjan  ...  PQR_layout_2.csv 2024-05-30 08:12:59.092212
+15     6789012346          Puja KC  ...  PQR_layout_2.csv 2024-05-30 08:12:59.092212
+16     7890123457      Anil Khadka  ...  PQR_layout_2.csv 2024-05-30 08:12:59.092212
+17     8901234568       Rita Rimal  ...  PQR_layout_2.csv 2024-05-30 08:12:59.092212
+18     9012345679  Pratiksha Dahal  ...  PQR_layout_2.csv 2024-05-30 08:12:59.092212
+19      123456790  Dipesh Pokharel  ...  PQR_layout_2.csv 2024-05-30 08:12:59.092212
+
+[20 rows x 8 columns]], [    Customer Code            Name  ...            source              modified_date
+0        21216874        RamThapa  ...  ABC_layout_1.csv 2024-05-30 08:12:59.084534
+1        22359363    SitaShrestha  ...  ABC_layout_1.csv 2024-05-30 08:12:59.084534
+2        33485241      HariGurung  ...  ABC_layout_1.csv 2024-05-30 08:12:59.084534
+3        45475489      GitaTamang  ...  ABC_layout_1.csv 2024-05-30 08:12:59.084534
+4        56562139       MohanLama  ...  ABC_layout_1.csv 2024-05-30 08:12:59.084534
+5        67698214      RadhaMagar  ...  ABC_layout_1.csv 2024-05-30 08:12:59.084534
+6        78714635      KrishnaRai  ...  ABC_layout_1.csv 2024-05-30 08:12:59.084534
+7        89847326    SaritaSherpa  ...  ABC_layout_1.csv 2024-05-30 08:12:59.084534
+8        91953421     BikashKarki  ...  ABC_layout_1.csv 2024-05-30 08:12:59.084534
+9        10203847   NishaBhandari  ...  ABC_layout_1.csv 2024-05-30 08:12:59.084534
+10       12113982   AaravAdhikari  ...  ABC_layout_1.csv 2024-05-30 08:12:59.084534
+11       13122547      SnehaJoshi  ...  ABC_layout_1.csv 2024-05-30 08:12:59.084534
+12       13235698     PratikShahi  ...  ABC_layout_1.csv 2024-05-30 08:12:59.084534
+13       14247652   AnjuBhattarai  ...  ABC_layout_1.csv 2024-05-30 08:12:59.084534
+14       15158964  ManishMaharjan  ...  ABC_layout_1.csv 2024-05-30 08:12:59.084534
+15       16169853          PujaKC  ...  ABC_layout_1.csv 2024-05-30 08:12:59.084534
+16       17375246      AnilKhadka  ...  ABC_layout_1.csv 2024-05-30 08:12:59.084534
+17       18383569       RitaRimal  ...  ABC_layout_1.csv 2024-05-30 08:12:59.084534
+18       19294258  PratikshaDahal  ...  ABC_layout_1.csv 2024-05-30 08:12:59.084534
+19       20305417  DipeshPokharel  ...  ABC_layout_1.csv 2024-05-30 08:12:59.084534
+
+[20 rows x 11 columns],               Name  Mobile Number  ...            source              modified_date
+0         RamThapa     1234567890  ...  KLM_layout_4.csv 2024-05-30 08:12:59.091142
+1     SitaShrestha     2345678901  ...  KLM_layout_4.csv 2024-05-30 08:12:59.091142
+2       HariGurung     3456789012  ...  KLM_layout_4.csv 2024-05-30 08:12:59.091142
+3       GitaTamang     4567890123  ...  KLM_layout_4.csv 2024-05-30 08:12:59.091142
+4        MohanLama     5678901234  ...  KLM_layout_4.csv 2024-05-30 08:12:59.091142
+5       RadhaMagar     6789012345  ...  KLM_layout_4.csv 2024-05-30 08:12:59.091142
+6       KrishnaRai     7890123456  ...  KLM_layout_4.csv 2024-05-30 08:12:59.091142
+7     SaritaSherpa     8901234567  ...  KLM_layout_4.csv 2024-05-30 08:12:59.091142
+8      BikashKarki     9012345678  ...  KLM_layout_4.csv 2024-05-30 08:12:59.091142
+9    NishaBhandari      123456789  ...  KLM_layout_4.csv 2024-05-30 08:12:59.091142
+10   AaravAdhikari     1234567800  ...  KLM_layout_4.csv 2024-05-30 08:12:59.091142
+11      SnehaJoshi     2345678902  ...  KLM_layout_4.csv 2024-05-30 08:12:59.091142
+12     PratikShahi     3456789013  ...  KLM_layout_4.csv 2024-05-30 08:12:59.091142
+13   AnjuBhattarai     4567890124  ...  KLM_layout_4.csv 2024-05-30 08:12:59.091142
+14  ManishMaharjan     5678901235  ...  KLM_layout_4.csv 2024-05-30 08:12:59.091142
+15          PujaKC     6789012346  ...  KLM_layout_4.csv 2024-05-30 08:12:59.091142
+16      AnilKhadka     7890123457  ...  KLM_layout_4.csv 2024-05-30 08:12:59.091142
+17       RitaRimal     8901234568  ...  KLM_layout_4.csv 2024-05-30 08:12:59.091142
+18  PratikshaDahal     9012345679  ...  KLM_layout_4.csv 2024-05-30 08:12:59.091142
+19  DipeshPokharel      123456790  ...  KLM_layout_4.csv 2024-05-30 08:12:59.091142
+
+[20 rows x 8 columns],     votersID            Name  ...               source              modified_date
+0   11116874        RamThapa  ...  layout_3_voters.csv 2024-05-30 08:12:59.091584
+1   22259363    SitaShrestha  ...  layout_3_voters.csv 2024-05-30 08:12:59.091584
+2   33385241      HariGurung  ...  layout_3_voters.csv 2024-05-30 08:12:59.091584
+3   44475489      GitaTamang  ...  layout_3_voters.csv 2024-05-30 08:12:59.091584
+4   55562139       MohanLama  ...  layout_3_voters.csv 2024-05-30 08:12:59.091584
+5   66698214      RadhaMagar  ...  layout_3_voters.csv 2024-05-30 08:12:59.091584
+6   77714635      KrishnaRai  ...  layout_3_voters.csv 2024-05-30 08:12:59.091584
+7   88847326    SaritaSherpa  ...  layout_3_voters.csv 2024-05-30 08:12:59.091584
+8   99953421     BikashKarki  ...  layout_3_voters.csv 2024-05-30 08:12:59.091584
+9   10103847   NishaBhandari  ...  layout_3_voters.csv 2024-05-30 08:12:59.091584
+10  11113982   AaravAdhikari  ...  layout_3_voters.csv 2024-05-30 08:12:59.091584
+11  12122547      SnehaJoshi  ...  layout_3_voters.csv 2024-05-30 08:12:59.091584
+12  13135698     PratikShahi  ...  layout_3_voters.csv 2024-05-30 08:12:59.091584
+13  14147652   AnjuBhattarai  ...  layout_3_voters.csv 2024-05-30 08:12:59.091584
+14  15158963  ManishMaharjan  ...  layout_3_voters.csv 2024-05-30 08:12:59.091584
+15  16169852          PujaKC  ...  layout_3_voters.csv 2024-05-30 08:12:59.091584
+16  17175246      AnilKhadka  ...  layout_3_voters.csv 2024-05-30 08:12:59.091584
+17  18183569       RitaRimal  ...  layout_3_voters.csv 2024-05-30 08:12:59.091584
+18  19194258  PratikshaDahal  ...  layout_3_voters.csv 2024-05-30 08:12:59.091584
+19  20205417  DipeshPokharel  ...  layout_3_voters.csv 2024-05-30 08:12:59.091584
+
+[20 rows x 11 columns],     License Number Blood Group  ...                source              modified_date
+0   15-05-58353205         AB+  ...  layout_5_license.csv 2024-05-30 08:12:59.091908
+1   21-08-00435579         AB-  ...  layout_5_license.csv 2024-05-30 08:12:59.091908
+2   93-12-35351480          B-  ...  layout_5_license.csv 2024-05-30 08:12:59.091908
+3   65-03-68139881          A-  ...  layout_5_license.csv 2024-05-30 08:12:59.091908
+4   14-11-40056582          A+  ...  layout_5_license.csv 2024-05-30 08:12:59.091908
+5   82-09-81734599          B-  ...  layout_5_license.csv 2024-05-30 08:12:59.091908
+6   26-03-50185868         AB+  ...  layout_5_license.csv 2024-05-30 08:12:59.091908
+7   98-03-72394228          A-  ...  layout_5_license.csv 2024-05-30 08:12:59.091908
+8   68-01-80388982          B-  ...  layout_5_license.csv 2024-05-30 08:12:59.091908
+9   42-08-02614125          A-  ...  layout_5_license.csv 2024-05-30 08:12:59.091908
+10  15-06-41273848          O+  ...  layout_5_license.csv 2024-05-30 08:12:59.091908
+11  31-01-32329238         AB+  ...  layout_5_license.csv 2024-05-30 08:12:59.091908
+12  73-02-11496212          O-  ...  layout_5_license.csv 2024-05-30 08:12:59.091908
+13  94-08-09289547         AB-  ...  layout_5_license.csv 2024-05-30 08:12:59.091908
+14  98-09-16879291          B+  ...  layout_5_license.csv 2024-05-30 08:12:59.091908
+15  17-11-63791321         AB-  ...  layout_5_license.csv 2024-05-30 08:12:59.091908
+16  71-03-35575299         AB-  ...  layout_5_license.csv 2024-05-30 08:12:59.091908
+17  68-10-56792613          B-  ...  layout_5_license.csv 2024-05-30 08:12:59.091908
+18  28-09-97969690         AB+  ...  layout_5_license.csv 2024-05-30 08:12:59.091908
+19  89-04-95690392          A-  ...  layout_5_license.csv 2024-05-30 08:12:59.091908
+
+[20 rows x 11 columns],     Mobile Number            Name  ...            source              modified_date
+0      1234567890        RamThapa  ...  PQR_layout_2.csv 2024-05-30 08:12:59.092212
+1      2345678901    SitaShrestha  ...  PQR_layout_2.csv 2024-05-30 08:12:59.092212
+2      3456789012      HariGurung  ...  PQR_layout_2.csv 2024-05-30 08:12:59.092212
+3      4567890123      GitaTamang  ...  PQR_layout_2.csv 2024-05-30 08:12:59.092212
+4      5678901234       MohanLama  ...  PQR_layout_2.csv 2024-05-30 08:12:59.092212
+5      6789012345      RadhaMagar  ...  PQR_layout_2.csv 2024-05-30 08:12:59.092212
+6      7890123456      KrishnaRai  ...  PQR_layout_2.csv 2024-05-30 08:12:59.092212
+7      8901234567    SaritaSherpa  ...  PQR_layout_2.csv 2024-05-30 08:12:59.092212
+8      9012345678     BikashKarki  ...  PQR_layout_2.csv 2024-05-30 08:12:59.092212
+9       123456789   NishaBhandari  ...  PQR_layout_2.csv 2024-05-30 08:12:59.092212
+10     1234567800   AaravAdhikari  ...  PQR_layout_2.csv 2024-05-30 08:12:59.092212
+11     2345678902      SnehaJoshi  ...  PQR_layout_2.csv 2024-05-30 08:12:59.092212
+12     3456789013     PratikShahi  ...  PQR_layout_2.csv 2024-05-30 08:12:59.092212
+13     4567890124   AnjuBhattarai  ...  PQR_layout_2.csv 2024-05-30 08:12:59.092212
+14     5678901235  ManishMaharjan  ...  PQR_layout_2.csv 2024-05-30 08:12:59.092212
+15     6789012346          PujaKC  ...  PQR_layout_2.csv 2024-05-30 08:12:59.092212
+16     7890123457      AnilKhadka  ...  PQR_layout_2.csv 2024-05-30 08:12:59.092212
+17     8901234568       RitaRimal  ...  PQR_layout_2.csv 2024-05-30 08:12:59.092212
+18     9012345679  PratikshaDahal  ...  PQR_layout_2.csv 2024-05-30 08:12:59.092212
+19      123456790  DipeshPokharel  ...  PQR_layout_2.csv 2024-05-30 08:12:59.092212
+
+[20 rows x 8 columns]])
+[2024-05-30T08:12:59.252+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-05-30T08:13:00.161+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=extenso_assignment, task_id=reader, run_id=scheduled__2024-03-14T00:00:00+00:00, execution_date=20240314T000000, start_date=20240530T081258, end_date=20240530T081300
+[2024-05-30T08:13:00.232+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-05-30T08:13:00.262+0000] {taskinstance.py:3498} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-05-30T08:13:00.277+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

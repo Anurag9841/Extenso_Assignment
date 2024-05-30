@@ -17,11 +17,6 @@ def final_entity_matching():
     soup = ['Name', 'Date of Birth', 'Father_Name']
     # Read data and initialize layouts
     layouts,layout_copies = read_datas()
-    layout1 = layouts[0]
-    layout2 = layouts[1]
-    layout3 = layouts[2]
-    layout4 = layouts[3]
-    layout5 = layouts[4]
     # Create 'soup' columns for each layout
     for i, j, k, in zip(layouts, layout_copies, range(len(layouts))):
         create_soup(i, j, soup, f"soup{k+1}")
@@ -68,9 +63,9 @@ def final_entity_matching():
         return result
 
     # Sequentially combine all layouts
-    result_12 = combine(layout1, layout2, 'soup1', 'soup2')
-    result_123 = combine(result_12, layout3, 'soup1', 'soup3')
-    result_1234 = combine(result_123, layout4, 'soup1', 'soup4')
-    final_result = combine(result_1234, layout5, 'soup1', 'soup5')
+    result_12 = combine(layouts[0], layouts[1], 'soup1', 'soup2')
+    result_123 = combine(result_12, layouts[2], 'soup1', 'soup3')
+    result_1234 = combine(result_123, layouts[3], 'soup1', 'soup4')
+    # final_result = combine(result_1234, layouts[4], 'soup1', 'soup5')
     # Export final result to CSV
-    return final_result.to_csv('/opt/airflow/files/output_files/final_output.csv',index = False)
+    return result_1234.to_csv('/opt/airflow/files/output_files/final_output.csv',index = False)

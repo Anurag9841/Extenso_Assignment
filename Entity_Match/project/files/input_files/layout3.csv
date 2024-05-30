@@ -1,4 +1,4 @@
-votersID,votersName,votersAge,votersFatherName,votersMotherName,SpouseName,Permanent_Adress, Gender,Date of Birth
+votersID,Name,votersAge,Father_Name,Mother Name,SpouseName,Permanent_Address,Gender,Date of Birth
 11116874,Ram Thapa,45,Ram Bahadur Thapa,Laxmi Thapa,Sita Thapa,"Baluwatar, Kathmandu, Nepal", Male,1990-01-01
 22259363,Sita Shrestha,38,Hari Prasad Shrestha,Radha Sharma,Ravi Sharma,"Lakeside, Pokhara, Nepal", Female,1991-02-02
 33385241,Hari Gurung,52,Gopal Krishna Gurung,Gita Adhikari,Maya Adhikari,"Chitwan National Park, Chitwan, Nepal", Male,1992-03-03

@@ -502,3 +502,197 @@
 [2024-05-30T04:41:37.076+0000] {logging_mixin.py:188} INFO - [2024-05-30T04:41:37.076+0000] {dag.py:3096} INFO - Sync 1 DAGs
 [2024-05-30T04:41:37.097+0000] {logging_mixin.py:188} INFO - [2024-05-30T04:41:37.097+0000] {dag.py:3954} INFO - Setting next_dagrun for extenso_assignment to None, run_after=None
 [2024-05-30T04:41:37.118+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dump_load_dag.py took 1.221 seconds
+[2024-05-30T08:03:23.176+0000] {processor.py:161} INFO - Started process (PID=165) to work on /opt/airflow/dags/dump_load_dag.py
+[2024-05-30T08:03:23.179+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dump_load_dag.py for tasks to queue
+[2024-05-30T08:03:23.182+0000] {logging_mixin.py:188} INFO - [2024-05-30T08:03:23.181+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dump_load_dag.py
+[2024-05-30T08:03:28.257+0000] {processor.py:840} INFO - DAG(s) 'extenso_assignment' retrieved from /opt/airflow/dags/dump_load_dag.py
+[2024-05-30T08:03:28.539+0000] {logging_mixin.py:188} INFO - [2024-05-30T08:03:28.538+0000] {override.py:1829} INFO - Created Permission View: can read on DAG:extenso_assignment
+[2024-05-30T08:03:28.548+0000] {logging_mixin.py:188} INFO - [2024-05-30T08:03:28.548+0000] {override.py:1829} INFO - Created Permission View: can delete on DAG:extenso_assignment
+[2024-05-30T08:03:28.555+0000] {logging_mixin.py:188} INFO - [2024-05-30T08:03:28.554+0000] {override.py:1829} INFO - Created Permission View: can edit on DAG:extenso_assignment
+[2024-05-30T08:03:28.556+0000] {logging_mixin.py:188} INFO - [2024-05-30T08:03:28.555+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-30T08:03:28.568+0000] {logging_mixin.py:188} INFO - [2024-05-30T08:03:28.567+0000] {dag.py:3118} INFO - Creating ORM DAG for extenso_assignment
+[2024-05-30T08:03:28.579+0000] {logging_mixin.py:188} INFO - [2024-05-30T08:03:28.579+0000] {dag.py:3954} INFO - Setting next_dagrun for extenso_assignment to 2024-03-14 00:00:00+00:00, run_after=2024-03-14 00:00:00+00:00
+[2024-05-30T08:03:28.595+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dump_load_dag.py took 5.426 seconds
+[2024-05-30T08:03:58.834+0000] {processor.py:161} INFO - Started process (PID=203) to work on /opt/airflow/dags/dump_load_dag.py
+[2024-05-30T08:03:58.836+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dump_load_dag.py for tasks to queue
+[2024-05-30T08:03:58.845+0000] {logging_mixin.py:188} INFO - [2024-05-30T08:03:58.843+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dump_load_dag.py
+[2024-05-30T08:04:00.755+0000] {processor.py:840} INFO - DAG(s) 'extenso_assignment' retrieved from /opt/airflow/dags/dump_load_dag.py
+[2024-05-30T08:04:00.786+0000] {logging_mixin.py:188} INFO - [2024-05-30T08:04:00.786+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-30T08:04:00.807+0000] {logging_mixin.py:188} INFO - [2024-05-30T08:04:00.807+0000] {dag.py:3954} INFO - Setting next_dagrun for extenso_assignment to None, run_after=None
+[2024-05-30T08:04:00.830+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dump_load_dag.py took 2.010 seconds
+[2024-05-30T08:04:31.052+0000] {processor.py:161} INFO - Started process (PID=223) to work on /opt/airflow/dags/dump_load_dag.py
+[2024-05-30T08:04:31.053+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dump_load_dag.py for tasks to queue
+[2024-05-30T08:04:31.056+0000] {logging_mixin.py:188} INFO - [2024-05-30T08:04:31.055+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dump_load_dag.py
+[2024-05-30T08:04:32.163+0000] {processor.py:840} INFO - DAG(s) 'extenso_assignment' retrieved from /opt/airflow/dags/dump_load_dag.py
+[2024-05-30T08:04:32.187+0000] {logging_mixin.py:188} INFO - [2024-05-30T08:04:32.186+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-30T08:04:32.205+0000] {logging_mixin.py:188} INFO - [2024-05-30T08:04:32.205+0000] {dag.py:3954} INFO - Setting next_dagrun for extenso_assignment to None, run_after=None
+[2024-05-30T08:04:32.220+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dump_load_dag.py took 1.175 seconds
+[2024-05-30T08:05:02.336+0000] {processor.py:161} INFO - Started process (PID=242) to work on /opt/airflow/dags/dump_load_dag.py
+[2024-05-30T08:05:02.337+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dump_load_dag.py for tasks to queue
+[2024-05-30T08:05:02.338+0000] {logging_mixin.py:188} INFO - [2024-05-30T08:05:02.338+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dump_load_dag.py
+[2024-05-30T08:05:03.216+0000] {processor.py:840} INFO - DAG(s) 'extenso_assignment' retrieved from /opt/airflow/dags/dump_load_dag.py
+[2024-05-30T08:05:03.235+0000] {logging_mixin.py:188} INFO - [2024-05-30T08:05:03.235+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-30T08:05:03.252+0000] {logging_mixin.py:188} INFO - [2024-05-30T08:05:03.252+0000] {dag.py:3954} INFO - Setting next_dagrun for extenso_assignment to None, run_after=None
+[2024-05-30T08:05:03.268+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dump_load_dag.py took 0.938 seconds
+[2024-05-30T08:05:33.494+0000] {processor.py:161} INFO - Started process (PID=261) to work on /opt/airflow/dags/dump_load_dag.py
+[2024-05-30T08:05:33.496+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dump_load_dag.py for tasks to queue
+[2024-05-30T08:05:33.498+0000] {logging_mixin.py:188} INFO - [2024-05-30T08:05:33.498+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dump_load_dag.py
+[2024-05-30T08:05:34.419+0000] {processor.py:840} INFO - DAG(s) 'extenso_assignment' retrieved from /opt/airflow/dags/dump_load_dag.py
+[2024-05-30T08:05:34.446+0000] {logging_mixin.py:188} INFO - [2024-05-30T08:05:34.445+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-30T08:05:34.463+0000] {logging_mixin.py:188} INFO - [2024-05-30T08:05:34.463+0000] {dag.py:3954} INFO - Setting next_dagrun for extenso_assignment to None, run_after=None
+[2024-05-30T08:05:34.480+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dump_load_dag.py took 0.992 seconds
+[2024-05-30T08:06:04.713+0000] {processor.py:161} INFO - Started process (PID=280) to work on /opt/airflow/dags/dump_load_dag.py
+[2024-05-30T08:06:04.715+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dump_load_dag.py for tasks to queue
+[2024-05-30T08:06:04.716+0000] {logging_mixin.py:188} INFO - [2024-05-30T08:06:04.716+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dump_load_dag.py
+[2024-05-30T08:06:05.646+0000] {processor.py:840} INFO - DAG(s) 'extenso_assignment' retrieved from /opt/airflow/dags/dump_load_dag.py
+[2024-05-30T08:06:05.666+0000] {logging_mixin.py:188} INFO - [2024-05-30T08:06:05.665+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-30T08:06:05.684+0000] {logging_mixin.py:188} INFO - [2024-05-30T08:06:05.684+0000] {dag.py:3954} INFO - Setting next_dagrun for extenso_assignment to None, run_after=None
+[2024-05-30T08:06:05.700+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dump_load_dag.py took 0.998 seconds
+[2024-05-30T08:06:35.942+0000] {processor.py:161} INFO - Started process (PID=299) to work on /opt/airflow/dags/dump_load_dag.py
+[2024-05-30T08:06:35.944+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dump_load_dag.py for tasks to queue
+[2024-05-30T08:06:35.948+0000] {logging_mixin.py:188} INFO - [2024-05-30T08:06:35.948+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dump_load_dag.py
+[2024-05-30T08:06:36.977+0000] {processor.py:840} INFO - DAG(s) 'extenso_assignment' retrieved from /opt/airflow/dags/dump_load_dag.py
+[2024-05-30T08:06:37.012+0000] {logging_mixin.py:188} INFO - [2024-05-30T08:06:37.011+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-30T08:06:37.041+0000] {logging_mixin.py:188} INFO - [2024-05-30T08:06:37.041+0000] {dag.py:3954} INFO - Setting next_dagrun for extenso_assignment to None, run_after=None
+[2024-05-30T08:06:37.061+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dump_load_dag.py took 1.130 seconds
+[2024-05-30T08:07:07.554+0000] {processor.py:161} INFO - Started process (PID=318) to work on /opt/airflow/dags/dump_load_dag.py
+[2024-05-30T08:07:07.556+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dump_load_dag.py for tasks to queue
+[2024-05-30T08:07:07.558+0000] {logging_mixin.py:188} INFO - [2024-05-30T08:07:07.558+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dump_load_dag.py
+[2024-05-30T08:07:08.525+0000] {processor.py:840} INFO - DAG(s) 'extenso_assignment' retrieved from /opt/airflow/dags/dump_load_dag.py
+[2024-05-30T08:07:08.548+0000] {logging_mixin.py:188} INFO - [2024-05-30T08:07:08.548+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-30T08:07:08.566+0000] {logging_mixin.py:188} INFO - [2024-05-30T08:07:08.566+0000] {dag.py:3954} INFO - Setting next_dagrun for extenso_assignment to None, run_after=None
+[2024-05-30T08:07:08.582+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dump_load_dag.py took 1.034 seconds
+[2024-05-30T08:07:38.840+0000] {processor.py:161} INFO - Started process (PID=337) to work on /opt/airflow/dags/dump_load_dag.py
+[2024-05-30T08:07:38.843+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dump_load_dag.py for tasks to queue
+[2024-05-30T08:07:38.848+0000] {logging_mixin.py:188} INFO - [2024-05-30T08:07:38.847+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dump_load_dag.py
+[2024-05-30T08:07:40.592+0000] {processor.py:840} INFO - DAG(s) 'extenso_assignment' retrieved from /opt/airflow/dags/dump_load_dag.py
+[2024-05-30T08:07:40.637+0000] {logging_mixin.py:188} INFO - [2024-05-30T08:07:40.636+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-30T08:07:40.670+0000] {logging_mixin.py:188} INFO - [2024-05-30T08:07:40.669+0000] {dag.py:3954} INFO - Setting next_dagrun for extenso_assignment to None, run_after=None
+[2024-05-30T08:07:40.688+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dump_load_dag.py took 1.856 seconds
+[2024-05-30T08:08:10.989+0000] {processor.py:161} INFO - Started process (PID=356) to work on /opt/airflow/dags/dump_load_dag.py
+[2024-05-30T08:08:10.991+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dump_load_dag.py for tasks to queue
+[2024-05-30T08:08:10.999+0000] {logging_mixin.py:188} INFO - [2024-05-30T08:08:10.997+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dump_load_dag.py
+[2024-05-30T08:08:12.829+0000] {processor.py:840} INFO - DAG(s) 'extenso_assignment' retrieved from /opt/airflow/dags/dump_load_dag.py
+[2024-05-30T08:08:12.867+0000] {logging_mixin.py:188} INFO - [2024-05-30T08:08:12.866+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-30T08:08:12.886+0000] {logging_mixin.py:188} INFO - [2024-05-30T08:08:12.886+0000] {dag.py:3954} INFO - Setting next_dagrun for extenso_assignment to None, run_after=None
+[2024-05-30T08:08:12.909+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dump_load_dag.py took 1.941 seconds
+[2024-05-30T08:11:48.342+0000] {processor.py:161} INFO - Started process (PID=165) to work on /opt/airflow/dags/dump_load_dag.py
+[2024-05-30T08:11:48.347+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dump_load_dag.py for tasks to queue
+[2024-05-30T08:11:48.362+0000] {logging_mixin.py:188} INFO - [2024-05-30T08:11:48.360+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dump_load_dag.py
+[2024-05-30T08:11:51.524+0000] {processor.py:840} INFO - DAG(s) 'extenso_assignment' retrieved from /opt/airflow/dags/dump_load_dag.py
+[2024-05-30T08:11:51.748+0000] {logging_mixin.py:188} INFO - [2024-05-30T08:11:51.746+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-30T08:11:51.778+0000] {logging_mixin.py:188} INFO - [2024-05-30T08:11:51.778+0000] {dag.py:3954} INFO - Setting next_dagrun for extenso_assignment to None, run_after=None
+[2024-05-30T08:11:51.826+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dump_load_dag.py took 3.522 seconds
+[2024-05-30T08:12:22.426+0000] {processor.py:161} INFO - Started process (PID=184) to work on /opt/airflow/dags/dump_load_dag.py
+[2024-05-30T08:12:22.430+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dump_load_dag.py for tasks to queue
+[2024-05-30T08:12:22.454+0000] {logging_mixin.py:188} INFO - [2024-05-30T08:12:22.453+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dump_load_dag.py
+[2024-05-30T08:12:28.593+0000] {processor.py:840} INFO - DAG(s) 'extenso_assignment' retrieved from /opt/airflow/dags/dump_load_dag.py
+[2024-05-30T08:12:28.864+0000] {logging_mixin.py:188} INFO - [2024-05-30T08:12:28.864+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-30T08:12:28.882+0000] {logging_mixin.py:188} INFO - [2024-05-30T08:12:28.882+0000] {dag.py:3118} INFO - Creating ORM DAG for extenso_assignment
+[2024-05-30T08:12:28.903+0000] {logging_mixin.py:188} INFO - [2024-05-30T08:12:28.903+0000] {dag.py:3954} INFO - Setting next_dagrun for extenso_assignment to 2024-03-14 00:00:00+00:00, run_after=2024-03-14 00:00:00+00:00
+[2024-05-30T08:12:28.942+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dump_load_dag.py took 6.559 seconds
+[2024-05-30T08:12:59.221+0000] {processor.py:161} INFO - Started process (PID=213) to work on /opt/airflow/dags/dump_load_dag.py
+[2024-05-30T08:12:59.230+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dump_load_dag.py for tasks to queue
+[2024-05-30T08:12:59.241+0000] {logging_mixin.py:188} INFO - [2024-05-30T08:12:59.239+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dump_load_dag.py
+[2024-05-30T08:13:01.379+0000] {processor.py:840} INFO - DAG(s) 'extenso_assignment' retrieved from /opt/airflow/dags/dump_load_dag.py
+[2024-05-30T08:13:01.422+0000] {logging_mixin.py:188} INFO - [2024-05-30T08:13:01.421+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-30T08:13:01.450+0000] {logging_mixin.py:188} INFO - [2024-05-30T08:13:01.450+0000] {dag.py:3954} INFO - Setting next_dagrun for extenso_assignment to None, run_after=None
+[2024-05-30T08:13:01.486+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dump_load_dag.py took 2.306 seconds
+[2024-05-30T08:13:31.793+0000] {processor.py:161} INFO - Started process (PID=242) to work on /opt/airflow/dags/dump_load_dag.py
+[2024-05-30T08:13:31.794+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dump_load_dag.py for tasks to queue
+[2024-05-30T08:13:31.796+0000] {logging_mixin.py:188} INFO - [2024-05-30T08:13:31.796+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dump_load_dag.py
+[2024-05-30T08:13:32.786+0000] {processor.py:840} INFO - DAG(s) 'extenso_assignment' retrieved from /opt/airflow/dags/dump_load_dag.py
+[2024-05-30T08:13:32.807+0000] {logging_mixin.py:188} INFO - [2024-05-30T08:13:32.806+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-30T08:13:32.825+0000] {logging_mixin.py:188} INFO - [2024-05-30T08:13:32.824+0000] {dag.py:3954} INFO - Setting next_dagrun for extenso_assignment to None, run_after=None
+[2024-05-30T08:13:32.840+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dump_load_dag.py took 1.053 seconds
+[2024-05-30T08:14:03.065+0000] {processor.py:161} INFO - Started process (PID=261) to work on /opt/airflow/dags/dump_load_dag.py
+[2024-05-30T08:14:03.066+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dump_load_dag.py for tasks to queue
+[2024-05-30T08:14:03.069+0000] {logging_mixin.py:188} INFO - [2024-05-30T08:14:03.069+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dump_load_dag.py
+[2024-05-30T08:14:04.160+0000] {processor.py:840} INFO - DAG(s) 'extenso_assignment' retrieved from /opt/airflow/dags/dump_load_dag.py
+[2024-05-30T08:14:04.179+0000] {logging_mixin.py:188} INFO - [2024-05-30T08:14:04.179+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-30T08:14:04.197+0000] {logging_mixin.py:188} INFO - [2024-05-30T08:14:04.196+0000] {dag.py:3954} INFO - Setting next_dagrun for extenso_assignment to None, run_after=None
+[2024-05-30T08:14:04.214+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dump_load_dag.py took 1.172 seconds
+[2024-05-30T08:14:34.354+0000] {processor.py:161} INFO - Started process (PID=286) to work on /opt/airflow/dags/dump_load_dag.py
+[2024-05-30T08:14:34.355+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dump_load_dag.py for tasks to queue
+[2024-05-30T08:14:34.357+0000] {logging_mixin.py:188} INFO - [2024-05-30T08:14:34.357+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dump_load_dag.py
+[2024-05-30T08:14:35.257+0000] {processor.py:840} INFO - DAG(s) 'extenso_assignment' retrieved from /opt/airflow/dags/dump_load_dag.py
+[2024-05-30T08:14:35.282+0000] {logging_mixin.py:188} INFO - [2024-05-30T08:14:35.281+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-30T08:14:35.310+0000] {logging_mixin.py:188} INFO - [2024-05-30T08:14:35.310+0000] {dag.py:3954} INFO - Setting next_dagrun for extenso_assignment to None, run_after=None
+[2024-05-30T08:14:35.353+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dump_load_dag.py took 1.005 seconds
+[2024-05-30T08:15:05.571+0000] {processor.py:161} INFO - Started process (PID=305) to work on /opt/airflow/dags/dump_load_dag.py
+[2024-05-30T08:15:05.572+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dump_load_dag.py for tasks to queue
+[2024-05-30T08:15:05.574+0000] {logging_mixin.py:188} INFO - [2024-05-30T08:15:05.573+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dump_load_dag.py
+[2024-05-30T08:15:06.527+0000] {processor.py:840} INFO - DAG(s) 'extenso_assignment' retrieved from /opt/airflow/dags/dump_load_dag.py
+[2024-05-30T08:15:06.547+0000] {logging_mixin.py:188} INFO - [2024-05-30T08:15:06.546+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-30T08:15:06.565+0000] {logging_mixin.py:188} INFO - [2024-05-30T08:15:06.565+0000] {dag.py:3954} INFO - Setting next_dagrun for extenso_assignment to None, run_after=None
+[2024-05-30T08:15:06.585+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dump_load_dag.py took 1.020 seconds
+[2024-05-30T08:15:36.832+0000] {processor.py:161} INFO - Started process (PID=324) to work on /opt/airflow/dags/dump_load_dag.py
+[2024-05-30T08:15:36.833+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dump_load_dag.py for tasks to queue
+[2024-05-30T08:15:36.835+0000] {logging_mixin.py:188} INFO - [2024-05-30T08:15:36.835+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dump_load_dag.py
+[2024-05-30T08:15:37.753+0000] {processor.py:840} INFO - DAG(s) 'extenso_assignment' retrieved from /opt/airflow/dags/dump_load_dag.py
+[2024-05-30T08:15:37.774+0000] {logging_mixin.py:188} INFO - [2024-05-30T08:15:37.773+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-30T08:15:37.794+0000] {logging_mixin.py:188} INFO - [2024-05-30T08:15:37.793+0000] {dag.py:3954} INFO - Setting next_dagrun for extenso_assignment to None, run_after=None
+[2024-05-30T08:15:37.821+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dump_load_dag.py took 0.994 seconds
+[2024-05-30T08:16:08.103+0000] {processor.py:161} INFO - Started process (PID=343) to work on /opt/airflow/dags/dump_load_dag.py
+[2024-05-30T08:16:08.104+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dump_load_dag.py for tasks to queue
+[2024-05-30T08:16:08.106+0000] {logging_mixin.py:188} INFO - [2024-05-30T08:16:08.106+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dump_load_dag.py
+[2024-05-30T08:16:09.036+0000] {processor.py:840} INFO - DAG(s) 'extenso_assignment' retrieved from /opt/airflow/dags/dump_load_dag.py
+[2024-05-30T08:16:09.056+0000] {logging_mixin.py:188} INFO - [2024-05-30T08:16:09.056+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-30T08:16:09.073+0000] {logging_mixin.py:188} INFO - [2024-05-30T08:16:09.072+0000] {dag.py:3954} INFO - Setting next_dagrun for extenso_assignment to None, run_after=None
+[2024-05-30T08:16:09.088+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dump_load_dag.py took 0.990 seconds
+[2024-05-30T08:16:39.365+0000] {processor.py:161} INFO - Started process (PID=363) to work on /opt/airflow/dags/dump_load_dag.py
+[2024-05-30T08:16:39.366+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dump_load_dag.py for tasks to queue
+[2024-05-30T08:16:39.368+0000] {logging_mixin.py:188} INFO - [2024-05-30T08:16:39.368+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dump_load_dag.py
+[2024-05-30T08:16:40.258+0000] {processor.py:840} INFO - DAG(s) 'extenso_assignment' retrieved from /opt/airflow/dags/dump_load_dag.py
+[2024-05-30T08:16:40.278+0000] {logging_mixin.py:188} INFO - [2024-05-30T08:16:40.278+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-30T08:16:40.295+0000] {logging_mixin.py:188} INFO - [2024-05-30T08:16:40.295+0000] {dag.py:3954} INFO - Setting next_dagrun for extenso_assignment to None, run_after=None
+[2024-05-30T08:16:40.311+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dump_load_dag.py took 0.951 seconds
+[2024-05-30T08:17:10.656+0000] {processor.py:161} INFO - Started process (PID=382) to work on /opt/airflow/dags/dump_load_dag.py
+[2024-05-30T08:17:10.657+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dump_load_dag.py for tasks to queue
+[2024-05-30T08:17:10.659+0000] {logging_mixin.py:188} INFO - [2024-05-30T08:17:10.658+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dump_load_dag.py
+[2024-05-30T08:17:11.964+0000] {processor.py:840} INFO - DAG(s) 'extenso_assignment' retrieved from /opt/airflow/dags/dump_load_dag.py
+[2024-05-30T08:17:11.986+0000] {logging_mixin.py:188} INFO - [2024-05-30T08:17:11.985+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-30T08:17:12.002+0000] {logging_mixin.py:188} INFO - [2024-05-30T08:17:12.002+0000] {dag.py:3954} INFO - Setting next_dagrun for extenso_assignment to None, run_after=None
+[2024-05-30T08:17:12.019+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dump_load_dag.py took 1.369 seconds
+[2024-05-30T08:17:42.235+0000] {processor.py:161} INFO - Started process (PID=421) to work on /opt/airflow/dags/dump_load_dag.py
+[2024-05-30T08:17:42.236+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dump_load_dag.py for tasks to queue
+[2024-05-30T08:17:42.239+0000] {logging_mixin.py:188} INFO - [2024-05-30T08:17:42.239+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dump_load_dag.py
+[2024-05-30T08:17:43.730+0000] {processor.py:840} INFO - DAG(s) 'extenso_assignment' retrieved from /opt/airflow/dags/dump_load_dag.py
+[2024-05-30T08:17:43.794+0000] {logging_mixin.py:188} INFO - [2024-05-30T08:17:43.793+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-30T08:17:43.849+0000] {logging_mixin.py:188} INFO - [2024-05-30T08:17:43.848+0000] {dag.py:3954} INFO - Setting next_dagrun for extenso_assignment to None, run_after=None
+[2024-05-30T08:17:43.905+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dump_load_dag.py took 1.677 seconds
+[2024-05-30T08:18:14.109+0000] {processor.py:161} INFO - Started process (PID=440) to work on /opt/airflow/dags/dump_load_dag.py
+[2024-05-30T08:18:14.111+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dump_load_dag.py for tasks to queue
+[2024-05-30T08:18:14.113+0000] {logging_mixin.py:188} INFO - [2024-05-30T08:18:14.113+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dump_load_dag.py
+[2024-05-30T08:18:22.875+0000] {logging_mixin.py:188} WARNING - Exception ignored in: <function WeakKeyDictionary.__init__.<locals>.remove at 0x7f996dd4f4c0>
+[2024-05-30T08:18:22.878+0000] {logging_mixin.py:188} WARNING - Traceback (most recent call last):
+[2024-05-30T08:18:22.880+0000] {logging_mixin.py:188} WARNING -   File "/usr/local/lib/python3.12/weakref.py", line 369, in remove
+[2024-05-30T08:18:22.881+0000] {logging_mixin.py:188} WARNING -     def remove(k, selfref=ref(self)):
+[2024-05-30T08:18:22.882+0000] {logging_mixin.py:188} WARNING -   File "/home/airflow/.local/lib/python3.12/site-packages/airflow/dag_processing/manager.py", line 453, in _exit_gracefully
+[2024-05-30T08:18:22.883+0000] {logging_mixin.py:188} WARNING -     self.log.debug("Current Stacktrace is: %s", "\n".join(map(str, inspect.stack())))
+[2024-05-30T08:18:22.884+0000] {logging_mixin.py:188} WARNING -                                                                    ^^^^^^^^^^^^^^^
+[2024-05-30T08:18:22.885+0000] {logging_mixin.py:188} WARNING -   File "/usr/local/lib/python3.12/inspect.py", line 1770, in stack
+[2024-05-30T08:18:22.887+0000] {logging_mixin.py:188} WARNING -     return getouterframes(sys._getframe(1), context)
+[2024-05-30T08:18:22.888+0000] {logging_mixin.py:188} WARNING -            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2024-05-30T08:18:22.890+0000] {logging_mixin.py:188} WARNING -   File "/usr/local/lib/python3.12/inspect.py", line 1745, in getouterframes
+[2024-05-30T08:18:22.892+0000] {logging_mixin.py:188} WARNING -     traceback_info = getframeinfo(frame, context)
+[2024-05-30T08:18:22.893+0000] {logging_mixin.py:188} WARNING -                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2024-05-30T08:18:22.894+0000] {logging_mixin.py:188} WARNING -   File "/usr/local/lib/python3.12/inspect.py", line 1707, in getframeinfo
+[2024-05-30T08:18:22.897+0000] {logging_mixin.py:188} WARNING -     lines, lnum = findsource(frame)
+[2024-05-30T08:18:22.901+0000] {logging_mixin.py:188} WARNING -                   ^^^^^^^^^^^^^^^^^
+[2024-05-30T08:18:22.909+0000] {logging_mixin.py:188} WARNING -   File "/usr/local/lib/python3.12/inspect.py", line 1083, in findsource
+[2024-05-30T08:18:22.912+0000] {logging_mixin.py:188} WARNING -     module = getmodule(object, file)
+[2024-05-30T08:18:22.915+0000] {logging_mixin.py:188} WARNING -              ^^^^^^^^^^^^^^^^^^^^^^^
+[2024-05-30T08:18:22.917+0000] {logging_mixin.py:188} WARNING -   File "/usr/local/lib/python3.12/inspect.py", line 1006, in getmodule
+[2024-05-30T08:18:22.918+0000] {logging_mixin.py:188} WARNING -     f = getabsfile(module)
+[2024-05-30T08:18:22.919+0000] {logging_mixin.py:188} WARNING -         ^^^^^^^^^^^^^^^^^^
+[2024-05-30T08:18:22.922+0000] {logging_mixin.py:188} WARNING -   File "/usr/local/lib/python3.12/inspect.py", line 975, in getabsfile
+[2024-05-30T08:18:22.925+0000] {logging_mixin.py:188} WARNING -     _filename = getsourcefile(object) or getfile(object)
+[2024-05-30T08:18:22.927+0000] {logging_mixin.py:188} WARNING -                 ^^^^^^^^^^^^^^^^^^^^^
+[2024-05-30T08:18:22.928+0000] {logging_mixin.py:188} WARNING -   File "/usr/local/lib/python3.12/inspect.py", line 960, in getsourcefile
+[2024-05-30T08:18:22.929+0000] {logging_mixin.py:188} WARNING -     if os.path.exists(filename):
+[2024-05-30T08:18:22.930+0000] {logging_mixin.py:188} WARNING -        ^^^^^^^^^^^^^^^^^^^^^^^^
+[2024-05-30T08:18:22.931+0000] {logging_mixin.py:188} WARNING -   File "<frozen genericpath>", line 19, in exists
+[2024-05-30T08:18:22.932+0000] {logging_mixin.py:188} WARNING -   File "/home/airflow/.local/lib/python3.12/site-packages/airflow/dag_processing/manager.py", line 457, in _exit_gracefully
+[2024-05-30T08:18:22.933+0000] {logging_mixin.py:188} WARNING -     sys.exit(os.EX_OK)
+[2024-05-30T08:18:22.934+0000] {logging_mixin.py:188} WARNING - SystemExit: 0
