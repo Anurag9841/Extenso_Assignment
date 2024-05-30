@@ -6,7 +6,7 @@ def sanitize(df):
     return df.applymap(
         lambda x: x.replace(',', '').replace(' ', '').strip() if isinstance(x, str) else '' if pd.isna(x) else x)
 
-def load_df(filename, file_path='/opt/airflow/files'):
+def load_df(filename, file_path='/opt/airflow/files/input_files'):
     full_path = os.path.join(file_path, f'{filename}.csv')
     try:
         df = pd.read_csv(full_path)

@@ -10,21 +10,21 @@ from datetime import datetime
 
 
 def final_entity_matching():
-
+    # Helper function to create a concatenated 'soup' column from specified columns
     def create_soup(df, df_, soup, soup_name):
         df[soup_name] = df_[soup].apply(lambda x: ' '.join(x.values.astype(str)).lower(), axis=1)
 
     soup = ['Name', 'Date of Birth', 'Father_Name']
-
+    # Read data and initialize layouts
     layouts,layout_copies = read_datas()
     layout1 = layouts[0]
     layout2 = layouts[1]
     layout3 = layouts[2]
     layout4 = layouts[3]
     layout5 = layouts[4]
+    # Create 'soup' columns for each layout
     for i, j, k, in zip(layouts, layout_copies, range(len(layouts))):
         create_soup(i, j, soup, f"soup{k+1}")
-
 
     def combine(A, B, soup_A, soup_B, threshold=0.3):
         # Initialize the TF-IDF Vectorizer
@@ -67,9 +67,10 @@ def final_entity_matching():
         result.drop(columns=soup_B, inplace=True)
         return result
 
+    # Sequentially combine all layouts
     result_12 = combine(layout1, layout2, 'soup1', 'soup2')
     result_123 = combine(result_12, layout3, 'soup1', 'soup3')
     result_1234 = combine(result_123, layout4, 'soup1', 'soup4')
     final_result = combine(result_1234, layout5, 'soup1', 'soup5')
-
-    return final_result.to_csv('/opt/airflow/files/final_result.csv')
+    # Export final result to CSV
+    return final_result.to_csv('/opt/airflow/files/output_files/final_output.csv',index = False)

@@ -251,3 +251,509 @@
 [2024-05-30T04:23:27.150+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
 [2024-05-30T04:23:27.217+0000] {taskinstance.py:3498} INFO - 1 downstream tasks scheduled from follow-on schedule check
 [2024-05-30T04:23:27.224+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2024-05-30T04:38:34.388+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-05-30T04:38:34.487+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: extenso_assignment.reader scheduled__2024-03-14T00:00:00+00:00 [queued]>
+[2024-05-30T04:38:34.504+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: extenso_assignment.reader scheduled__2024-03-14T00:00:00+00:00 [queued]>
+[2024-05-30T04:38:34.505+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-05-30T04:38:34.527+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): reader> on 2024-03-14 00:00:00+00:00
+[2024-05-30T04:38:34.598+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61 DeprecationWarning: This process (pid=223) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-05-30T04:38:34.610+0000] {standard_task_runner.py:63} INFO - Started process 232 to run task
+[2024-05-30T04:38:34.600+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'extenso_assignment', 'reader', 'scheduled__2024-03-14T00:00:00+00:00', '--job-id', '7', '--raw', '--subdir', 'DAGS_FOLDER/dump_load_dag.py', '--cfg-path', '/tmp/tmp9s54tazp']
+[2024-05-30T04:38:34.618+0000] {standard_task_runner.py:91} INFO - Job 7: Subtask reader
+[2024-05-30T04:38:34.925+0000] {task_command.py:426} INFO - Running <TaskInstance: extenso_assignment.reader scheduled__2024-03-14T00:00:00+00:00 [running]> on host 36f443bd28d4
+[2024-05-30T04:38:35.261+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='extenso_assignment' AIRFLOW_CTX_TASK_ID='reader' AIRFLOW_CTX_EXECUTION_DATE='2024-03-14T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-03-14T00:00:00+00:00'
+[2024-05-30T04:38:35.271+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-05-30T04:38:35.381+0000] {logging_mixin.py:188} INFO - File 'ABC_layout_1.csv' loaded successfully from '/opt/***/files/input_files'.
+[2024-05-30T04:38:35.387+0000] {logging_mixin.py:188} INFO - File 'PQR_layout_2.csv' loaded successfully from '/opt/***/files/input_files'.
+[2024-05-30T04:38:35.391+0000] {logging_mixin.py:188} INFO - File 'layout_3_voters.csv' loaded successfully from '/opt/***/files/input_files'.
+[2024-05-30T04:38:35.395+0000] {logging_mixin.py:188} INFO - File 'KLM_layout_4.csv' loaded successfully from '/opt/***/files/input_files'.
+[2024-05-30T04:38:35.399+0000] {logging_mixin.py:188} INFO - File 'layout_5_license_dropped.csv' loaded successfully from '/opt/***/files/input_files'.
+[2024-05-30T04:38:35.444+0000] {logging_mixin.py:188} WARNING - /opt/***/dags/Load_DF.py:6 FutureWarning: DataFrame.applymap has been deprecated. Use DataFrame.map instead.
+[2024-05-30T04:38:35.482+0000] {logging_mixin.py:188} WARNING - /opt/***/dags/Load_DF.py:6 FutureWarning: DataFrame.applymap has been deprecated. Use DataFrame.map instead.
+[2024-05-30T04:38:35.491+0000] {logging_mixin.py:188} WARNING - /opt/***/dags/Load_DF.py:6 FutureWarning: DataFrame.applymap has been deprecated. Use DataFrame.map instead.
+[2024-05-30T04:38:35.499+0000] {logging_mixin.py:188} WARNING - /opt/***/dags/Load_DF.py:6 FutureWarning: DataFrame.applymap has been deprecated. Use DataFrame.map instead.
+[2024-05-30T04:38:35.508+0000] {logging_mixin.py:188} WARNING - /opt/***/dags/Load_DF.py:6 FutureWarning: DataFrame.applymap has been deprecated. Use DataFrame.map instead.
+[2024-05-30T04:38:35.517+0000] {logging_mixin.py:188} WARNING - /opt/***/dags/Load_DF.py:6 FutureWarning: DataFrame.applymap has been deprecated. Use DataFrame.map instead.
+[2024-05-30T04:38:35.533+0000] {logging_mixin.py:188} WARNING - /opt/***/dags/Load_DF.py:6 FutureWarning: DataFrame.applymap has been deprecated. Use DataFrame.map instead.
+[2024-05-30T04:38:35.546+0000] {logging_mixin.py:188} WARNING - /opt/***/dags/Load_DF.py:6 FutureWarning: DataFrame.applymap has been deprecated. Use DataFrame.map instead.
+[2024-05-30T04:38:35.556+0000] {logging_mixin.py:188} WARNING - /opt/***/dags/Load_DF.py:6 FutureWarning: DataFrame.applymap has been deprecated. Use DataFrame.map instead.
+[2024-05-30T04:38:35.564+0000] {logging_mixin.py:188} WARNING - /opt/***/dags/Load_DF.py:6 FutureWarning: DataFrame.applymap has been deprecated. Use DataFrame.map instead.
+[2024-05-30T04:38:35.569+0000] {python.py:237} INFO - Done. Returned value was: ([    Customer Code             Name  ... source              modified_date
+0        21216874        Ram Thapa  ...   bank 2024-05-30 04:38:35.424190
+1        22359363    Sita Shrestha  ...   bank 2024-05-30 04:38:35.424190
+2        33485241      Hari Gurung  ...   bank 2024-05-30 04:38:35.424190
+3        45475489      Gita Tamang  ...   bank 2024-05-30 04:38:35.424190
+4        56562139       Mohan Lama  ...   bank 2024-05-30 04:38:35.424190
+5        67698214      Radha Magar  ...   bank 2024-05-30 04:38:35.424190
+6        78714635      Krishna Rai  ...   bank 2024-05-30 04:38:35.424190
+7        89847326    Sarita Sherpa  ...   bank 2024-05-30 04:38:35.424190
+8        91953421     Bikash Karki  ...   bank 2024-05-30 04:38:35.424190
+9        10203847   Nisha Bhandari  ...   bank 2024-05-30 04:38:35.424190
+10       12113982   Aarav Adhikari  ...   bank 2024-05-30 04:38:35.424190
+11       13122547      Sneha Joshi  ...   bank 2024-05-30 04:38:35.424190
+12       13235698     Pratik Shahi  ...   bank 2024-05-30 04:38:35.424190
+13       14247652   Anju Bhattarai  ...   bank 2024-05-30 04:38:35.424190
+14       15158964  Manish Maharjan  ...   bank 2024-05-30 04:38:35.424190
+15       16169853          Puja KC  ...   bank 2024-05-30 04:38:35.424190
+16       17375246      Anil Khadka  ...   bank 2024-05-30 04:38:35.424190
+17       18383569       Rita Rimal  ...   bank 2024-05-30 04:38:35.424190
+18       19294258  Pratiksha Dahal  ...   bank 2024-05-30 04:38:35.424190
+19       20305417  Dipesh Pokharel  ...   bank 2024-05-30 04:38:35.424190
+
+[20 rows x 11 columns],     Mobile Number             Name  ... source              modified_date
+0      1234567890        Ram Thapa  ...  esewa 2024-05-30 04:38:35.433396
+1      2345678901    Sita Shrestha  ...  esewa 2024-05-30 04:38:35.433396
+2      3456789012      Hari Gurung  ...  esewa 2024-05-30 04:38:35.433396
+3      4567890123      Gita Tamang  ...  esewa 2024-05-30 04:38:35.433396
+4      5678901234       Mohan Lama  ...  esewa 2024-05-30 04:38:35.433396
+5      6789012345      Radha Magar  ...  esewa 2024-05-30 04:38:35.433396
+6      7890123456      Krishna Rai  ...  esewa 2024-05-30 04:38:35.433396
+7      8901234567    Sarita Sherpa  ...  esewa 2024-05-30 04:38:35.433396
+8      9012345678     Bikash Karki  ...  esewa 2024-05-30 04:38:35.433396
+9       123456789   Nisha Bhandari  ...  esewa 2024-05-30 04:38:35.433396
+10     1234567800   Aarav Adhikari  ...  esewa 2024-05-30 04:38:35.433396
+11     2345678902      Sneha Joshi  ...  esewa 2024-05-30 04:38:35.433396
+12     3456789013     Pratik Shahi  ...  esewa 2024-05-30 04:38:35.433396
+13     4567890124   Anju Bhattarai  ...  esewa 2024-05-30 04:38:35.433396
+14     5678901235  Manish Maharjan  ...  esewa 2024-05-30 04:38:35.433396
+15     6789012346          Puja KC  ...  esewa 2024-05-30 04:38:35.433396
+16     7890123457      Anil Khadka  ...  esewa 2024-05-30 04:38:35.433396
+17     8901234568       Rita Rimal  ...  esewa 2024-05-30 04:38:35.433396
+18     9012345679  Pratiksha Dahal  ...  esewa 2024-05-30 04:38:35.433396
+19      123456790  Dipesh Pokharel  ...  esewa 2024-05-30 04:38:35.433396
+
+[20 rows x 8 columns],     votersID             Name  ...  source              modified_date
+0   11116874        Ram Thapa  ...   voter 2024-05-30 04:38:35.434083
+1   22259363    Sita Shrestha  ...   voter 2024-05-30 04:38:35.434083
+2   33385241      Hari Gurung  ...   voter 2024-05-30 04:38:35.434083
+3   44475489      Gita Tamang  ...   voter 2024-05-30 04:38:35.434083
+4   55562139       Mohan Lama  ...   voter 2024-05-30 04:38:35.434083
+5   66698214      Radha Magar  ...   voter 2024-05-30 04:38:35.434083
+6   77714635      Krishna Rai  ...   voter 2024-05-30 04:38:35.434083
+7   88847326    Sarita Sherpa  ...   voter 2024-05-30 04:38:35.434083
+8   99953421     Bikash Karki  ...   voter 2024-05-30 04:38:35.434083
+9   10103847   Nisha Bhandari  ...   voter 2024-05-30 04:38:35.434083
+10  11113982   Aarav Adhikari  ...   voter 2024-05-30 04:38:35.434083
+11  12122547      Sneha Joshi  ...   voter 2024-05-30 04:38:35.434083
+12  13135698     Pratik Shahi  ...   voter 2024-05-30 04:38:35.434083
+13  14147652   Anju Bhattarai  ...   voter 2024-05-30 04:38:35.434083
+14  15158963  Manish Maharjan  ...   voter 2024-05-30 04:38:35.434083
+15  16169852          Puja KC  ...   voter 2024-05-30 04:38:35.434083
+16  17175246      Anil Khadka  ...   voter 2024-05-30 04:38:35.434083
+17  18183569       Rita Rimal  ...   voter 2024-05-30 04:38:35.434083
+18  19194258  Pratiksha Dahal  ...   voter 2024-05-30 04:38:35.434083
+19  20205417  Dipesh Pokharel  ...   voter 2024-05-30 04:38:35.434083
+
+[20 rows x 11 columns],                Name  Mobile Number  ...       source              modified_date
+0         Ram Thapa     1234567890  ...  electricity 2024-05-30 04:38:35.434574
+1     Sita Shrestha     2345678901  ...  electricity 2024-05-30 04:38:35.434574
+2       Hari Gurung     3456789012  ...  electricity 2024-05-30 04:38:35.434574
+3       Gita Tamang     4567890123  ...  electricity 2024-05-30 04:38:35.434574
+4        Mohan Lama     5678901234  ...  electricity 2024-05-30 04:38:35.434574
+5       Radha Magar     6789012345  ...  electricity 2024-05-30 04:38:35.434574
+6       Krishna Rai     7890123456  ...  electricity 2024-05-30 04:38:35.434574
+7     Sarita Sherpa     8901234567  ...  electricity 2024-05-30 04:38:35.434574
+8      Bikash Karki     9012345678  ...  electricity 2024-05-30 04:38:35.434574
+9    Nisha Bhandari      123456789  ...  electricity 2024-05-30 04:38:35.434574
+10   Aarav Adhikari     1234567800  ...  electricity 2024-05-30 04:38:35.434574
+11      Sneha Joshi     2345678902  ...  electricity 2024-05-30 04:38:35.434574
+12     Pratik Shahi     3456789013  ...  electricity 2024-05-30 04:38:35.434574
+13   Anju Bhattarai     4567890124  ...  electricity 2024-05-30 04:38:35.434574
+14  Manish Maharjan     5678901235  ...  electricity 2024-05-30 04:38:35.434574
+15          Puja KC     6789012346  ...  electricity 2024-05-30 04:38:35.434574
+16      Anil Khadka     7890123457  ...  electricity 2024-05-30 04:38:35.434574
+17       Rita Rimal     8901234568  ...  electricity 2024-05-30 04:38:35.434574
+18  Pratiksha Dahal     9012345679  ...  electricity 2024-05-30 04:38:35.434574
+19  Dipesh Pokharel      123456790  ...  electricity 2024-05-30 04:38:35.434574
+
+[20 rows x 8 columns],     License Number Blood Group  ...   source              modified_date
+0   15-05-58353205         AB+  ...  license 2024-05-30 04:38:35.435013
+1   21-08-00435579         AB-  ...  license 2024-05-30 04:38:35.435013
+2   93-12-35351480          B-  ...  license 2024-05-30 04:38:35.435013
+3   65-03-68139881          A-  ...  license 2024-05-30 04:38:35.435013
+4   14-11-40056582          A+  ...  license 2024-05-30 04:38:35.435013
+5   82-09-81734599          B-  ...  license 2024-05-30 04:38:35.435013
+6   26-03-50185868         AB+  ...  license 2024-05-30 04:38:35.435013
+7   98-03-72394228          A-  ...  license 2024-05-30 04:38:35.435013
+8   68-01-80388982          B-  ...  license 2024-05-30 04:38:35.435013
+9   42-08-02614125          A-  ...  license 2024-05-30 04:38:35.435013
+10  15-06-41273848          O+  ...  license 2024-05-30 04:38:35.435013
+11  31-01-32329238         AB+  ...  license 2024-05-30 04:38:35.435013
+12  73-02-11496212          O-  ...  license 2024-05-30 04:38:35.435013
+13  94-08-09289547         AB-  ...  license 2024-05-30 04:38:35.435013
+14  98-09-16879291          B+  ...  license 2024-05-30 04:38:35.435013
+15  17-11-63791321         AB-  ...  license 2024-05-30 04:38:35.435013
+16  71-03-35575299         AB-  ...  license 2024-05-30 04:38:35.435013
+17  68-10-56792613          B-  ...  license 2024-05-30 04:38:35.435013
+18  28-09-97969690         AB+  ...  license 2024-05-30 04:38:35.435013
+19  89-04-95690392          A-  ...  license 2024-05-30 04:38:35.435013
+
+[20 rows x 11 columns]], [    Customer Code            Name  ... source              modified_date
+0        21216874        RamThapa  ...   bank 2024-05-30 04:38:35.424190
+1        22359363    SitaShrestha  ...   bank 2024-05-30 04:38:35.424190
+2        33485241      HariGurung  ...   bank 2024-05-30 04:38:35.424190
+3        45475489      GitaTamang  ...   bank 2024-05-30 04:38:35.424190
+4        56562139       MohanLama  ...   bank 2024-05-30 04:38:35.424190
+5        67698214      RadhaMagar  ...   bank 2024-05-30 04:38:35.424190
+6        78714635      KrishnaRai  ...   bank 2024-05-30 04:38:35.424190
+7        89847326    SaritaSherpa  ...   bank 2024-05-30 04:38:35.424190
+8        91953421     BikashKarki  ...   bank 2024-05-30 04:38:35.424190
+9        10203847   NishaBhandari  ...   bank 2024-05-30 04:38:35.424190
+10       12113982   AaravAdhikari  ...   bank 2024-05-30 04:38:35.424190
+11       13122547      SnehaJoshi  ...   bank 2024-05-30 04:38:35.424190
+12       13235698     PratikShahi  ...   bank 2024-05-30 04:38:35.424190
+13       14247652   AnjuBhattarai  ...   bank 2024-05-30 04:38:35.424190
+14       15158964  ManishMaharjan  ...   bank 2024-05-30 04:38:35.424190
+15       16169853          PujaKC  ...   bank 2024-05-30 04:38:35.424190
+16       17375246      AnilKhadka  ...   bank 2024-05-30 04:38:35.424190
+17       18383569       RitaRimal  ...   bank 2024-05-30 04:38:35.424190
+18       19294258  PratikshaDahal  ...   bank 2024-05-30 04:38:35.424190
+19       20305417  DipeshPokharel  ...   bank 2024-05-30 04:38:35.424190
+
+[20 rows x 11 columns],     Mobile Number            Name  ... source              modified_date
+0      1234567890        RamThapa  ...  esewa 2024-05-30 04:38:35.433396
+1      2345678901    SitaShrestha  ...  esewa 2024-05-30 04:38:35.433396
+2      3456789012      HariGurung  ...  esewa 2024-05-30 04:38:35.433396
+3      4567890123      GitaTamang  ...  esewa 2024-05-30 04:38:35.433396
+4      5678901234       MohanLama  ...  esewa 2024-05-30 04:38:35.433396
+5      6789012345      RadhaMagar  ...  esewa 2024-05-30 04:38:35.433396
+6      7890123456      KrishnaRai  ...  esewa 2024-05-30 04:38:35.433396
+7      8901234567    SaritaSherpa  ...  esewa 2024-05-30 04:38:35.433396
+8      9012345678     BikashKarki  ...  esewa 2024-05-30 04:38:35.433396
+9       123456789   NishaBhandari  ...  esewa 2024-05-30 04:38:35.433396
+10     1234567800   AaravAdhikari  ...  esewa 2024-05-30 04:38:35.433396
+11     2345678902      SnehaJoshi  ...  esewa 2024-05-30 04:38:35.433396
+12     3456789013     PratikShahi  ...  esewa 2024-05-30 04:38:35.433396
+13     4567890124   AnjuBhattarai  ...  esewa 2024-05-30 04:38:35.433396
+14     5678901235  ManishMaharjan  ...  esewa 2024-05-30 04:38:35.433396
+15     6789012346          PujaKC  ...  esewa 2024-05-30 04:38:35.433396
+16     7890123457      AnilKhadka  ...  esewa 2024-05-30 04:38:35.433396
+17     8901234568       RitaRimal  ...  esewa 2024-05-30 04:38:35.433396
+18     9012345679  PratikshaDahal  ...  esewa 2024-05-30 04:38:35.433396
+19      123456790  DipeshPokharel  ...  esewa 2024-05-30 04:38:35.433396
+
+[20 rows x 8 columns],     votersID            Name  ...  source              modified_date
+0   11116874        RamThapa  ...   voter 2024-05-30 04:38:35.434083
+1   22259363    SitaShrestha  ...   voter 2024-05-30 04:38:35.434083
+2   33385241      HariGurung  ...   voter 2024-05-30 04:38:35.434083
+3   44475489      GitaTamang  ...   voter 2024-05-30 04:38:35.434083
+4   55562139       MohanLama  ...   voter 2024-05-30 04:38:35.434083
+5   66698214      RadhaMagar  ...   voter 2024-05-30 04:38:35.434083
+6   77714635      KrishnaRai  ...   voter 2024-05-30 04:38:35.434083
+7   88847326    SaritaSherpa  ...   voter 2024-05-30 04:38:35.434083
+8   99953421     BikashKarki  ...   voter 2024-05-30 04:38:35.434083
+9   10103847   NishaBhandari  ...   voter 2024-05-30 04:38:35.434083
+10  11113982   AaravAdhikari  ...   voter 2024-05-30 04:38:35.434083
+11  12122547      SnehaJoshi  ...   voter 2024-05-30 04:38:35.434083
+12  13135698     PratikShahi  ...   voter 2024-05-30 04:38:35.434083
+13  14147652   AnjuBhattarai  ...   voter 2024-05-30 04:38:35.434083
+14  15158963  ManishMaharjan  ...   voter 2024-05-30 04:38:35.434083
+15  16169852          PujaKC  ...   voter 2024-05-30 04:38:35.434083
+16  17175246      AnilKhadka  ...   voter 2024-05-30 04:38:35.434083
+17  18183569       RitaRimal  ...   voter 2024-05-30 04:38:35.434083
+18  19194258  PratikshaDahal  ...   voter 2024-05-30 04:38:35.434083
+19  20205417  DipeshPokharel  ...   voter 2024-05-30 04:38:35.434083
+
+[20 rows x 11 columns],               Name  Mobile Number  ...       source              modified_date
+0         RamThapa     1234567890  ...  electricity 2024-05-30 04:38:35.434574
+1     SitaShrestha     2345678901  ...  electricity 2024-05-30 04:38:35.434574
+2       HariGurung     3456789012  ...  electricity 2024-05-30 04:38:35.434574
+3       GitaTamang     4567890123  ...  electricity 2024-05-30 04:38:35.434574
+4        MohanLama     5678901234  ...  electricity 2024-05-30 04:38:35.434574
+5       RadhaMagar     6789012345  ...  electricity 2024-05-30 04:38:35.434574
+6       KrishnaRai     7890123456  ...  electricity 2024-05-30 04:38:35.434574
+7     SaritaSherpa     8901234567  ...  electricity 2024-05-30 04:38:35.434574
+8      BikashKarki     9012345678  ...  electricity 2024-05-30 04:38:35.434574
+9    NishaBhandari      123456789  ...  electricity 2024-05-30 04:38:35.434574
+10   AaravAdhikari     1234567800  ...  electricity 2024-05-30 04:38:35.434574
+11      SnehaJoshi     2345678902  ...  electricity 2024-05-30 04:38:35.434574
+12     PratikShahi     3456789013  ...  electricity 2024-05-30 04:38:35.434574
+13   AnjuBhattarai     4567890124  ...  electricity 2024-05-30 04:38:35.434574
+14  ManishMaharjan     5678901235  ...  electricity 2024-05-30 04:38:35.434574
+15          PujaKC     6789012346  ...  electricity 2024-05-30 04:38:35.434574
+16      AnilKhadka     7890123457  ...  electricity 2024-05-30 04:38:35.434574
+17       RitaRimal     8901234568  ...  electricity 2024-05-30 04:38:35.434574
+18  PratikshaDahal     9012345679  ...  electricity 2024-05-30 04:38:35.434574
+19  DipeshPokharel      123456790  ...  electricity 2024-05-30 04:38:35.434574
+
+[20 rows x 8 columns],     License Number Blood Group  ...   source              modified_date
+0   15-05-58353205         AB+  ...  license 2024-05-30 04:38:35.435013
+1   21-08-00435579         AB-  ...  license 2024-05-30 04:38:35.435013
+2   93-12-35351480          B-  ...  license 2024-05-30 04:38:35.435013
+3   65-03-68139881          A-  ...  license 2024-05-30 04:38:35.435013
+4   14-11-40056582          A+  ...  license 2024-05-30 04:38:35.435013
+5   82-09-81734599          B-  ...  license 2024-05-30 04:38:35.435013
+6   26-03-50185868         AB+  ...  license 2024-05-30 04:38:35.435013
+7   98-03-72394228          A-  ...  license 2024-05-30 04:38:35.435013
+8   68-01-80388982          B-  ...  license 2024-05-30 04:38:35.435013
+9   42-08-02614125          A-  ...  license 2024-05-30 04:38:35.435013
+10  15-06-41273848          O+  ...  license 2024-05-30 04:38:35.435013
+11  31-01-32329238         AB+  ...  license 2024-05-30 04:38:35.435013
+12  73-02-11496212          O-  ...  license 2024-05-30 04:38:35.435013
+13  94-08-09289547         AB-  ...  license 2024-05-30 04:38:35.435013
+14  98-09-16879291          B+  ...  license 2024-05-30 04:38:35.435013
+15  17-11-63791321         AB-  ...  license 2024-05-30 04:38:35.435013
+16  71-03-35575299         AB-  ...  license 2024-05-30 04:38:35.435013
+17  68-10-56792613          B-  ...  license 2024-05-30 04:38:35.435013
+18  28-09-97969690         AB+  ...  license 2024-05-30 04:38:35.435013
+19  89-04-95690392          A-  ...  license 2024-05-30 04:38:35.435013
+
+[20 rows x 11 columns]])
+[2024-05-30T04:38:35.713+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-05-30T04:38:36.047+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=extenso_assignment, task_id=reader, run_id=scheduled__2024-03-14T00:00:00+00:00, execution_date=20240314T000000, start_date=20240530T043834, end_date=20240530T043836
+[2024-05-30T04:38:36.122+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-05-30T04:38:36.175+0000] {taskinstance.py:3498} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-05-30T04:38:36.178+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2024-05-30T04:40:42.744+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-05-30T04:40:42.864+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: extenso_assignment.reader scheduled__2024-03-14T00:00:00+00:00 [queued]>
+[2024-05-30T04:40:42.879+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: extenso_assignment.reader scheduled__2024-03-14T00:00:00+00:00 [queued]>
+[2024-05-30T04:40:42.879+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-05-30T04:40:42.903+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): reader> on 2024-03-14 00:00:00+00:00
+[2024-05-30T04:40:42.953+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61 DeprecationWarning: This process (pid=322) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-05-30T04:40:42.939+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'extenso_assignment', 'reader', 'scheduled__2024-03-14T00:00:00+00:00', '--job-id', '9', '--raw', '--subdir', 'DAGS_FOLDER/dump_load_dag.py', '--cfg-path', '/tmp/tmpi2phpycs']
+[2024-05-30T04:40:42.954+0000] {standard_task_runner.py:63} INFO - Started process 331 to run task
+[2024-05-30T04:40:42.955+0000] {standard_task_runner.py:91} INFO - Job 9: Subtask reader
+[2024-05-30T04:40:43.057+0000] {task_command.py:426} INFO - Running <TaskInstance: extenso_assignment.reader scheduled__2024-03-14T00:00:00+00:00 [running]> on host 36f443bd28d4
+[2024-05-30T04:40:43.180+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='extenso_assignment' AIRFLOW_CTX_TASK_ID='reader' AIRFLOW_CTX_EXECUTION_DATE='2024-03-14T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-03-14T00:00:00+00:00'
+[2024-05-30T04:40:43.182+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-05-30T04:40:43.226+0000] {logging_mixin.py:188} INFO - File 'ABC_layout_1.csv' loaded successfully from '/opt/***/files/input_files'.
+[2024-05-30T04:40:43.230+0000] {logging_mixin.py:188} INFO - File 'PQR_layout_2.csv' loaded successfully from '/opt/***/files/input_files'.
+[2024-05-30T04:40:43.234+0000] {logging_mixin.py:188} INFO - File 'layout_3_voters.csv' loaded successfully from '/opt/***/files/input_files'.
+[2024-05-30T04:40:43.238+0000] {logging_mixin.py:188} INFO - File 'KLM_layout_4.csv' loaded successfully from '/opt/***/files/input_files'.
+[2024-05-30T04:40:43.241+0000] {logging_mixin.py:188} INFO - File 'layout_5_license_dropped.csv' loaded successfully from '/opt/***/files/input_files'.
+[2024-05-30T04:40:43.263+0000] {logging_mixin.py:188} WARNING - /opt/***/dags/Load_DF.py:6 FutureWarning: DataFrame.applymap has been deprecated. Use DataFrame.map instead.
+[2024-05-30T04:40:43.272+0000] {logging_mixin.py:188} WARNING - /opt/***/dags/Load_DF.py:6 FutureWarning: DataFrame.applymap has been deprecated. Use DataFrame.map instead.
+[2024-05-30T04:40:43.274+0000] {logging_mixin.py:188} WARNING - /opt/***/dags/Load_DF.py:6 FutureWarning: DataFrame.applymap has been deprecated. Use DataFrame.map instead.
+[2024-05-30T04:40:43.277+0000] {logging_mixin.py:188} WARNING - /opt/***/dags/Load_DF.py:6 FutureWarning: DataFrame.applymap has been deprecated. Use DataFrame.map instead.
+[2024-05-30T04:40:43.279+0000] {logging_mixin.py:188} WARNING - /opt/***/dags/Load_DF.py:6 FutureWarning: DataFrame.applymap has been deprecated. Use DataFrame.map instead.
+[2024-05-30T04:40:43.281+0000] {logging_mixin.py:188} WARNING - /opt/***/dags/Load_DF.py:6 FutureWarning: DataFrame.applymap has been deprecated. Use DataFrame.map instead.
+[2024-05-30T04:40:43.284+0000] {logging_mixin.py:188} WARNING - /opt/***/dags/Load_DF.py:6 FutureWarning: DataFrame.applymap has been deprecated. Use DataFrame.map instead.
+[2024-05-30T04:40:43.286+0000] {logging_mixin.py:188} WARNING - /opt/***/dags/Load_DF.py:6 FutureWarning: DataFrame.applymap has been deprecated. Use DataFrame.map instead.
+[2024-05-30T04:40:43.289+0000] {logging_mixin.py:188} WARNING - /opt/***/dags/Load_DF.py:6 FutureWarning: DataFrame.applymap has been deprecated. Use DataFrame.map instead.
+[2024-05-30T04:40:43.292+0000] {logging_mixin.py:188} WARNING - /opt/***/dags/Load_DF.py:6 FutureWarning: DataFrame.applymap has been deprecated. Use DataFrame.map instead.
+[2024-05-30T04:40:43.294+0000] {python.py:237} INFO - Done. Returned value was: ([    Customer Code             Name  ... source              modified_date
+0        21216874        Ram Thapa  ...   bank 2024-05-30 04:40:43.254103
+1        22359363    Sita Shrestha  ...   bank 2024-05-30 04:40:43.254103
+2        33485241      Hari Gurung  ...   bank 2024-05-30 04:40:43.254103
+3        45475489      Gita Tamang  ...   bank 2024-05-30 04:40:43.254103
+4        56562139       Mohan Lama  ...   bank 2024-05-30 04:40:43.254103
+5        67698214      Radha Magar  ...   bank 2024-05-30 04:40:43.254103
+6        78714635      Krishna Rai  ...   bank 2024-05-30 04:40:43.254103
+7        89847326    Sarita Sherpa  ...   bank 2024-05-30 04:40:43.254103
+8        91953421     Bikash Karki  ...   bank 2024-05-30 04:40:43.254103
+9        10203847   Nisha Bhandari  ...   bank 2024-05-30 04:40:43.254103
+10       12113982   Aarav Adhikari  ...   bank 2024-05-30 04:40:43.254103
+11       13122547      Sneha Joshi  ...   bank 2024-05-30 04:40:43.254103
+12       13235698     Pratik Shahi  ...   bank 2024-05-30 04:40:43.254103
+13       14247652   Anju Bhattarai  ...   bank 2024-05-30 04:40:43.254103
+14       15158964  Manish Maharjan  ...   bank 2024-05-30 04:40:43.254103
+15       16169853          Puja KC  ...   bank 2024-05-30 04:40:43.254103
+16       17375246      Anil Khadka  ...   bank 2024-05-30 04:40:43.254103
+17       18383569       Rita Rimal  ...   bank 2024-05-30 04:40:43.254103
+18       19294258  Pratiksha Dahal  ...   bank 2024-05-30 04:40:43.254103
+19       20305417  Dipesh Pokharel  ...   bank 2024-05-30 04:40:43.254103
+
+[20 rows x 11 columns],     Mobile Number             Name  ... source              modified_date
+0      1234567890        Ram Thapa  ...  esewa 2024-05-30 04:40:43.257884
+1      2345678901    Sita Shrestha  ...  esewa 2024-05-30 04:40:43.257884
+2      3456789012      Hari Gurung  ...  esewa 2024-05-30 04:40:43.257884
+3      4567890123      Gita Tamang  ...  esewa 2024-05-30 04:40:43.257884
+4      5678901234       Mohan Lama  ...  esewa 2024-05-30 04:40:43.257884
+5      6789012345      Radha Magar  ...  esewa 2024-05-30 04:40:43.257884
+6      7890123456      Krishna Rai  ...  esewa 2024-05-30 04:40:43.257884
+7      8901234567    Sarita Sherpa  ...  esewa 2024-05-30 04:40:43.257884
+8      9012345678     Bikash Karki  ...  esewa 2024-05-30 04:40:43.257884
+9       123456789   Nisha Bhandari  ...  esewa 2024-05-30 04:40:43.257884
+10     1234567800   Aarav Adhikari  ...  esewa 2024-05-30 04:40:43.257884
+11     2345678902      Sneha Joshi  ...  esewa 2024-05-30 04:40:43.257884
+12     3456789013     Pratik Shahi  ...  esewa 2024-05-30 04:40:43.257884
+13     4567890124   Anju Bhattarai  ...  esewa 2024-05-30 04:40:43.257884
+14     5678901235  Manish Maharjan  ...  esewa 2024-05-30 04:40:43.257884
+15     6789012346          Puja KC  ...  esewa 2024-05-30 04:40:43.257884
+16     7890123457      Anil Khadka  ...  esewa 2024-05-30 04:40:43.257884
+17     8901234568       Rita Rimal  ...  esewa 2024-05-30 04:40:43.257884
+18     9012345679  Pratiksha Dahal  ...  esewa 2024-05-30 04:40:43.257884
+19      123456790  Dipesh Pokharel  ...  esewa 2024-05-30 04:40:43.257884
+
+[20 rows x 8 columns],     votersID             Name  ...  source              modified_date
+0   11116874        Ram Thapa  ...   voter 2024-05-30 04:40:43.258353
+1   22259363    Sita Shrestha  ...   voter 2024-05-30 04:40:43.258353
+2   33385241      Hari Gurung  ...   voter 2024-05-30 04:40:43.258353
+3   44475489      Gita Tamang  ...   voter 2024-05-30 04:40:43.258353
+4   55562139       Mohan Lama  ...   voter 2024-05-30 04:40:43.258353
+5   66698214      Radha Magar  ...   voter 2024-05-30 04:40:43.258353
+6   77714635      Krishna Rai  ...   voter 2024-05-30 04:40:43.258353
+7   88847326    Sarita Sherpa  ...   voter 2024-05-30 04:40:43.258353
+8   99953421     Bikash Karki  ...   voter 2024-05-30 04:40:43.258353
+9   10103847   Nisha Bhandari  ...   voter 2024-05-30 04:40:43.258353
+10  11113982   Aarav Adhikari  ...   voter 2024-05-30 04:40:43.258353
+11  12122547      Sneha Joshi  ...   voter 2024-05-30 04:40:43.258353
+12  13135698     Pratik Shahi  ...   voter 2024-05-30 04:40:43.258353
+13  14147652   Anju Bhattarai  ...   voter 2024-05-30 04:40:43.258353
+14  15158963  Manish Maharjan  ...   voter 2024-05-30 04:40:43.258353
+15  16169852          Puja KC  ...   voter 2024-05-30 04:40:43.258353
+16  17175246      Anil Khadka  ...   voter 2024-05-30 04:40:43.258353
+17  18183569       Rita Rimal  ...   voter 2024-05-30 04:40:43.258353
+18  19194258  Pratiksha Dahal  ...   voter 2024-05-30 04:40:43.258353
+19  20205417  Dipesh Pokharel  ...   voter 2024-05-30 04:40:43.258353
+
+[20 rows x 11 columns],                Name  Mobile Number  ...       source              modified_date
+0         Ram Thapa     1234567890  ...  electricity 2024-05-30 04:40:43.258819
+1     Sita Shrestha     2345678901  ...  electricity 2024-05-30 04:40:43.258819
+2       Hari Gurung     3456789012  ...  electricity 2024-05-30 04:40:43.258819
+3       Gita Tamang     4567890123  ...  electricity 2024-05-30 04:40:43.258819
+4        Mohan Lama     5678901234  ...  electricity 2024-05-30 04:40:43.258819
+5       Radha Magar     6789012345  ...  electricity 2024-05-30 04:40:43.258819
+6       Krishna Rai     7890123456  ...  electricity 2024-05-30 04:40:43.258819
+7     Sarita Sherpa     8901234567  ...  electricity 2024-05-30 04:40:43.258819
+8      Bikash Karki     9012345678  ...  electricity 2024-05-30 04:40:43.258819
+9    Nisha Bhandari      123456789  ...  electricity 2024-05-30 04:40:43.258819
+10   Aarav Adhikari     1234567800  ...  electricity 2024-05-30 04:40:43.258819
+11      Sneha Joshi     2345678902  ...  electricity 2024-05-30 04:40:43.258819
+12     Pratik Shahi     3456789013  ...  electricity 2024-05-30 04:40:43.258819
+13   Anju Bhattarai     4567890124  ...  electricity 2024-05-30 04:40:43.258819
+14  Manish Maharjan     5678901235  ...  electricity 2024-05-30 04:40:43.258819
+15          Puja KC     6789012346  ...  electricity 2024-05-30 04:40:43.258819
+16      Anil Khadka     7890123457  ...  electricity 2024-05-30 04:40:43.258819
+17       Rita Rimal     8901234568  ...  electricity 2024-05-30 04:40:43.258819
+18  Pratiksha Dahal     9012345679  ...  electricity 2024-05-30 04:40:43.258819
+19  Dipesh Pokharel      123456790  ...  electricity 2024-05-30 04:40:43.258819
+
+[20 rows x 8 columns],     License Number Blood Group  ...   source              modified_date
+0   15-05-58353205         AB+  ...  license 2024-05-30 04:40:43.259203
+1   21-08-00435579         AB-  ...  license 2024-05-30 04:40:43.259203
+2   93-12-35351480          B-  ...  license 2024-05-30 04:40:43.259203
+3   65-03-68139881          A-  ...  license 2024-05-30 04:40:43.259203
+4   14-11-40056582          A+  ...  license 2024-05-30 04:40:43.259203
+5   82-09-81734599          B-  ...  license 2024-05-30 04:40:43.259203
+6   26-03-50185868         AB+  ...  license 2024-05-30 04:40:43.259203
+7   98-03-72394228          A-  ...  license 2024-05-30 04:40:43.259203
+8   68-01-80388982          B-  ...  license 2024-05-30 04:40:43.259203
+9   42-08-02614125          A-  ...  license 2024-05-30 04:40:43.259203
+10  15-06-41273848          O+  ...  license 2024-05-30 04:40:43.259203
+11  31-01-32329238         AB+  ...  license 2024-05-30 04:40:43.259203
+12  73-02-11496212          O-  ...  license 2024-05-30 04:40:43.259203
+13  94-08-09289547         AB-  ...  license 2024-05-30 04:40:43.259203
+14  98-09-16879291          B+  ...  license 2024-05-30 04:40:43.259203
+15  17-11-63791321         AB-  ...  license 2024-05-30 04:40:43.259203
+16  71-03-35575299         AB-  ...  license 2024-05-30 04:40:43.259203
+17  68-10-56792613          B-  ...  license 2024-05-30 04:40:43.259203
+18  28-09-97969690         AB+  ...  license 2024-05-30 04:40:43.259203
+19  89-04-95690392          A-  ...  license 2024-05-30 04:40:43.259203
+
+[20 rows x 11 columns]], [    Customer Code            Name  ... source              modified_date
+0        21216874        RamThapa  ...   bank 2024-05-30 04:40:43.254103
+1        22359363    SitaShrestha  ...   bank 2024-05-30 04:40:43.254103
+2        33485241      HariGurung  ...   bank 2024-05-30 04:40:43.254103
+3        45475489      GitaTamang  ...   bank 2024-05-30 04:40:43.254103
+4        56562139       MohanLama  ...   bank 2024-05-30 04:40:43.254103
+5        67698214      RadhaMagar  ...   bank 2024-05-30 04:40:43.254103
+6        78714635      KrishnaRai  ...   bank 2024-05-30 04:40:43.254103
+7        89847326    SaritaSherpa  ...   bank 2024-05-30 04:40:43.254103
+8        91953421     BikashKarki  ...   bank 2024-05-30 04:40:43.254103
+9        10203847   NishaBhandari  ...   bank 2024-05-30 04:40:43.254103
+10       12113982   AaravAdhikari  ...   bank 2024-05-30 04:40:43.254103
+11       13122547      SnehaJoshi  ...   bank 2024-05-30 04:40:43.254103
+12       13235698     PratikShahi  ...   bank 2024-05-30 04:40:43.254103
+13       14247652   AnjuBhattarai  ...   bank 2024-05-30 04:40:43.254103
+14       15158964  ManishMaharjan  ...   bank 2024-05-30 04:40:43.254103
+15       16169853          PujaKC  ...   bank 2024-05-30 04:40:43.254103
+16       17375246      AnilKhadka  ...   bank 2024-05-30 04:40:43.254103
+17       18383569       RitaRimal  ...   bank 2024-05-30 04:40:43.254103
+18       19294258  PratikshaDahal  ...   bank 2024-05-30 04:40:43.254103
+19       20305417  DipeshPokharel  ...   bank 2024-05-30 04:40:43.254103
+
+[20 rows x 11 columns],     Mobile Number            Name  ... source              modified_date
+0      1234567890        RamThapa  ...  esewa 2024-05-30 04:40:43.257884
+1      2345678901    SitaShrestha  ...  esewa 2024-05-30 04:40:43.257884
+2      3456789012      HariGurung  ...  esewa 2024-05-30 04:40:43.257884
+3      4567890123      GitaTamang  ...  esewa 2024-05-30 04:40:43.257884
+4      5678901234       MohanLama  ...  esewa 2024-05-30 04:40:43.257884
+5      6789012345      RadhaMagar  ...  esewa 2024-05-30 04:40:43.257884
+6      7890123456      KrishnaRai  ...  esewa 2024-05-30 04:40:43.257884
+7      8901234567    SaritaSherpa  ...  esewa 2024-05-30 04:40:43.257884
+8      9012345678     BikashKarki  ...  esewa 2024-05-30 04:40:43.257884
+9       123456789   NishaBhandari  ...  esewa 2024-05-30 04:40:43.257884
+10     1234567800   AaravAdhikari  ...  esewa 2024-05-30 04:40:43.257884
+11     2345678902      SnehaJoshi  ...  esewa 2024-05-30 04:40:43.257884
+12     3456789013     PratikShahi  ...  esewa 2024-05-30 04:40:43.257884
+13     4567890124   AnjuBhattarai  ...  esewa 2024-05-30 04:40:43.257884
+14     5678901235  ManishMaharjan  ...  esewa 2024-05-30 04:40:43.257884
+15     6789012346          PujaKC  ...  esewa 2024-05-30 04:40:43.257884
+16     7890123457      AnilKhadka  ...  esewa 2024-05-30 04:40:43.257884
+17     8901234568       RitaRimal  ...  esewa 2024-05-30 04:40:43.257884
+18     9012345679  PratikshaDahal  ...  esewa 2024-05-30 04:40:43.257884
+19      123456790  DipeshPokharel  ...  esewa 2024-05-30 04:40:43.257884
+
+[20 rows x 8 columns],     votersID            Name  ...  source              modified_date
+0   11116874        RamThapa  ...   voter 2024-05-30 04:40:43.258353
+1   22259363    SitaShrestha  ...   voter 2024-05-30 04:40:43.258353
+2   33385241      HariGurung  ...   voter 2024-05-30 04:40:43.258353
+3   44475489      GitaTamang  ...   voter 2024-05-30 04:40:43.258353
+4   55562139       MohanLama  ...   voter 2024-05-30 04:40:43.258353
+5   66698214      RadhaMagar  ...   voter 2024-05-30 04:40:43.258353
+6   77714635      KrishnaRai  ...   voter 2024-05-30 04:40:43.258353
+7   88847326    SaritaSherpa  ...   voter 2024-05-30 04:40:43.258353
+8   99953421     BikashKarki  ...   voter 2024-05-30 04:40:43.258353
+9   10103847   NishaBhandari  ...   voter 2024-05-30 04:40:43.258353
+10  11113982   AaravAdhikari  ...   voter 2024-05-30 04:40:43.258353
+11  12122547      SnehaJoshi  ...   voter 2024-05-30 04:40:43.258353
+12  13135698     PratikShahi  ...   voter 2024-05-30 04:40:43.258353
+13  14147652   AnjuBhattarai  ...   voter 2024-05-30 04:40:43.258353
+14  15158963  ManishMaharjan  ...   voter 2024-05-30 04:40:43.258353
+15  16169852          PujaKC  ...   voter 2024-05-30 04:40:43.258353
+16  17175246      AnilKhadka  ...   voter 2024-05-30 04:40:43.258353
+17  18183569       RitaRimal  ...   voter 2024-05-30 04:40:43.258353
+18  19194258  PratikshaDahal  ...   voter 2024-05-30 04:40:43.258353
+19  20205417  DipeshPokharel  ...   voter 2024-05-30 04:40:43.258353
+
+[20 rows x 11 columns],               Name  Mobile Number  ...       source              modified_date
+0         RamThapa     1234567890  ...  electricity 2024-05-30 04:40:43.258819
+1     SitaShrestha     2345678901  ...  electricity 2024-05-30 04:40:43.258819
+2       HariGurung     3456789012  ...  electricity 2024-05-30 04:40:43.258819
+3       GitaTamang     4567890123  ...  electricity 2024-05-30 04:40:43.258819
+4        MohanLama     5678901234  ...  electricity 2024-05-30 04:40:43.258819
+5       RadhaMagar     6789012345  ...  electricity 2024-05-30 04:40:43.258819
+6       KrishnaRai     7890123456  ...  electricity 2024-05-30 04:40:43.258819
+7     SaritaSherpa     8901234567  ...  electricity 2024-05-30 04:40:43.258819
+8      BikashKarki     9012345678  ...  electricity 2024-05-30 04:40:43.258819
+9    NishaBhandari      123456789  ...  electricity 2024-05-30 04:40:43.258819
+10   AaravAdhikari     1234567800  ...  electricity 2024-05-30 04:40:43.258819
+11      SnehaJoshi     2345678902  ...  electricity 2024-05-30 04:40:43.258819
+12     PratikShahi     3456789013  ...  electricity 2024-05-30 04:40:43.258819
+13   AnjuBhattarai     4567890124  ...  electricity 2024-05-30 04:40:43.258819
+14  ManishMaharjan     5678901235  ...  electricity 2024-05-30 04:40:43.258819
+15          PujaKC     6789012346  ...  electricity 2024-05-30 04:40:43.258819
+16      AnilKhadka     7890123457  ...  electricity 2024-05-30 04:40:43.258819
+17       RitaRimal     8901234568  ...  electricity 2024-05-30 04:40:43.258819
+18  PratikshaDahal     9012345679  ...  electricity 2024-05-30 04:40:43.258819
+19  DipeshPokharel      123456790  ...  electricity 2024-05-30 04:40:43.258819
+
+[20 rows x 8 columns],     License Number Blood Group  ...   source              modified_date
+0   15-05-58353205         AB+  ...  license 2024-05-30 04:40:43.259203
+1   21-08-00435579         AB-  ...  license 2024-05-30 04:40:43.259203
+2   93-12-35351480          B-  ...  license 2024-05-30 04:40:43.259203
+3   65-03-68139881          A-  ...  license 2024-05-30 04:40:43.259203
+4   14-11-40056582          A+  ...  license 2024-05-30 04:40:43.259203
+5   82-09-81734599          B-  ...  license 2024-05-30 04:40:43.259203
+6   26-03-50185868         AB+  ...  license 2024-05-30 04:40:43.259203
+7   98-03-72394228          A-  ...  license 2024-05-30 04:40:43.259203
+8   68-01-80388982          B-  ...  license 2024-05-30 04:40:43.259203
+9   42-08-02614125          A-  ...  license 2024-05-30 04:40:43.259203
+10  15-06-41273848          O+  ...  license 2024-05-30 04:40:43.259203
+11  31-01-32329238         AB+  ...  license 2024-05-30 04:40:43.259203
+12  73-02-11496212          O-  ...  license 2024-05-30 04:40:43.259203
+13  94-08-09289547         AB-  ...  license 2024-05-30 04:40:43.259203
+14  98-09-16879291          B+  ...  license 2024-05-30 04:40:43.259203
+15  17-11-63791321         AB-  ...  license 2024-05-30 04:40:43.259203
+16  71-03-35575299         AB-  ...  license 2024-05-30 04:40:43.259203
+17  68-10-56792613          B-  ...  license 2024-05-30 04:40:43.259203
+18  28-09-97969690         AB+  ...  license 2024-05-30 04:40:43.259203
+19  89-04-95690392          A-  ...  license 2024-05-30 04:40:43.259203
+
+[20 rows x 11 columns]])
+[2024-05-30T04:40:43.458+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-05-30T04:40:43.602+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=extenso_assignment, task_id=reader, run_id=scheduled__2024-03-14T00:00:00+00:00, execution_date=20240314T000000, start_date=20240530T044042, end_date=20240530T044043
+[2024-05-30T04:40:43.652+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-05-30T04:40:43.686+0000] {taskinstance.py:3498} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-05-30T04:40:43.688+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
