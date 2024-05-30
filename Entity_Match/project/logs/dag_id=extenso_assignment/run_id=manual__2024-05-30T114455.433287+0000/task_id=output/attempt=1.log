@@ -1,0 +1,52 @@
+[2024-05-30T11:45:00.402+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-05-30T11:45:00.464+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: extenso_assignment.output manual__2024-05-30T11:44:55.433287+00:00 [queued]>
+[2024-05-30T11:45:00.490+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: extenso_assignment.output manual__2024-05-30T11:44:55.433287+00:00 [queued]>
+[2024-05-30T11:45:00.492+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-05-30T11:45:00.515+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): output> on 2024-05-30 11:44:55.433287+00:00
+[2024-05-30T11:45:00.558+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61 DeprecationWarning: This process (pid=737) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-05-30T11:45:00.564+0000] {standard_task_runner.py:63} INFO - Started process 746 to run task
+[2024-05-30T11:45:00.557+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'extenso_assignment', 'output', 'manual__2024-05-30T11:44:55.433287+00:00', '--job-id', '20', '--raw', '--subdir', 'DAGS_FOLDER/dump_load_dag.py', '--cfg-path', '/tmp/tmp1eln269j']
+[2024-05-30T11:45:00.566+0000] {standard_task_runner.py:91} INFO - Job 20: Subtask output
+[2024-05-30T11:45:00.698+0000] {task_command.py:426} INFO - Running <TaskInstance: extenso_assignment.output manual__2024-05-30T11:44:55.433287+00:00 [running]> on host d78d325bbf3e
+[2024-05-30T11:45:00.862+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='extenso_assignment' AIRFLOW_CTX_TASK_ID='output' AIRFLOW_CTX_EXECUTION_DATE='2024-05-30T11:44:55.433287+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-05-30T11:44:55.433287+00:00'
+[2024-05-30T11:45:00.865+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-05-30T11:45:01.009+0000] {logging_mixin.py:188} WARNING - /opt/***/dags/Load_DF.py:6 FutureWarning: DataFrame.applymap has been deprecated. Use DataFrame.map instead.
+[2024-05-30T11:45:01.040+0000] {logging_mixin.py:188} WARNING - /opt/***/dags/Load_DF.py:6 FutureWarning: DataFrame.applymap has been deprecated. Use DataFrame.map instead.
+[2024-05-30T11:45:01.046+0000] {logging_mixin.py:188} WARNING - /opt/***/dags/Load_DF.py:6 FutureWarning: DataFrame.applymap has been deprecated. Use DataFrame.map instead.
+[2024-05-30T11:45:01.050+0000] {logging_mixin.py:188} WARNING - /opt/***/dags/Load_DF.py:6 FutureWarning: DataFrame.applymap has been deprecated. Use DataFrame.map instead.
+[2024-05-30T11:45:01.057+0000] {logging_mixin.py:188} WARNING - /opt/***/dags/Load_DF.py:6 FutureWarning: DataFrame.applymap has been deprecated. Use DataFrame.map instead.
+[2024-05-30T11:45:01.064+0000] {logging_mixin.py:188} WARNING - /opt/***/dags/Load_DF.py:6 FutureWarning: DataFrame.applymap has been deprecated. Use DataFrame.map instead.
+[2024-05-30T11:45:01.594+0000] {python.py:237} INFO - Done. Returned value was:     License Number    votersID  ...       SpouseName votersAge
+0   15-05-58353205  11116874.0  ...       Sita Thapa      45.0
+1   21-08-00435579  22259363.0  ...      Ravi Sharma      38.0
+2   93-12-35351480  33385241.0  ...    Maya Adhikari      52.0
+3   65-03-68139881  44475489.0  ...        Surya Rai      30.0
+4   14-11-40056582  55562139.0  ...     Sarita Karki      27.0
+5   82-09-81734599  66698214.0  ...     Pemba Gurung      41.0
+6   26-03-50185868  77714635.0  ...   Laxmi Shrestha      36.0
+7   98-03-72394228  88847326.0  ...     Raj Maharjan      50.0
+8   68-01-80388982  99953421.0  ...      Pema Tamang      43.0
+9   42-08-02614125  10103847.0  ...        Manish KC      34.0
+10  15-06-41273848  11113982.0  ...     Nisha Khadka      39.0
+11  31-01-32329238  12122547.0  ...      Kamal Magar      48.0
+12  73-02-11496212  13135698.0  ...       Sita Yadav      31.0
+13  94-08-09289547  14147652.0  ...       Mina Bista      29.0
+14  98-09-16879291  15158963.0  ...       Ram Dhakal      44.0
+15  17-11-63791321  16169852.0  ...       Radha Pant      53.0
+16  71-03-35575299  17175246.0  ...       Amit Joshi      37.0
+17  68-10-56792613  18183569.0  ...  Anita Bhattarai      28.0
+18  28-09-97969690  19194258.0  ...      Sanu Gurung      46.0
+19  89-04-95690392  20205417.0  ...        Hari Lama      40.0
+20  14-11-40056582    55562139  ...     Sarita Karki        27
+21  26-03-50185868    77714635  ...   Laxmi Shrestha        36
+22  68-01-80388982    99953421  ...      Pema Tamang        43
+23  98-09-16879291    15158963  ...       Ram Dhakal        44
+24  71-03-35575299    17175246  ...       Amit Joshi        37
+25  89-04-95690392    20205417  ...        Hari Lama        40
+
+[26 rows x 23 columns]
+[2024-05-30T11:45:01.623+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-05-30T11:45:01.711+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=extenso_assignment, task_id=output, run_id=manual__2024-05-30T11:44:55.433287+00:00, execution_date=20240530T114455, start_date=20240530T114500, end_date=20240530T114501
+[2024-05-30T11:45:01.748+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-05-30T11:45:01.767+0000] {taskinstance.py:3498} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-05-30T11:45:01.770+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

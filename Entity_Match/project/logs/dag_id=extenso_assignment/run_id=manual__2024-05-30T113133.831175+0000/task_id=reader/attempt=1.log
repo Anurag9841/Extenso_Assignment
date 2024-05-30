@@ -1,0 +1,363 @@
+[2024-05-30T11:31:38.532+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-05-30T11:31:38.663+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: extenso_assignment.reader manual__2024-05-30T11:31:33.831175+00:00 [queued]>
+[2024-05-30T11:31:38.676+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: extenso_assignment.reader manual__2024-05-30T11:31:33.831175+00:00 [queued]>
+[2024-05-30T11:31:38.676+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-05-30T11:31:38.694+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): reader> on 2024-05-30 11:31:33.831175+00:00
+[2024-05-30T11:31:38.758+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'extenso_assignment', 'reader', 'manual__2024-05-30T11:31:33.831175+00:00', '--job-id', '15', '--raw', '--subdir', 'DAGS_FOLDER/dump_load_dag.py', '--cfg-path', '/tmp/tmphkdtxqne']
+[2024-05-30T11:31:38.762+0000] {standard_task_runner.py:91} INFO - Job 15: Subtask reader
+[2024-05-30T11:31:38.765+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61 DeprecationWarning: This process (pid=197) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-05-30T11:31:38.766+0000] {standard_task_runner.py:63} INFO - Started process 212 to run task
+[2024-05-30T11:31:38.856+0000] {task_command.py:426} INFO - Running <TaskInstance: extenso_assignment.reader manual__2024-05-30T11:31:33.831175+00:00 [running]> on host d78d325bbf3e
+[2024-05-30T11:31:39.029+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='extenso_assignment' AIRFLOW_CTX_TASK_ID='reader' AIRFLOW_CTX_EXECUTION_DATE='2024-05-30T11:31:33.831175+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-05-30T11:31:33.831175+00:00'
+[2024-05-30T11:31:39.030+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-05-30T11:31:39.240+0000] {logging_mixin.py:188} WARNING - /opt/***/dags/Load_DF.py:6 FutureWarning: DataFrame.applymap has been deprecated. Use DataFrame.map instead.
+[2024-05-30T11:31:39.259+0000] {logging_mixin.py:188} WARNING - /opt/***/dags/Load_DF.py:6 FutureWarning: DataFrame.applymap has been deprecated. Use DataFrame.map instead.
+[2024-05-30T11:31:39.262+0000] {logging_mixin.py:188} WARNING - /opt/***/dags/Load_DF.py:6 FutureWarning: DataFrame.applymap has been deprecated. Use DataFrame.map instead.
+[2024-05-30T11:31:39.265+0000] {logging_mixin.py:188} WARNING - /opt/***/dags/Load_DF.py:6 FutureWarning: DataFrame.applymap has been deprecated. Use DataFrame.map instead.
+[2024-05-30T11:31:39.268+0000] {logging_mixin.py:188} WARNING - /opt/***/dags/Load_DF.py:6 FutureWarning: DataFrame.applymap has been deprecated. Use DataFrame.map instead.
+[2024-05-30T11:31:39.275+0000] {logging_mixin.py:188} WARNING - /opt/***/dags/Load_DF.py:6 FutureWarning: DataFrame.applymap has been deprecated. Use DataFrame.map instead.
+[2024-05-30T11:31:39.279+0000] {logging_mixin.py:188} WARNING - /opt/***/dags/Load_DF.py:6 FutureWarning: DataFrame.applymap has been deprecated. Use DataFrame.map instead.
+[2024-05-30T11:31:39.284+0000] {logging_mixin.py:188} WARNING - /opt/***/dags/Load_DF.py:6 FutureWarning: DataFrame.applymap has been deprecated. Use DataFrame.map instead.
+[2024-05-30T11:31:39.290+0000] {logging_mixin.py:188} WARNING - /opt/***/dags/Load_DF.py:6 FutureWarning: DataFrame.applymap has been deprecated. Use DataFrame.map instead.
+[2024-05-30T11:31:39.293+0000] {logging_mixin.py:188} WARNING - /opt/***/dags/Load_DF.py:6 FutureWarning: DataFrame.applymap has been deprecated. Use DataFrame.map instead.
+[2024-05-30T11:31:39.296+0000] {logging_mixin.py:188} WARNING - /opt/***/dags/Load_DF.py:6 FutureWarning: DataFrame.applymap has been deprecated. Use DataFrame.map instead.
+[2024-05-30T11:31:39.299+0000] {logging_mixin.py:188} WARNING - /opt/***/dags/Load_DF.py:6 FutureWarning: DataFrame.applymap has been deprecated. Use DataFrame.map instead.
+[2024-05-30T11:31:39.301+0000] {python.py:237} INFO - Done. Returned value was: ([              source  ...              modified_date
+0   final_result.csv  ... 2024-05-30 11:31:39.216462
+1   final_result.csv  ... 2024-05-30 11:31:39.216462
+2   final_result.csv  ... 2024-05-30 11:31:39.216462
+3   final_result.csv  ... 2024-05-30 11:31:39.216462
+4   final_result.csv  ... 2024-05-30 11:31:39.216462
+5   final_result.csv  ... 2024-05-30 11:31:39.216462
+6   final_result.csv  ... 2024-05-30 11:31:39.216462
+7   final_result.csv  ... 2024-05-30 11:31:39.216462
+8   final_result.csv  ... 2024-05-30 11:31:39.216462
+9   final_result.csv  ... 2024-05-30 11:31:39.216462
+10  final_result.csv  ... 2024-05-30 11:31:39.216462
+11  final_result.csv  ... 2024-05-30 11:31:39.216462
+12  final_result.csv  ... 2024-05-30 11:31:39.216462
+13  final_result.csv  ... 2024-05-30 11:31:39.216462
+14  final_result.csv  ... 2024-05-30 11:31:39.216462
+15  final_result.csv  ... 2024-05-30 11:31:39.216462
+16  final_result.csv  ... 2024-05-30 11:31:39.216462
+17  final_result.csv  ... 2024-05-30 11:31:39.216462
+18  final_result.csv  ... 2024-05-30 11:31:39.216462
+19  final_result.csv  ... 2024-05-30 11:31:39.216462
+20  final_result.csv  ... 2024-05-30 11:31:39.216462
+21  final_result.csv  ... 2024-05-30 11:31:39.216462
+22  final_result.csv  ... 2024-05-30 11:31:39.216462
+23  final_result.csv  ... 2024-05-30 11:31:39.216462
+24  final_result.csv  ... 2024-05-30 11:31:39.216462
+25  final_result.csv  ... 2024-05-30 11:31:39.216462
+
+[26 rows x 24 columns],     Customer Code             Name  ...       source              modified_date
+0        21216874        Ram Thapa  ...  layout1.csv 2024-05-30 11:31:39.229156
+1        22359363    Sita Shrestha  ...  layout1.csv 2024-05-30 11:31:39.229156
+2        33485241      Hari Gurung  ...  layout1.csv 2024-05-30 11:31:39.229156
+3        45475489      Gita Tamang  ...  layout1.csv 2024-05-30 11:31:39.229156
+4        56562139       Mohan Lama  ...  layout1.csv 2024-05-30 11:31:39.229156
+5        67698214      Radha Magar  ...  layout1.csv 2024-05-30 11:31:39.229156
+6        78714635      Krishna Rai  ...  layout1.csv 2024-05-30 11:31:39.229156
+7        89847326    Sarita Sherpa  ...  layout1.csv 2024-05-30 11:31:39.229156
+8        91953421     Bikash Karki  ...  layout1.csv 2024-05-30 11:31:39.229156
+9        10203847   Nisha Bhandari  ...  layout1.csv 2024-05-30 11:31:39.229156
+10       12113982   Aarav Adhikari  ...  layout1.csv 2024-05-30 11:31:39.229156
+11       13122547      Sneha Joshi  ...  layout1.csv 2024-05-30 11:31:39.229156
+12       13235698     Pratik Shahi  ...  layout1.csv 2024-05-30 11:31:39.229156
+13       14247652   Anju Bhattarai  ...  layout1.csv 2024-05-30 11:31:39.229156
+14       15158964  Manish Maharjan  ...  layout1.csv 2024-05-30 11:31:39.229156
+15       16169853          Puja KC  ...  layout1.csv 2024-05-30 11:31:39.229156
+16       17375246      Anil Khadka  ...  layout1.csv 2024-05-30 11:31:39.229156
+17       18383569       Rita Rimal  ...  layout1.csv 2024-05-30 11:31:39.229156
+18       19294258  Pratiksha Dahal  ...  layout1.csv 2024-05-30 11:31:39.229156
+19       20305417  Dipesh Pokharel  ...  layout1.csv 2024-05-30 11:31:39.229156
+
+[20 rows x 11 columns],     Mobile Number             Name  ...       source              modified_date
+0      1234567890        Ram Thapa  ...  layout2.csv 2024-05-30 11:31:39.229643
+1      2345678901    Sita Shrestha  ...  layout2.csv 2024-05-30 11:31:39.229643
+2      3456789012      Hari Gurung  ...  layout2.csv 2024-05-30 11:31:39.229643
+3      4567890123      Gita Tamang  ...  layout2.csv 2024-05-30 11:31:39.229643
+4      5678901234       Mohan Lama  ...  layout2.csv 2024-05-30 11:31:39.229643
+5      6789012345      Radha Magar  ...  layout2.csv 2024-05-30 11:31:39.229643
+6      7890123456      Krishna Rai  ...  layout2.csv 2024-05-30 11:31:39.229643
+7      8901234567    Sarita Sherpa  ...  layout2.csv 2024-05-30 11:31:39.229643
+8      9012345678     Bikash Karki  ...  layout2.csv 2024-05-30 11:31:39.229643
+9       123456789   Nisha Bhandari  ...  layout2.csv 2024-05-30 11:31:39.229643
+10     1234567800   Aarav Adhikari  ...  layout2.csv 2024-05-30 11:31:39.229643
+11     2345678902      Sneha Joshi  ...  layout2.csv 2024-05-30 11:31:39.229643
+12     3456789013     Pratik Shahi  ...  layout2.csv 2024-05-30 11:31:39.229643
+13     4567890124   Anju Bhattarai  ...  layout2.csv 2024-05-30 11:31:39.229643
+14     5678901235  Manish Maharjan  ...  layout2.csv 2024-05-30 11:31:39.229643
+15     6789012346          Puja KC  ...  layout2.csv 2024-05-30 11:31:39.229643
+16     7890123457      Anil Khadka  ...  layout2.csv 2024-05-30 11:31:39.229643
+17     8901234568       Rita Rimal  ...  layout2.csv 2024-05-30 11:31:39.229643
+18     9012345679  Pratiksha Dahal  ...  layout2.csv 2024-05-30 11:31:39.229643
+19      123456790  Dipesh Pokharel  ...  layout2.csv 2024-05-30 11:31:39.229643
+
+[20 rows x 8 columns],     votersID             Name  ...       source              modified_date
+0   11116874        Ram Thapa  ...  layout3.csv 2024-05-30 11:31:39.229952
+1   22259363    Sita Shrestha  ...  layout3.csv 2024-05-30 11:31:39.229952
+2   33385241      Hari Gurung  ...  layout3.csv 2024-05-30 11:31:39.229952
+3   44475489      Gita Tamang  ...  layout3.csv 2024-05-30 11:31:39.229952
+4   55562139       Mohan Lama  ...  layout3.csv 2024-05-30 11:31:39.229952
+5   66698214      Radha Magar  ...  layout3.csv 2024-05-30 11:31:39.229952
+6   77714635      Krishna Rai  ...  layout3.csv 2024-05-30 11:31:39.229952
+7   88847326    Sarita Sherpa  ...  layout3.csv 2024-05-30 11:31:39.229952
+8   99953421     Bikash Karki  ...  layout3.csv 2024-05-30 11:31:39.229952
+9   10103847   Nisha Bhandari  ...  layout3.csv 2024-05-30 11:31:39.229952
+10  11113982   Aarav Adhikari  ...  layout3.csv 2024-05-30 11:31:39.229952
+11  12122547      Sneha Joshi  ...  layout3.csv 2024-05-30 11:31:39.229952
+12  13135698     Pratik Shahi  ...  layout3.csv 2024-05-30 11:31:39.229952
+13  14147652   Anju Bhattarai  ...  layout3.csv 2024-05-30 11:31:39.229952
+14  15158963  Manish Maharjan  ...  layout3.csv 2024-05-30 11:31:39.229952
+15  16169852          Puja KC  ...  layout3.csv 2024-05-30 11:31:39.229952
+16  17175246      Anil Khadka  ...  layout3.csv 2024-05-30 11:31:39.229952
+17  18183569       Rita Rimal  ...  layout3.csv 2024-05-30 11:31:39.229952
+18  19194258  Pratiksha Dahal  ...  layout3.csv 2024-05-30 11:31:39.229952
+19  20205417  Dipesh Pokharel  ...  layout3.csv 2024-05-30 11:31:39.229952
+
+[20 rows x 11 columns],                Name  Mobile Number  ...       source              modified_date
+0         Ram Thapa     1234567890  ...  layout4.csv 2024-05-30 11:31:39.230238
+1     Sita Shrestha     2345678901  ...  layout4.csv 2024-05-30 11:31:39.230238
+2       Hari Gurung     3456789012  ...  layout4.csv 2024-05-30 11:31:39.230238
+3       Gita Tamang     4567890123  ...  layout4.csv 2024-05-30 11:31:39.230238
+4        Mohan Lama     5678901234  ...  layout4.csv 2024-05-30 11:31:39.230238
+5       Radha Magar     6789012345  ...  layout4.csv 2024-05-30 11:31:39.230238
+6       Krishna Rai     7890123456  ...  layout4.csv 2024-05-30 11:31:39.230238
+7     Sarita Sherpa     8901234567  ...  layout4.csv 2024-05-30 11:31:39.230238
+8      Bikash Karki     9012345678  ...  layout4.csv 2024-05-30 11:31:39.230238
+9    Nisha Bhandari      123456789  ...  layout4.csv 2024-05-30 11:31:39.230238
+10   Aarav Adhikari     1234567800  ...  layout4.csv 2024-05-30 11:31:39.230238
+11      Sneha Joshi     2345678902  ...  layout4.csv 2024-05-30 11:31:39.230238
+12     Pratik Shahi     3456789013  ...  layout4.csv 2024-05-30 11:31:39.230238
+13   Anju Bhattarai     4567890124  ...  layout4.csv 2024-05-30 11:31:39.230238
+14  Manish Maharjan     5678901235  ...  layout4.csv 2024-05-30 11:31:39.230238
+15          Puja KC     6789012346  ...  layout4.csv 2024-05-30 11:31:39.230238
+16      Anil Khadka     7890123457  ...  layout4.csv 2024-05-30 11:31:39.230238
+17       Rita Rimal     8901234568  ...  layout4.csv 2024-05-30 11:31:39.230238
+18  Pratiksha Dahal     9012345679  ...  layout4.csv 2024-05-30 11:31:39.230238
+19  Dipesh Pokharel      123456790  ...  layout4.csv 2024-05-30 11:31:39.230238
+
+[20 rows x 8 columns],     License Number Blood Group  ...       source              modified_date
+0   15-05-58353205         AB+  ...  layout5.csv 2024-05-30 11:31:39.230538
+1   21-08-00435579         AB-  ...  layout5.csv 2024-05-30 11:31:39.230538
+2   93-12-35351480          B-  ...  layout5.csv 2024-05-30 11:31:39.230538
+3   65-03-68139881          A-  ...  layout5.csv 2024-05-30 11:31:39.230538
+4   14-11-40056582          A+  ...  layout5.csv 2024-05-30 11:31:39.230538
+5   82-09-81734599          B-  ...  layout5.csv 2024-05-30 11:31:39.230538
+6   26-03-50185868         AB+  ...  layout5.csv 2024-05-30 11:31:39.230538
+7   98-03-72394228          A-  ...  layout5.csv 2024-05-30 11:31:39.230538
+8   68-01-80388982          B-  ...  layout5.csv 2024-05-30 11:31:39.230538
+9   42-08-02614125          A-  ...  layout5.csv 2024-05-30 11:31:39.230538
+10  15-06-41273848          O+  ...  layout5.csv 2024-05-30 11:31:39.230538
+11  31-01-32329238         AB+  ...  layout5.csv 2024-05-30 11:31:39.230538
+12  73-02-11496212          O-  ...  layout5.csv 2024-05-30 11:31:39.230538
+13  94-08-09289547         AB-  ...  layout5.csv 2024-05-30 11:31:39.230538
+14  98-09-16879291          B+  ...  layout5.csv 2024-05-30 11:31:39.230538
+15  17-11-63791321         AB-  ...  layout5.csv 2024-05-30 11:31:39.230538
+16  71-03-35575299         AB-  ...  layout5.csv 2024-05-30 11:31:39.230538
+17  68-10-56792613          B-  ...  layout5.csv 2024-05-30 11:31:39.230538
+18  28-09-97969690         AB+  ...  layout5.csv 2024-05-30 11:31:39.230538
+19  89-04-95690392          A-  ...  layout5.csv 2024-05-30 11:31:39.230538
+
+[20 rows x 11 columns]], [              source  ...              modified_date
+0   final_result.csv  ... 2024-05-30 11:31:39.216462
+1   final_result.csv  ... 2024-05-30 11:31:39.216462
+2   final_result.csv  ... 2024-05-30 11:31:39.216462
+3   final_result.csv  ... 2024-05-30 11:31:39.216462
+4   final_result.csv  ... 2024-05-30 11:31:39.216462
+5   final_result.csv  ... 2024-05-30 11:31:39.216462
+6   final_result.csv  ... 2024-05-30 11:31:39.216462
+7   final_result.csv  ... 2024-05-30 11:31:39.216462
+8   final_result.csv  ... 2024-05-30 11:31:39.216462
+9   final_result.csv  ... 2024-05-30 11:31:39.216462
+10  final_result.csv  ... 2024-05-30 11:31:39.216462
+11  final_result.csv  ... 2024-05-30 11:31:39.216462
+12  final_result.csv  ... 2024-05-30 11:31:39.216462
+13  final_result.csv  ... 2024-05-30 11:31:39.216462
+14  final_result.csv  ... 2024-05-30 11:31:39.216462
+15  final_result.csv  ... 2024-05-30 11:31:39.216462
+16  final_result.csv  ... 2024-05-30 11:31:39.216462
+17  final_result.csv  ... 2024-05-30 11:31:39.216462
+18  final_result.csv  ... 2024-05-30 11:31:39.216462
+19  final_result.csv  ... 2024-05-30 11:31:39.216462
+20  final_result.csv  ... 2024-05-30 11:31:39.216462
+21  final_result.csv  ... 2024-05-30 11:31:39.216462
+22  final_result.csv  ... 2024-05-30 11:31:39.216462
+23  final_result.csv  ... 2024-05-30 11:31:39.216462
+24  final_result.csv  ... 2024-05-30 11:31:39.216462
+25  final_result.csv  ... 2024-05-30 11:31:39.216462
+
+[26 rows x 24 columns],     Customer Code            Name  ...       source              modified_date
+0        21216874        RamThapa  ...  layout1.csv 2024-05-30 11:31:39.229156
+1        22359363    SitaShrestha  ...  layout1.csv 2024-05-30 11:31:39.229156
+2        33485241      HariGurung  ...  layout1.csv 2024-05-30 11:31:39.229156
+3        45475489      GitaTamang  ...  layout1.csv 2024-05-30 11:31:39.229156
+4        56562139       MohanLama  ...  layout1.csv 2024-05-30 11:31:39.229156
+5        67698214      RadhaMagar  ...  layout1.csv 2024-05-30 11:31:39.229156
+6        78714635      KrishnaRai  ...  layout1.csv 2024-05-30 11:31:39.229156
+7        89847326    SaritaSherpa  ...  layout1.csv 2024-05-30 11:31:39.229156
+8        91953421     BikashKarki  ...  layout1.csv 2024-05-30 11:31:39.229156
+9        10203847   NishaBhandari  ...  layout1.csv 2024-05-30 11:31:39.229156
+10       12113982   AaravAdhikari  ...  layout1.csv 2024-05-30 11:31:39.229156
+11       13122547      SnehaJoshi  ...  layout1.csv 2024-05-30 11:31:39.229156
+12       13235698     PratikShahi  ...  layout1.csv 2024-05-30 11:31:39.229156
+13       14247652   AnjuBhattarai  ...  layout1.csv 2024-05-30 11:31:39.229156
+14       15158964  ManishMaharjan  ...  layout1.csv 2024-05-30 11:31:39.229156
+15       16169853          PujaKC  ...  layout1.csv 2024-05-30 11:31:39.229156
+16       17375246      AnilKhadka  ...  layout1.csv 2024-05-30 11:31:39.229156
+17       18383569       RitaRimal  ...  layout1.csv 2024-05-30 11:31:39.229156
+18       19294258  PratikshaDahal  ...  layout1.csv 2024-05-30 11:31:39.229156
+19       20305417  DipeshPokharel  ...  layout1.csv 2024-05-30 11:31:39.229156
+
+[20 rows x 11 columns],     Mobile Number            Name  ...       source              modified_date
+0      1234567890        RamThapa  ...  layout2.csv 2024-05-30 11:31:39.229643
+1      2345678901    SitaShrestha  ...  layout2.csv 2024-05-30 11:31:39.229643
+2      3456789012      HariGurung  ...  layout2.csv 2024-05-30 11:31:39.229643
+3      4567890123      GitaTamang  ...  layout2.csv 2024-05-30 11:31:39.229643
+4      5678901234       MohanLama  ...  layout2.csv 2024-05-30 11:31:39.229643
+5      6789012345      RadhaMagar  ...  layout2.csv 2024-05-30 11:31:39.229643
+6      7890123456      KrishnaRai  ...  layout2.csv 2024-05-30 11:31:39.229643
+7      8901234567    SaritaSherpa  ...  layout2.csv 2024-05-30 11:31:39.229643
+8      9012345678     BikashKarki  ...  layout2.csv 2024-05-30 11:31:39.229643
+9       123456789   NishaBhandari  ...  layout2.csv 2024-05-30 11:31:39.229643
+10     1234567800   AaravAdhikari  ...  layout2.csv 2024-05-30 11:31:39.229643
+11     2345678902      SnehaJoshi  ...  layout2.csv 2024-05-30 11:31:39.229643
+12     3456789013     PratikShahi  ...  layout2.csv 2024-05-30 11:31:39.229643
+13     4567890124   AnjuBhattarai  ...  layout2.csv 2024-05-30 11:31:39.229643
+14     5678901235  ManishMaharjan  ...  layout2.csv 2024-05-30 11:31:39.229643
+15     6789012346          PujaKC  ...  layout2.csv 2024-05-30 11:31:39.229643
+16     7890123457      AnilKhadka  ...  layout2.csv 2024-05-30 11:31:39.229643
+17     8901234568       RitaRimal  ...  layout2.csv 2024-05-30 11:31:39.229643
+18     9012345679  PratikshaDahal  ...  layout2.csv 2024-05-30 11:31:39.229643
+19      123456790  DipeshPokharel  ...  layout2.csv 2024-05-30 11:31:39.229643
+
+[20 rows x 8 columns],     votersID            Name  ...       source              modified_date
+0   11116874        RamThapa  ...  layout3.csv 2024-05-30 11:31:39.229952
+1   22259363    SitaShrestha  ...  layout3.csv 2024-05-30 11:31:39.229952
+2   33385241      HariGurung  ...  layout3.csv 2024-05-30 11:31:39.229952
+3   44475489      GitaTamang  ...  layout3.csv 2024-05-30 11:31:39.229952
+4   55562139       MohanLama  ...  layout3.csv 2024-05-30 11:31:39.229952
+5   66698214      RadhaMagar  ...  layout3.csv 2024-05-30 11:31:39.229952
+6   77714635      KrishnaRai  ...  layout3.csv 2024-05-30 11:31:39.229952
+7   88847326    SaritaSherpa  ...  layout3.csv 2024-05-30 11:31:39.229952
+8   99953421     BikashKarki  ...  layout3.csv 2024-05-30 11:31:39.229952
+9   10103847   NishaBhandari  ...  layout3.csv 2024-05-30 11:31:39.229952
+10  11113982   AaravAdhikari  ...  layout3.csv 2024-05-30 11:31:39.229952
+11  12122547      SnehaJoshi  ...  layout3.csv 2024-05-30 11:31:39.229952
+12  13135698     PratikShahi  ...  layout3.csv 2024-05-30 11:31:39.229952
+13  14147652   AnjuBhattarai  ...  layout3.csv 2024-05-30 11:31:39.229952
+14  15158963  ManishMaharjan  ...  layout3.csv 2024-05-30 11:31:39.229952
+15  16169852          PujaKC  ...  layout3.csv 2024-05-30 11:31:39.229952
+16  17175246      AnilKhadka  ...  layout3.csv 2024-05-30 11:31:39.229952
+17  18183569       RitaRimal  ...  layout3.csv 2024-05-30 11:31:39.229952
+18  19194258  PratikshaDahal  ...  layout3.csv 2024-05-30 11:31:39.229952
+19  20205417  DipeshPokharel  ...  layout3.csv 2024-05-30 11:31:39.229952
+
+[20 rows x 11 columns],               Name  Mobile Number  ...       source              modified_date
+0         RamThapa     1234567890  ...  layout4.csv 2024-05-30 11:31:39.230238
+1     SitaShrestha     2345678901  ...  layout4.csv 2024-05-30 11:31:39.230238
+2       HariGurung     3456789012  ...  layout4.csv 2024-05-30 11:31:39.230238
+3       GitaTamang     4567890123  ...  layout4.csv 2024-05-30 11:31:39.230238
+4        MohanLama     5678901234  ...  layout4.csv 2024-05-30 11:31:39.230238
+5       RadhaMagar     6789012345  ...  layout4.csv 2024-05-30 11:31:39.230238
+6       KrishnaRai     7890123456  ...  layout4.csv 2024-05-30 11:31:39.230238
+7     SaritaSherpa     8901234567  ...  layout4.csv 2024-05-30 11:31:39.230238
+8      BikashKarki     9012345678  ...  layout4.csv 2024-05-30 11:31:39.230238
+9    NishaBhandari      123456789  ...  layout4.csv 2024-05-30 11:31:39.230238
+10   AaravAdhikari     1234567800  ...  layout4.csv 2024-05-30 11:31:39.230238
+11      SnehaJoshi     2345678902  ...  layout4.csv 2024-05-30 11:31:39.230238
+12     PratikShahi     3456789013  ...  layout4.csv 2024-05-30 11:31:39.230238
+13   AnjuBhattarai     4567890124  ...  layout4.csv 2024-05-30 11:31:39.230238
+14  ManishMaharjan     5678901235  ...  layout4.csv 2024-05-30 11:31:39.230238
+15          PujaKC     6789012346  ...  layout4.csv 2024-05-30 11:31:39.230238
+16      AnilKhadka     7890123457  ...  layout4.csv 2024-05-30 11:31:39.230238
+17       RitaRimal     8901234568  ...  layout4.csv 2024-05-30 11:31:39.230238
+18  PratikshaDahal     9012345679  ...  layout4.csv 2024-05-30 11:31:39.230238
+19  DipeshPokharel      123456790  ...  layout4.csv 2024-05-30 11:31:39.230238
+
+[20 rows x 8 columns],     License Number Blood Group  ...       source              modified_date
+0   15-05-58353205         AB+  ...  layout5.csv 2024-05-30 11:31:39.230538
+1   21-08-00435579         AB-  ...  layout5.csv 2024-05-30 11:31:39.230538
+2   93-12-35351480          B-  ...  layout5.csv 2024-05-30 11:31:39.230538
+3   65-03-68139881          A-  ...  layout5.csv 2024-05-30 11:31:39.230538
+4   14-11-40056582          A+  ...  layout5.csv 2024-05-30 11:31:39.230538
+5   82-09-81734599          B-  ...  layout5.csv 2024-05-30 11:31:39.230538
+6   26-03-50185868         AB+  ...  layout5.csv 2024-05-30 11:31:39.230538
+7   98-03-72394228          A-  ...  layout5.csv 2024-05-30 11:31:39.230538
+8   68-01-80388982          B-  ...  layout5.csv 2024-05-30 11:31:39.230538
+9   42-08-02614125          A-  ...  layout5.csv 2024-05-30 11:31:39.230538
+10  15-06-41273848          O+  ...  layout5.csv 2024-05-30 11:31:39.230538
+11  31-01-32329238         AB+  ...  layout5.csv 2024-05-30 11:31:39.230538
+12  73-02-11496212          O-  ...  layout5.csv 2024-05-30 11:31:39.230538
+13  94-08-09289547         AB-  ...  layout5.csv 2024-05-30 11:31:39.230538
+14  98-09-16879291          B+  ...  layout5.csv 2024-05-30 11:31:39.230538
+15  17-11-63791321         AB-  ...  layout5.csv 2024-05-30 11:31:39.230538
+16  71-03-35575299         AB-  ...  layout5.csv 2024-05-30 11:31:39.230538
+17  68-10-56792613          B-  ...  layout5.csv 2024-05-30 11:31:39.230538
+18  28-09-97969690         AB+  ...  layout5.csv 2024-05-30 11:31:39.230538
+19  89-04-95690392          A-  ...  layout5.csv 2024-05-30 11:31:39.230538
+
+[20 rows x 11 columns]])
+[2024-05-30T11:31:39.507+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-05-30T11:31:39.668+0000] {xcom.py:675} ERROR - ("Could not convert '' with type str: tried to convert to double", 'Conversion failed for column votersAge with type object'). If you are using pickle instead of JSON for XCom, then you need to enable pickle support for XCom in your *** config or make sure to decorate your object with attr.
+[2024-05-30T11:31:39.672+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 486, in _execute_task
+    task_instance.xcom_push(key=XCOM_RETURN_KEY, value=xcom_value, session=session)
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/session.py", line 76, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3197, in xcom_push
+    XCom.set(
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/session.py", line 76, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/xcom.py", line 246, in set
+    value = cls.serialize_value(
+            ^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/xcom.py", line 673, in serialize_value
+    return json.dumps(value, cls=XComEncoder).encode("UTF-8")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/json.py", line 102, in encode
+    o = self.default(o)
+        ^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/json.py", line 91, in default
+    return serialize(o)
+           ^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/serialization/serde.py", line 150, in serialize
+    return encode(classname or serialized_classname, version, serialize(data, depth + 1))
+                                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/serialization/serde.py", line 127, in serialize
+    return [serialize(d, depth + 1) for d in o]
+            ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/serialization/serde.py", line 127, in serialize
+    return [serialize(d, depth + 1) for d in o]
+            ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/serialization/serde.py", line 148, in serialize
+    data, serialized_classname, version, is_serialized = _serializers[qn].serialize(o)
+                                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/serialization/serializers/pandas.py", line 49, in serialize
+    table = pa.Table.from_pandas(o)
+            ^^^^^^^^^^^^^^^^^^^^^^^
+  File "pyarrow/table.pxi", line 4525, in pyarrow.lib.Table.from_pandas
+  File "/home/airflow/.local/lib/python3.12/site-packages/pyarrow/pandas_compat.py", line 611, in dataframe_to_arrays
+    arrays = [convert_column(c, f)
+              ^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pyarrow/pandas_compat.py", line 598, in convert_column
+    raise e
+  File "/home/airflow/.local/lib/python3.12/site-packages/pyarrow/pandas_compat.py", line 592, in convert_column
+    result = pa.array(col, type=type_, from_pandas=True, safe=safe)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "pyarrow/array.pxi", line 345, in pyarrow.lib.array
+  File "pyarrow/array.pxi", line 85, in pyarrow.lib._ndarray_to_array
+  File "pyarrow/error.pxi", line 91, in pyarrow.lib.check_status
+pyarrow.lib.ArrowInvalid: ("Could not convert '' with type str: tried to convert to double", 'Conversion failed for column votersAge with type object')
+[2024-05-30T11:31:39.710+0000] {taskinstance.py:1206} INFO - Marking task as FAILED. dag_id=extenso_assignment, task_id=reader, run_id=manual__2024-05-30T11:31:33.831175+00:00, execution_date=20240530T113133, start_date=20240530T113138, end_date=20240530T113139
+[2024-05-30T11:31:39.748+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 15 for task reader (("Could not convert '' with type str: tried to convert to double", 'Conversion failed for column votersAge with type object'); 212)
+[2024-05-30T11:31:39.788+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 1
+[2024-05-30T11:31:39.817+0000] {taskinstance.py:3498} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-05-30T11:31:39.825+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

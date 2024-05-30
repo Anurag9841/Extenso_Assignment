@@ -20,17 +20,18 @@ dag = DAG(
     catchup=False,
 )
 
-preparing_preprocessing = PythonOperator(
-    task_id = "reader",
-    python_callable = read_datas,
-    dag = dag
-)
+# preparing_preprocessing = PythonOperator(
+#     task_id = "reader",
+#     python_callable = read_datas,
+#     dag = dag
+# )
 final_df = PythonOperator(
     task_id = "output",
     python_callable = final_entity_matching,
     dag = dag
 )
-preparing_preprocessing >> final_df
+final_df
+# preparing_preprocessing >> final_df
 
 
 
