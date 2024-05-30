@@ -1,0 +1,133 @@
+[2024-05-27T08:26:34.803+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-05-27T08:26:34.828+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: entity_match_dag.preprocess_task manual__2024-05-27T08:26:30.403243+00:00 [queued]>
+[2024-05-27T08:26:34.836+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: entity_match_dag.preprocess_task manual__2024-05-27T08:26:30.403243+00:00 [queued]>
+[2024-05-27T08:26:34.837+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-05-27T08:26:34.855+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): preprocess_task> on 2024-05-27 08:26:30.403243+00:00
+[2024-05-27T08:26:34.867+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'entity_match_dag', 'preprocess_task', 'manual__2024-05-27T08:26:30.403243+00:00', '--job-id', '49', '--raw', '--subdir', 'DAGS_FOLDER/entity_match_dag.py', '--cfg-path', '/tmp/tmpe0mi5dp5']
+[2024-05-27T08:26:34.871+0000] {standard_task_runner.py:91} INFO - Job 49: Subtask preprocess_task
+[2024-05-27T08:26:34.873+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61 DeprecationWarning: This process (pid=922) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-05-27T08:26:34.876+0000] {standard_task_runner.py:63} INFO - Started process 931 to run task
+[2024-05-27T08:26:34.935+0000] {task_command.py:426} INFO - Running <TaskInstance: entity_match_dag.preprocess_task manual__2024-05-27T08:26:30.403243+00:00 [running]> on host b6490b04884b
+[2024-05-27T08:26:35.033+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='entity_match_dag' AIRFLOW_CTX_TASK_ID='preprocess_task' AIRFLOW_CTX_EXECUTION_DATE='2024-05-27T08:26:30.403243+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-05-27T08:26:30.403243+00:00'
+[2024-05-27T08:26:35.034+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-05-27T08:26:35.143+0000] {logging_mixin.py:188} WARNING - /opt/***/dags/entity_match_dag.py:65 FutureWarning: DataFrame.applymap has been deprecated. Use DataFrame.map instead.
+[2024-05-27T08:26:35.149+0000] {logging_mixin.py:188} WARNING - /opt/***/dags/entity_match_dag.py:65 FutureWarning: DataFrame.applymap has been deprecated. Use DataFrame.map instead.
+[2024-05-27T08:26:35.153+0000] {logging_mixin.py:188} WARNING - /opt/***/dags/entity_match_dag.py:65 FutureWarning: DataFrame.applymap has been deprecated. Use DataFrame.map instead.
+[2024-05-27T08:26:35.157+0000] {logging_mixin.py:188} WARNING - /opt/***/dags/entity_match_dag.py:65 FutureWarning: DataFrame.applymap has been deprecated. Use DataFrame.map instead.
+[2024-05-27T08:26:35.162+0000] {logging_mixin.py:188} WARNING - /opt/***/dags/entity_match_dag.py:65 FutureWarning: DataFrame.applymap has been deprecated. Use DataFrame.map instead.
+[2024-05-27T08:26:35.166+0000] {python.py:237} INFO - Done. Returned value was: [    Customer Code  ...                                            soup
+0        21216874  ...             ramthapa 1990-01-01 rambahadurthapa
+1        22359363  ...      sitashrestha 1991-02-02 hariprasadshrestha
+2        33485241  ...        harigurung 1992-03-03 gopalkrishnagurung
+3        45475489  ...            gitatamang 1993-04-04 shyamlaltamang
+4        56562139  ...             mohanlama 1994-05-05 krishnarajlama
+5        67698214  ...         radhamagar 1995-06-06 narayankumarmagar
+6        78714635  ...         krishnarai 1996-07-07 govindabahadurrai
+7        89847326  ...      saritasherpa 1997-08-08 shivanarayansherpa
+8        91953421  ...    bikashkarki 1998-09-09 bhagirathbahadurkarki
+9        10203847  ...   nishabhandari 1999-10-10 suryabahadurbhandari
+10       12113982  ...   aaravadhikari 2000-11-11 rajanbahaduradhikari
+11       13122547  ...        snehajoshi 2001-12-12 rameshbahadurjoshi
+12       13235698  ...         pratikshahi 1989-01-13 sureshkumarshahi
+13       14247652  ...     anjubhattarai 1988-02-14 dineshrajbhattarai
+14       15158964  ...  manishmaharjan 1987-03-15 bijaybahadurmaharjan
+15       16169853  ...               pujakc 1986-04-16 rameshbahadurkc
+16       17375246  ...       anilkhadka 1985-05-17 rajeshbahadurkhadka
+17       18383569  ...         ritarimal 1984-06-18 ganeshbahadurrimal
+18       19294258  ...   pratikshadahal 1983-07-19 santoshbahadurdahal
+19       20305417  ...   dipeshpokharel 1982-08-20 shyamsundarpokharel
+
+[20 rows x 12 columns],     Mobile Number  ...                                            soup
+0      1234567890  ...             ramthapa 1990-01-01 rambahadurthapa
+1      2345678901  ...      sitashrestha 1991-02-02 hariprasadshrestha
+2      3456789012  ...        harigurung 1992-03-03 gopalkrishnagurung
+3      4567890123  ...            gitatamang 1993-04-04 shyamlaltamang
+4      5678901234  ...             mohanlama 1994-05-05 krishnarajlama
+5      6789012345  ...         radhamagar 1995-06-06 narayankumarmagar
+6      7890123456  ...         krishnarai 1996-07-07 govindabahadurrai
+7      8901234567  ...      saritasherpa 1997-08-08 shivanarayansherpa
+8      9012345678  ...    bikashkarki 1998-09-09 bhagirathbahadurkarki
+9       123456789  ...   nishabhandari 1999-10-10 suryabahadurbhandari
+10     1234567800  ...   aaravadhikari 2000-11-11 rajanbahaduradhikari
+11     2345678902  ...        snehajoshi 2001-12-12 rameshbahadurjoshi
+12     3456789013  ...         pratikshahi 1989-01-13 sureshkumarshahi
+13     4567890124  ...     anjubhattarai 1988-02-14 dineshrajbhattarai
+14     5678901235  ...  manishmaharjan 1987-03-15 bijaybahadurmaharjan
+15     6789012346  ...               pujakc 1986-04-16 rameshbahadurkc
+16     7890123457  ...       anilkhadka 1985-05-17 rajeshbahadurkhadka
+17     8901234568  ...         ritarimal 1984-06-18 ganeshbahadurrimal
+18     9012345679  ...   pratikshadahal 1983-07-19 santoshbahadurdahal
+19      123456790  ...   dipeshpokharel 1982-08-20 shyamsundarpokharel
+
+[20 rows x 9 columns],     votersID  ...                                            soup
+0   11116874  ...             ramthapa 1990-01-01 rambahadurthapa
+1   22259363  ...      sitashrestha 1991-02-02 hariprasadshrestha
+2   33385241  ...        harigurung 1992-03-03 gopalkrishnagurung
+3   44475489  ...            gitatamang 1993-04-04 shyamlaltamang
+4   55562139  ...             mohanlama 1994-05-05 krishnarajlama
+5   66698214  ...         radhamagar 1995-06-06 narayankumarmagar
+6   77714635  ...         krishnarai 1996-07-07 govindabahadurrai
+7   88847326  ...      saritasherpa 1997-08-08 shivanarayansherpa
+8   99953421  ...    bikashkarki 1998-09-09 bhagirathbahadurkarki
+9   10103847  ...   nishabhandari 1999-10-10 suryabahadurbhandari
+10  11113982  ...   aaravadhikari 2000-11-11 rajanbahaduradhikari
+11  12122547  ...        snehajoshi 2001-12-12 rameshbahadurjoshi
+12  13135698  ...         pratikshahi 1989-01-13 sureshkumarshahi
+13  14147652  ...     anjubhattarai 1988-02-14 dineshrajbhattarai
+14  15158963  ...  manishmaharjan 1987-03-15 bijaybahadurmaharjan
+15  16169852  ...               pujakc 1986-04-16 rameshbahadurkc
+16  17175246  ...       anilkhadka 1985-05-17 rajeshbahadurkhadka
+17  18183569  ...         ritarimal 1984-06-18 ganeshbahadurrimal
+18  19194258  ...   pratikshadahal 1983-07-19 santoshbahadurdahal
+19  20205417  ...   dipeshpokharel 1982-08-20 shyamsundarpokharel
+
+[20 rows x 12 columns],                Name  ...                                            soup
+0         Ram Thapa  ...             ramthapa 1990-01-01 rambahadurthapa
+1     Sita Shrestha  ...      sitashrestha 1991-02-02 hariprasadshrestha
+2       Hari Gurung  ...        harigurung 1992-03-03 gopalkrishnagurung
+3       Gita Tamang  ...            gitatamang 1993-04-04 shyamlaltamang
+4        Mohan Lama  ...             mohanlama 1994-05-05 krishnarajlama
+5       Radha Magar  ...         radhamagar 1995-06-06 narayankumarmagar
+6       Krishna Rai  ...         krishnarai 1996-07-07 govindabahadurrai
+7     Sarita Sherpa  ...      saritasherpa 1997-08-08 shivanarayansherpa
+8      Bikash Karki  ...    bikashkarki 1998-09-09 bhagirathbahadurkarki
+9    Nisha Bhandari  ...   nishabhandari 1999-10-10 suryabahadurbhandari
+10   Aarav Adhikari  ...   aaravadhikari 2000-11-11 rajanbahaduradhikari
+11      Sneha Joshi  ...        snehajoshi 2001-12-12 rameshbahadurjoshi
+12     Pratik Shahi  ...         pratikshahi 1989-01-13 sureshkumarshahi
+13   Anju Bhattarai  ...     anjubhattarai 1988-02-14 dineshrajbhattarai
+14  Manish Maharjan  ...  manishmaharjan 1987-03-15 bijaybahadurmaharjan
+15          Puja KC  ...               pujakc 1986-04-16 rameshbahadurkc
+16      Anil Khadka  ...       anilkhadka 1985-05-17 rajeshbahadurkhadka
+17       Rita Rimal  ...         ritarimal 1984-06-18 ganeshbahadurrimal
+18  Pratiksha Dahal  ...   pratikshadahal 1983-07-19 santoshbahadurdahal
+19  Dipesh Pokharel  ...   dipeshpokharel 1982-08-20 shyamsundarpokharel
+
+[20 rows x 9 columns],     License Number  ...                                           soup
+0   15-05-58353205  ...                           ramthapa 1990-01-01 
+1   21-08-00435579  ...     sitashrestha 1991-02-02 hariprasadshrestha
+2   93-12-35351480  ...       harigurung 1992-03-03 gopalkrishnagurung
+3   65-03-68139881  ...                         gitatamang 1993-04-04 
+4   14-11-40056582  ...                      mohanlama  krishnarajlama
+5   82-09-81734599  ...        radhamagar 1995-06-06 narayankumarmagar
+6   26-03-50185868  ...                                   krishnarai  
+7   98-03-72394228  ...                       saritasherpa 1997-08-08 
+8   68-01-80388982  ...             bikashkarki  bhagirathbahadurkarki
+9   42-08-02614125  ...  nishabhandari 1999-10-10 suryabahadurbhandari
+10  15-06-41273848  ...  aaravadhikari 2000-11-11 rajanbahaduradhikari
+11  31-01-32329238  ...                         snehajoshi 2001-12-12 
+12  73-02-11496212  ...        pratikshahi 1989-01-13 sureshkumarshahi
+13  94-08-09289547  ...                      anjubhattarai 1988-02-14 
+14  98-09-16879291  ...                               manishmaharjan  
+15  17-11-63791321  ...              pujakc 1986-04-16 rameshbahadurkc
+16  71-03-35575299  ...                                   anilkhadka  
+17  68-10-56792613  ...        ritarimal 1984-06-18 ganeshbahadurrimal
+18  28-09-97969690  ...                     pratikshadahal 1983-07-19 
+19  89-04-95690392  ...            dipeshpokharel  shyamsundarpokharel
+
+[20 rows x 12 columns]]
+[2024-05-27T08:26:35.210+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-05-27T08:26:35.247+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=entity_match_dag, task_id=preprocess_task, run_id=manual__2024-05-27T08:26:30.403243+00:00, execution_date=20240527T082630, start_date=20240527T082634, end_date=20240527T082635
+[2024-05-27T08:26:35.293+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-05-27T08:26:35.310+0000] {taskinstance.py:3498} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-05-27T08:26:35.313+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

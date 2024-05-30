@@ -1,0 +1,4 @@
+delta==0.4.2
+delta_spark==3.2.0
+pyspark==3.5.1
+pyspark_stubs==3.0.0.post3

@@ -1,0 +1,1130 @@
+[2024-05-27T08:18:00.657+0000] {manager.py:470} INFO - Processing files using up to 2 processes at a time 
+[2024-05-27T08:18:00.658+0000] {manager.py:471} INFO - Process each file at most once every 30 seconds
+[2024-05-27T08:18:00.659+0000] {manager.py:472} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2024-05-27T08:18:00.660+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2024-05-27T08:18:00.726+0000] {manager.py:740} INFO - There are 6 files in /opt/airflow/dags
+[2024-05-27T08:18:08.704+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/entity_match_dag.py                           1           0  2.16s           2024-05-27T08:18:02
+/opt/airflow/dags/hdfs_dag.py                                   1           0  0.19s           2024-05-27T08:18:00
+/opt/airflow/dags/hello_world_dag.py                            1           0  0.17s           2024-05-27T08:18:01
+/opt/airflow/dags/dump_load_dag.py                              1           0  0.15s           2024-05-27T08:18:01
+/opt/airflow/dags/bash_dag.py                                   1           0  0.14s           2024-05-27T08:18:01
+/opt/airflow/dags/email_dag.py                                  1           0  0.14s           2024-05-27T08:18:01
+================================================================================
+[2024-05-27T08:18:38.718+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/entity_match_dag.py                           1           0  1.85s           2024-05-27T08:18:35
+/opt/airflow/dags/dump_load_dag.py                              1           0  0.23s           2024-05-27T08:18:31
+/opt/airflow/dags/bash_dag.py                                   1           0  0.20s           2024-05-27T08:18:31
+/opt/airflow/dags/email_dag.py                                  1           0  0.17s           2024-05-27T08:18:31
+/opt/airflow/dags/hello_world_dag.py                            1           0  0.17s           2024-05-27T08:18:31
+/opt/airflow/dags/hdfs_dag.py                                   1           0  0.17s           2024-05-27T08:18:31
+================================================================================
+[2024-05-27T08:19:08.881+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/entity_match_dag.py                           1           0  0.93s           2024-05-27T08:19:06
+/opt/airflow/dags/hello_world_dag.py                            1           0  0.13s           2024-05-27T08:19:02
+/opt/airflow/dags/dump_load_dag.py                              1           0  0.12s           2024-05-27T08:19:02
+/opt/airflow/dags/email_dag.py                                  1           0  0.11s           2024-05-27T08:19:02
+/opt/airflow/dags/hdfs_dag.py                                   1           0  0.11s           2024-05-27T08:19:01
+/opt/airflow/dags/bash_dag.py                                   1           0  0.11s           2024-05-27T08:19:02
+================================================================================
+[2024-05-27T08:19:39.780+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/entity_match_dag.py                           1           0  0.96s           2024-05-27T08:19:37
+/opt/airflow/dags/bash_dag.py                                   1           0  0.28s           2024-05-27T08:19:33
+/opt/airflow/dags/hello_world_dag.py                            1           0  0.28s           2024-05-27T08:19:33
+/opt/airflow/dags/hdfs_dag.py                                   1           0  0.26s           2024-05-27T08:19:32
+/opt/airflow/dags/dump_load_dag.py                              1           0  0.12s           2024-05-27T08:19:33
+/opt/airflow/dags/email_dag.py                                  1           0  0.11s           2024-05-27T08:19:33
+================================================================================
+[2024-05-27T08:20:09.861+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/entity_match_dag.py                           1           0  1.04s           2024-05-27T08:20:08
+/opt/airflow/dags/bash_dag.py                                   1           0  0.34s           2024-05-27T08:20:04
+/opt/airflow/dags/hello_world_dag.py                            1           0  0.33s           2024-05-27T08:20:04
+/opt/airflow/dags/hdfs_dag.py                                   1           0  0.32s           2024-05-27T08:20:03
+/opt/airflow/dags/dump_load_dag.py                              1           0  0.26s           2024-05-27T08:20:04
+/opt/airflow/dags/email_dag.py                                  1           0  0.23s           2024-05-27T08:20:04
+================================================================================
+[2024-05-27T08:20:39.867+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/entity_match_dag.py    409  0.87s             1           0  1.04s           2024-05-27T08:20:08
+/opt/airflow/dags/hello_world_dag.py                            1           0  0.37s           2024-05-27T08:20:35
+/opt/airflow/dags/bash_dag.py                                   1           0  0.30s           2024-05-27T08:20:35
+/opt/airflow/dags/dump_load_dag.py                              1           0  0.19s           2024-05-27T08:20:35
+/opt/airflow/dags/email_dag.py                                  1           0  0.13s           2024-05-27T08:20:35
+/opt/airflow/dags/hdfs_dag.py                                   1           0  0.11s           2024-05-27T08:20:34
+================================================================================
+[2024-05-27T08:21:10.094+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/entity_match_dag.py    453  0.00s             1           0  1.02s           2024-05-27T08:20:40
+/opt/airflow/dags/hello_world_dag.py                            1           0  0.12s           2024-05-27T08:21:05
+/opt/airflow/dags/hdfs_dag.py                                   1           0  0.12s           2024-05-27T08:21:04
+/opt/airflow/dags/dump_load_dag.py                              1           0  0.12s           2024-05-27T08:21:06
+/opt/airflow/dags/bash_dag.py                                   1           0  0.11s           2024-05-27T08:21:05
+/opt/airflow/dags/email_dag.py                                  1           0  0.11s           2024-05-27T08:21:06
+================================================================================
+[2024-05-27T08:21:40.136+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/entity_match_dag.py                           1           0  0.99s           2024-05-27T08:21:11
+/opt/airflow/dags/email_dag.py                                  1           0  0.18s           2024-05-27T08:21:37
+/opt/airflow/dags/bash_dag.py                                   1           0  0.16s           2024-05-27T08:21:36
+/opt/airflow/dags/hello_world_dag.py                            1           0  0.15s           2024-05-27T08:21:36
+/opt/airflow/dags/hdfs_dag.py                                   1           0  0.15s           2024-05-27T08:21:35
+/opt/airflow/dags/dump_load_dag.py                              1           0  0.14s           2024-05-27T08:21:36
+================================================================================
+[2024-05-27T08:22:10.805+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/entity_match_dag.py                           1           0  0.96s           2024-05-27T08:21:42
+/opt/airflow/dags/hello_world_dag.py                            1           0  0.16s           2024-05-27T08:22:07
+/opt/airflow/dags/bash_dag.py                                   1           0  0.14s           2024-05-27T08:22:07
+/opt/airflow/dags/dump_load_dag.py                              1           0  0.12s           2024-05-27T08:22:07
+/opt/airflow/dags/email_dag.py                                  1           0  0.12s           2024-05-27T08:22:07
+/opt/airflow/dags/hdfs_dag.py                                   1           0  0.11s           2024-05-27T08:22:06
+================================================================================
+[2024-05-27T08:22:41.617+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/entity_match_dag.py                           1           0  1.05s           2024-05-27T08:22:13
+/opt/airflow/dags/hello_world_dag.py                            1           0  0.13s           2024-05-27T08:22:38
+/opt/airflow/dags/hdfs_dag.py                                   1           0  0.13s           2024-05-27T08:22:37
+/opt/airflow/dags/dump_load_dag.py                              1           0  0.12s           2024-05-27T08:22:38
+/opt/airflow/dags/email_dag.py                                  1           0  0.12s           2024-05-27T08:22:38
+/opt/airflow/dags/bash_dag.py                                   1           0  0.11s           2024-05-27T08:22:38
+================================================================================
+[2024-05-27T08:23:00.994+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2024-05-27T08:23:01.029+0000] {manager.py:740} INFO - There are 6 files in /opt/airflow/dags
+[2024-05-27T08:23:11.680+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/entity_match_dag.py                           1           0  1.12s           2024-05-27T08:22:45
+/opt/airflow/dags/email_dag.py                                  1           0  0.18s           2024-05-27T08:23:09
+/opt/airflow/dags/bash_dag.py                                   1           0  0.14s           2024-05-27T08:23:09
+/opt/airflow/dags/hello_world_dag.py                            1           0  0.13s           2024-05-27T08:23:09
+/opt/airflow/dags/dump_load_dag.py                              1           0  0.13s           2024-05-27T08:23:09
+/opt/airflow/dags/hdfs_dag.py                                   1           0  0.13s           2024-05-27T08:23:08
+================================================================================
+[2024-05-27T08:23:42.198+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/entity_match_dag.py                           1           0  1.04s           2024-05-27T08:23:17
+/opt/airflow/dags/hello_world_dag.py                            1           0  0.13s           2024-05-27T08:23:40
+/opt/airflow/dags/email_dag.py                                  1           0  0.12s           2024-05-27T08:23:40
+/opt/airflow/dags/dump_load_dag.py                              1           0  0.11s           2024-05-27T08:23:40
+/opt/airflow/dags/bash_dag.py                                   1           0  0.11s           2024-05-27T08:23:40
+/opt/airflow/dags/hdfs_dag.py                                   1           0  0.10s           2024-05-27T08:23:38
+================================================================================
+[2024-05-27T08:24:12.209+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/entity_match_dag.py                           1           0  0.90s           2024-05-27T08:23:49
+/opt/airflow/dags/hello_world_dag.py                            1           0  0.20s           2024-05-27T08:24:10
+/opt/airflow/dags/bash_dag.py                                   1           0  0.20s           2024-05-27T08:24:10
+/opt/airflow/dags/email_dag.py                                  1           0  0.16s           2024-05-27T08:24:11
+/opt/airflow/dags/dump_load_dag.py                              1           0  0.14s           2024-05-27T08:24:11
+/opt/airflow/dags/hdfs_dag.py                                   1           0  0.11s           2024-05-27T08:24:09
+================================================================================
+[2024-05-27T08:24:42.729+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/entity_match_dag.py                           1           0  1.00s           2024-05-27T08:24:20
+/opt/airflow/dags/hdfs_dag.py                                   1           0  0.14s           2024-05-27T08:24:40
+/opt/airflow/dags/hello_world_dag.py                            1           0  0.13s           2024-05-27T08:24:41
+/opt/airflow/dags/dump_load_dag.py                              1           0  0.12s           2024-05-27T08:24:41
+/opt/airflow/dags/email_dag.py                                  1           0  0.12s           2024-05-27T08:24:41
+/opt/airflow/dags/bash_dag.py                                   1           0  0.11s           2024-05-27T08:24:41
+================================================================================
+[2024-05-27T08:25:13.510+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/entity_match_dag.py                           1           0  1.16s           2024-05-27T08:24:52
+/opt/airflow/dags/dump_load_dag.py                              1           0  0.14s           2024-05-27T08:25:12
+/opt/airflow/dags/email_dag.py                                  1           0  0.14s           2024-05-27T08:25:12
+/opt/airflow/dags/hello_world_dag.py                            1           0  0.12s           2024-05-27T08:25:12
+/opt/airflow/dags/bash_dag.py                                   1           0  0.11s           2024-05-27T08:25:12
+/opt/airflow/dags/hdfs_dag.py                                   1           0  0.11s           2024-05-27T08:25:11
+================================================================================
+[2024-05-27T08:25:43.796+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/entity_match_dag.py                           1           0  1.60s           2024-05-27T08:25:24
+/opt/airflow/dags/hello_world_dag.py                            1           0  0.14s           2024-05-27T08:25:42
+/opt/airflow/dags/dump_load_dag.py                              1           0  0.12s           2024-05-27T08:25:42
+/opt/airflow/dags/email_dag.py                                  1           0  0.12s           2024-05-27T08:25:42
+/opt/airflow/dags/bash_dag.py                                   1           0  0.12s           2024-05-27T08:25:42
+/opt/airflow/dags/hdfs_dag.py                                   1           0  0.12s           2024-05-27T08:25:41
+================================================================================
+[2024-05-27T08:26:14.632+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/entity_match_dag.py                           1           0  1.32s           2024-05-27T08:25:56
+/opt/airflow/dags/hdfs_dag.py                                   1           0  0.29s           2024-05-27T08:26:12
+/opt/airflow/dags/email_dag.py                                  1           0  0.15s           2024-05-27T08:26:13
+/opt/airflow/dags/hello_world_dag.py                            1           0  0.13s           2024-05-27T08:26:13
+/opt/airflow/dags/dump_load_dag.py                              1           0  0.13s           2024-05-27T08:26:13
+/opt/airflow/dags/bash_dag.py                                   1           0  0.11s           2024-05-27T08:26:13
+================================================================================
+[2024-05-27T08:26:45.461+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/entity_match_dag.py                           1           0  0.97s           2024-05-27T08:26:27
+/opt/airflow/dags/bash_dag.py                                   1           0  0.14s           2024-05-27T08:26:44
+/opt/airflow/dags/hello_world_dag.py                            1           0  0.14s           2024-05-27T08:26:44
+/opt/airflow/dags/hdfs_dag.py                                   1           0  0.13s           2024-05-27T08:26:43
+/opt/airflow/dags/dump_load_dag.py                              1           0  0.12s           2024-05-27T08:26:44
+/opt/airflow/dags/email_dag.py                                  1           0  0.12s           2024-05-27T08:26:44
+================================================================================
+[2024-05-27T08:27:16.173+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/entity_match_dag.py                           1           0  1.04s           2024-05-27T08:26:59
+/opt/airflow/dags/bash_dag.py                                   1           0  0.12s           2024-05-27T08:27:15
+/opt/airflow/dags/hello_world_dag.py                            1           0  0.12s           2024-05-27T08:27:15
+/opt/airflow/dags/email_dag.py                                  1           0  0.12s           2024-05-27T08:27:15
+/opt/airflow/dags/hdfs_dag.py                                   1           0  0.12s           2024-05-27T08:27:13
+/opt/airflow/dags/dump_load_dag.py                              1           0  0.11s           2024-05-27T08:27:15
+================================================================================
+[2024-05-27T08:27:46.844+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/entity_match_dag.py                           1           0  0.95s           2024-05-27T08:27:31
+/opt/airflow/dags/email_dag.py                                  1           0  0.13s           2024-05-27T08:27:45
+/opt/airflow/dags/dump_load_dag.py                              1           0  0.12s           2024-05-27T08:27:45
+/opt/airflow/dags/hdfs_dag.py                                   1           0  0.12s           2024-05-27T08:27:44
+/opt/airflow/dags/hello_world_dag.py                            1           0  0.12s           2024-05-27T08:27:45
+/opt/airflow/dags/bash_dag.py                                   1           0  0.11s           2024-05-27T08:27:45
+================================================================================
+[2024-05-27T08:28:01.131+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2024-05-27T08:28:01.176+0000] {manager.py:740} INFO - There are 6 files in /opt/airflow/dags
+[2024-05-27T08:28:17.508+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/entity_match_dag.py                           1           0  0.89s           2024-05-27T08:28:03
+/opt/airflow/dags/email_dag.py                                  1           0  0.14s           2024-05-27T08:28:16
+/opt/airflow/dags/dump_load_dag.py                              1           0  0.14s           2024-05-27T08:28:16
+/opt/airflow/dags/hello_world_dag.py                            1           0  0.12s           2024-05-27T08:28:16
+/opt/airflow/dags/bash_dag.py                                   1           0  0.12s           2024-05-27T08:28:16
+/opt/airflow/dags/hdfs_dag.py                                   1           0  0.11s           2024-05-27T08:28:15
+================================================================================
+[2024-05-27T10:39:30.847+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2024-05-27T10:39:30.902+0000] {manager.py:740} INFO - There are 6 files in /opt/airflow/dags
+[2024-05-27T10:39:37.905+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/entity_match_dag.py                           1           0  1.17s           2024-05-27T10:39:32
+/opt/airflow/dags/email_dag.py                                  1           0  0.24s           2024-05-27T10:39:31
+/opt/airflow/dags/hdfs_dag.py                                   1           0  0.17s           2024-05-27T10:39:31
+/opt/airflow/dags/bash_dag.py                                   1           0  0.13s           2024-05-27T10:39:31
+/opt/airflow/dags/dump_load_dag.py                              1           0  0.13s           2024-05-27T10:39:31
+/opt/airflow/dags/hello_world_dag.py                            1           0  0.13s           2024-05-27T10:39:31
+================================================================================
+[2024-05-27T10:39:46.834+0000] {manager.py:452} INFO - Exiting gracefully upon receiving signal 15
+[2024-05-30T03:31:10.322+0000] {manager.py:470} INFO - Processing files using up to 2 processes at a time 
+[2024-05-30T03:31:10.324+0000] {manager.py:471} INFO - Process each file at most once every 30 seconds
+[2024-05-30T03:31:10.326+0000] {manager.py:472} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2024-05-30T03:31:10.327+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2024-05-30T03:31:10.453+0000] {manager.py:740} INFO - There are 6 files in /opt/airflow/dags
+[2024-05-30T03:31:10.694+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  ----------
+/opt/airflow/dags/bash_dag.py                                   0           0
+/opt/airflow/dags/dump_load_dag.py                              0           0
+/opt/airflow/dags/email_dag.py                                  0           0
+/opt/airflow/dags/entity_match_dag.py    165  0.14s             0           0
+/opt/airflow/dags/hdfs_dag.py            168  0.08s             0           0
+/opt/airflow/dags/hello_world_dag.py                            0           0
+================================================================================
+[2024-05-30T03:31:41.281+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/entity_match_dag.py                           1           0  2.64s           2024-05-30T03:31:13
+/opt/airflow/dags/hdfs_dag.py            215  0.01s             1           0  0.31s           2024-05-30T03:31:10
+/opt/airflow/dags/hello_world_dag.py     218  0.00s             1           0  0.28s           2024-05-30T03:31:11
+/opt/airflow/dags/dump_load_dag.py                              1           0  0.20s           2024-05-30T03:31:11
+/opt/airflow/dags/email_dag.py                                  1           0  0.17s           2024-05-30T03:31:11
+/opt/airflow/dags/bash_dag.py                                   1           0  0.16s           2024-05-30T03:31:11
+================================================================================
+[2024-05-30T03:32:12.037+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/entity_match_dag.py                           1           0  0.95s           2024-05-30T03:31:44
+/opt/airflow/dags/hello_world_dag.py     262  0.00s             1           0  0.14s           2024-05-30T03:31:41
+/opt/airflow/dags/hdfs_dag.py            259  0.01s             1           0  0.13s           2024-05-30T03:31:41
+/opt/airflow/dags/email_dag.py                                  1           0  0.13s           2024-05-30T03:31:42
+/opt/airflow/dags/dump_load_dag.py                              1           0  0.12s           2024-05-30T03:31:42
+/opt/airflow/dags/bash_dag.py                                   1           0  0.10s           2024-05-30T03:31:41
+================================================================================
+[2024-05-30T03:32:42.732+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/entity_match_dag.py                           1           0  0.93s           2024-05-30T03:32:16
+/opt/airflow/dags/email_dag.py                                  1           0  0.17s           2024-05-30T03:32:13
+/opt/airflow/dags/dump_load_dag.py                              1           0  0.16s           2024-05-30T03:32:13
+/opt/airflow/dags/hdfs_dag.py            303  0.01s             1           0  0.13s           2024-05-30T03:32:12
+/opt/airflow/dags/hello_world_dag.py     306  0.00s             1           0  0.11s           2024-05-30T03:32:12
+/opt/airflow/dags/bash_dag.py                                   1           0  0.10s           2024-05-30T03:32:12
+================================================================================
+[2024-05-30T03:33:13.331+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/entity_match_dag.py                           1           0  0.87s           2024-05-30T03:32:47
+/opt/airflow/dags/bash_dag.py                                   1           0  0.15s           2024-05-30T03:32:42
+/opt/airflow/dags/hello_world_dag.py     350  0.00s             1           0  0.12s           2024-05-30T03:32:42
+/opt/airflow/dags/dump_load_dag.py                              1           0  0.12s           2024-05-30T03:32:43
+/opt/airflow/dags/email_dag.py                                  1           0  0.11s           2024-05-30T03:32:43
+/opt/airflow/dags/hdfs_dag.py            347  0.02s             1           0  0.11s           2024-05-30T03:32:42
+================================================================================
+[2024-05-30T03:33:44.054+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/entity_match_dag.py                           1           0  0.88s           2024-05-30T03:33:19
+/opt/airflow/dags/hdfs_dag.py            391  0.01s             1           0  0.17s           2024-05-30T03:33:13
+/opt/airflow/dags/hello_world_dag.py     394  0.00s             1           0  0.17s           2024-05-30T03:33:13
+/opt/airflow/dags/dump_load_dag.py                              1           0  0.13s           2024-05-30T03:33:14
+/opt/airflow/dags/email_dag.py                                  1           0  0.12s           2024-05-30T03:33:14
+/opt/airflow/dags/bash_dag.py                                   1           0  0.09s           2024-05-30T03:33:13
+================================================================================
+[2024-05-30T03:34:14.764+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/entity_match_dag.py                           1           0  0.89s           2024-05-30T03:33:51
+/opt/airflow/dags/dump_load_dag.py                              1           0  0.13s           2024-05-30T03:33:45
+/opt/airflow/dags/hdfs_dag.py            435  0.01s             1           0  0.13s           2024-05-30T03:33:44
+/opt/airflow/dags/email_dag.py                                  1           0  0.11s           2024-05-30T03:33:45
+/opt/airflow/dags/hello_world_dag.py     438  0.00s             1           0  0.11s           2024-05-30T03:33:44
+/opt/airflow/dags/bash_dag.py                                   1           0  0.10s           2024-05-30T03:33:44
+================================================================================
+[2024-05-30T03:34:45.323+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/entity_match_dag.py                           1           0  0.86s           2024-05-30T03:34:22
+/opt/airflow/dags/email_dag.py                                  1           0  0.14s           2024-05-30T03:34:16
+/opt/airflow/dags/dump_load_dag.py                              1           0  0.13s           2024-05-30T03:34:16
+/opt/airflow/dags/hello_world_dag.py     482  0.00s             1           0  0.12s           2024-05-30T03:34:14
+/opt/airflow/dags/hdfs_dag.py            479  0.01s             1           0  0.12s           2024-05-30T03:34:14
+/opt/airflow/dags/bash_dag.py                                   1           0  0.10s           2024-05-30T03:34:14
+================================================================================
+[2024-05-30T03:35:16.026+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/entity_match_dag.py                           1           0  0.89s           2024-05-30T03:34:54
+/opt/airflow/dags/hello_world_dag.py     526  0.00s             1           0  0.12s           2024-05-30T03:34:45
+/opt/airflow/dags/hdfs_dag.py            523  0.01s             1           0  0.12s           2024-05-30T03:34:45
+/opt/airflow/dags/dump_load_dag.py                              1           0  0.12s           2024-05-30T03:34:46
+/opt/airflow/dags/email_dag.py                                  1           0  0.11s           2024-05-30T03:34:46
+/opt/airflow/dags/bash_dag.py                                   1           0  0.11s           2024-05-30T03:34:45
+================================================================================
+[2024-05-30T03:35:46.814+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/entity_match_dag.py                           1           0  0.98s           2024-05-30T03:35:26
+/opt/airflow/dags/hdfs_dag.py            567  0.01s             1           0  0.15s           2024-05-30T03:35:16
+/opt/airflow/dags/bash_dag.py                                   1           0  0.14s           2024-05-30T03:35:16
+/opt/airflow/dags/dump_load_dag.py                              1           0  0.13s           2024-05-30T03:35:17
+/opt/airflow/dags/email_dag.py                                  1           0  0.12s           2024-05-30T03:35:17
+/opt/airflow/dags/hello_world_dag.py     570  0.00s             1           0  0.12s           2024-05-30T03:35:16
+================================================================================
+[2024-05-30T03:36:10.412+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2024-05-30T03:36:10.460+0000] {manager.py:740} INFO - There are 6 files in /opt/airflow/dags
+[2024-05-30T03:36:17.436+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/entity_match_dag.py                           1           0  0.95s           2024-05-30T03:35:58
+/opt/airflow/dags/bash_dag.py                                   1           0  0.13s           2024-05-30T03:35:47
+/opt/airflow/dags/hello_world_dag.py     614  0.00s             1           0  0.13s           2024-05-30T03:35:46
+/opt/airflow/dags/dump_load_dag.py                              1           0  0.12s           2024-05-30T03:35:48
+/opt/airflow/dags/hdfs_dag.py            611  0.01s             1           0  0.12s           2024-05-30T03:35:46
+/opt/airflow/dags/email_dag.py                                  1           0  0.12s           2024-05-30T03:35:48
+================================================================================
+[2024-05-30T03:36:48.128+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/entity_match_dag.py                           1           0  0.94s           2024-05-30T03:36:29
+/opt/airflow/dags/email_dag.py                                  1           0  0.13s           2024-05-30T03:36:18
+/opt/airflow/dags/dump_load_dag.py                              1           0  0.13s           2024-05-30T03:36:18
+/opt/airflow/dags/hello_world_dag.py     658  0.01s             1           0  0.13s           2024-05-30T03:36:17
+/opt/airflow/dags/hdfs_dag.py            655  0.03s             1           0  0.12s           2024-05-30T03:36:17
+/opt/airflow/dags/bash_dag.py                                   1           0  0.10s           2024-05-30T03:36:17
+================================================================================
+[2024-05-30T03:37:18.515+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/entity_match_dag.py                           1           0  1.36s           2024-05-30T03:37:01
+/opt/airflow/dags/hdfs_dag.py            699  0.01s             1           0  0.31s           2024-05-30T03:36:48
+/opt/airflow/dags/hello_world_dag.py     702  0.00s             1           0  0.30s           2024-05-30T03:36:48
+/opt/airflow/dags/dump_load_dag.py                              1           0  0.28s           2024-05-30T03:36:49
+/opt/airflow/dags/email_dag.py                                  1           0  0.25s           2024-05-30T03:36:49
+/opt/airflow/dags/bash_dag.py                                   1           0  0.21s           2024-05-30T03:36:48
+================================================================================
+[2024-05-30T03:37:49.244+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/entity_match_dag.py                           1           0  1.07s           2024-05-30T03:37:33
+/opt/airflow/dags/hdfs_dag.py            743  0.01s             1           0  0.15s           2024-05-30T03:37:18
+/opt/airflow/dags/email_dag.py                                  1           0  0.14s           2024-05-30T03:37:19
+/opt/airflow/dags/dump_load_dag.py                              1           0  0.14s           2024-05-30T03:37:19
+/opt/airflow/dags/hello_world_dag.py     746  0.00s             1           0  0.11s           2024-05-30T03:37:18
+/opt/airflow/dags/bash_dag.py                                   1           0  0.11s           2024-05-30T03:37:18
+================================================================================
+[2024-05-30T03:38:19.911+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/entity_match_dag.py                           1           0  0.89s           2024-05-30T03:38:04
+/opt/airflow/dags/email_dag.py                                  1           0  0.12s           2024-05-30T03:37:50
+/opt/airflow/dags/hello_world_dag.py     790  0.00s             1           0  0.12s           2024-05-30T03:37:49
+/opt/airflow/dags/dump_load_dag.py                              1           0  0.12s           2024-05-30T03:37:50
+/opt/airflow/dags/hdfs_dag.py            787  0.01s             1           0  0.12s           2024-05-30T03:37:49
+/opt/airflow/dags/bash_dag.py                                   1           0  0.10s           2024-05-30T03:37:49
+================================================================================
+[2024-05-30T03:38:50.563+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/entity_match_dag.py                           1           0  0.89s           2024-05-30T03:38:36
+/opt/airflow/dags/dump_load_dag.py                              1           0  0.13s           2024-05-30T03:38:21
+/opt/airflow/dags/hello_world_dag.py     835  0.00s             1           0  0.12s           2024-05-30T03:38:20
+/opt/airflow/dags/hdfs_dag.py            832  0.01s             1           0  0.12s           2024-05-30T03:38:20
+/opt/airflow/dags/email_dag.py                                  1           0  0.12s           2024-05-30T03:38:21
+/opt/airflow/dags/bash_dag.py                                   1           0  0.10s           2024-05-30T03:38:20
+================================================================================
+[2024-05-30T03:39:21.290+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/entity_match_dag.py                           1           0  0.87s           2024-05-30T03:39:08
+/opt/airflow/dags/hello_world_dag.py     879  0.00s             1           0  0.15s           2024-05-30T03:38:50
+/opt/airflow/dags/hdfs_dag.py            876  0.01s             1           0  0.14s           2024-05-30T03:38:50
+/opt/airflow/dags/dump_load_dag.py                              1           0  0.13s           2024-05-30T03:38:51
+/opt/airflow/dags/email_dag.py                                  1           0  0.13s           2024-05-30T03:38:51
+/opt/airflow/dags/bash_dag.py                                   1           0  0.11s           2024-05-30T03:38:50
+================================================================================
+[2024-05-30T03:39:51.964+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/entity_match_dag.py                           1           0  0.92s           2024-05-30T03:39:39
+/opt/airflow/dags/dump_load_dag.py                              1           0  0.16s           2024-05-30T03:39:22
+/opt/airflow/dags/email_dag.py                                  1           0  0.15s           2024-05-30T03:39:22
+/opt/airflow/dags/hdfs_dag.py            920  0.01s             1           0  0.13s           2024-05-30T03:39:21
+/opt/airflow/dags/hello_world_dag.py     923  0.00s             1           0  0.11s           2024-05-30T03:39:21
+/opt/airflow/dags/bash_dag.py                                   1           0  0.10s           2024-05-30T03:39:21
+================================================================================
+[2024-05-30T03:40:22.618+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/entity_match_dag.py                           1           0  0.99s           2024-05-30T03:40:11
+/opt/airflow/dags/hdfs_dag.py            964  0.01s             1           0  0.13s           2024-05-30T03:39:52
+/opt/airflow/dags/email_dag.py                                  1           0  0.13s           2024-05-30T03:39:53
+/opt/airflow/dags/dump_load_dag.py                              1           0  0.12s           2024-05-30T03:39:53
+/opt/airflow/dags/hello_world_dag.py     967  0.00s             1           0  0.11s           2024-05-30T03:39:52
+/opt/airflow/dags/bash_dag.py                                   1           0  0.10s           2024-05-30T03:39:52
+================================================================================
+[2024-05-30T03:40:53.401+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/entity_match_dag.py                           1           0  0.90s           2024-05-30T03:40:43
+/opt/airflow/dags/dump_load_dag.py                              1           0  0.16s           2024-05-30T03:40:23
+/opt/airflow/dags/hdfs_dag.py           1008  0.01s             1           0  0.16s           2024-05-30T03:40:22
+/opt/airflow/dags/email_dag.py                                  1           0  0.15s           2024-05-30T03:40:23
+/opt/airflow/dags/hello_world_dag.py    1011  0.00s             1           0  0.13s           2024-05-30T03:40:22
+/opt/airflow/dags/bash_dag.py                                   1           0  0.13s           2024-05-30T03:40:22
+================================================================================
+[2024-05-30T03:41:10.861+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2024-05-30T03:41:10.913+0000] {manager.py:740} INFO - There are 6 files in /opt/airflow/dags
+[2024-05-30T03:41:24.123+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/entity_match_dag.py                           1           0  0.96s           2024-05-30T03:41:14
+/opt/airflow/dags/dump_load_dag.py                              1           0  0.17s           2024-05-30T03:40:54
+/opt/airflow/dags/email_dag.py                                  1           0  0.15s           2024-05-30T03:40:54
+/opt/airflow/dags/hdfs_dag.py           1052  0.01s             1           0  0.13s           2024-05-30T03:40:53
+/opt/airflow/dags/hello_world_dag.py    1055  0.00s             1           0  0.11s           2024-05-30T03:40:53
+/opt/airflow/dags/bash_dag.py                                   1           0  0.10s           2024-05-30T03:40:53
+================================================================================
+[2024-05-30T03:41:54.892+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/entity_match_dag.py                           1           0  0.92s           2024-05-30T03:41:46
+/opt/airflow/dags/hello_world_dag.py    1099  0.00s             1           0  0.14s           2024-05-30T03:41:24
+/opt/airflow/dags/hdfs_dag.py           1096  0.01s             1           0  0.13s           2024-05-30T03:41:24
+/opt/airflow/dags/bash_dag.py                                   1           0  0.12s           2024-05-30T03:41:24
+/opt/airflow/dags/dump_load_dag.py                              1           0  0.12s           2024-05-30T03:41:25
+/opt/airflow/dags/email_dag.py                                  1           0  0.12s           2024-05-30T03:41:25
+================================================================================
+[2024-05-30T03:42:25.616+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/entity_match_dag.py                           1           0  0.89s           2024-05-30T03:42:18
+/opt/airflow/dags/hdfs_dag.py           1140  0.01s             1           0  0.14s           2024-05-30T03:41:55
+/opt/airflow/dags/dump_load_dag.py                              1           0  0.14s           2024-05-30T03:41:56
+/opt/airflow/dags/email_dag.py                                  1           0  0.12s           2024-05-30T03:41:56
+/opt/airflow/dags/hello_world_dag.py    1143  0.00s             1           0  0.12s           2024-05-30T03:41:55
+/opt/airflow/dags/bash_dag.py                                   1           0  0.10s           2024-05-30T03:41:55
+================================================================================
+[2024-05-30T03:42:56.287+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/entity_match_dag.py                           1           0  0.88s           2024-05-30T03:42:50
+/opt/airflow/dags/dump_load_dag.py                              1           0  0.12s           2024-05-30T03:42:26
+/opt/airflow/dags/hello_world_dag.py    1187  0.00s             1           0  0.12s           2024-05-30T03:42:25
+/opt/airflow/dags/email_dag.py                                  1           0  0.12s           2024-05-30T03:42:26
+/opt/airflow/dags/hdfs_dag.py           1184  0.01s             1           0  0.11s           2024-05-30T03:42:25
+/opt/airflow/dags/bash_dag.py                                   1           0  0.10s           2024-05-30T03:42:25
+================================================================================
+[2024-05-30T03:43:26.920+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/entity_match_dag.py                           1           0  0.87s           2024-05-30T03:43:21
+/opt/airflow/dags/dump_load_dag.py                              1           0  0.12s           2024-05-30T03:42:57
+/opt/airflow/dags/hello_world_dag.py    1231  0.00s             1           0  0.12s           2024-05-30T03:42:56
+/opt/airflow/dags/hdfs_dag.py           1228  0.01s             1           0  0.12s           2024-05-30T03:42:56
+/opt/airflow/dags/bash_dag.py                                   1           0  0.11s           2024-05-30T03:42:56
+/opt/airflow/dags/email_dag.py                                  1           0  0.11s           2024-05-30T03:42:57
+================================================================================
+[2024-05-30T03:43:57.615+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/entity_match_dag.py                           1           0  0.87s           2024-05-30T03:43:53
+/opt/airflow/dags/dump_load_dag.py                              1           0  0.12s           2024-05-30T03:43:28
+/opt/airflow/dags/hello_world_dag.py    1275  0.00s             1           0  0.12s           2024-05-30T03:43:27
+/opt/airflow/dags/email_dag.py                                  1           0  0.12s           2024-05-30T03:43:28
+/opt/airflow/dags/hdfs_dag.py           1272  0.01s             1           0  0.11s           2024-05-30T03:43:27
+/opt/airflow/dags/bash_dag.py                                   1           0  0.11s           2024-05-30T03:43:27
+================================================================================
+[2024-05-30T03:44:28.054+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/entity_match_dag.py                           1           0  1.79s           2024-05-30T03:44:26
+/opt/airflow/dags/dump_load_dag.py                              1           0  0.14s           2024-05-30T03:43:58
+/opt/airflow/dags/email_dag.py                                  1           0  0.12s           2024-05-30T03:43:58
+/opt/airflow/dags/hello_world_dag.py    1319  0.00s             1           0  0.12s           2024-05-30T03:43:57
+/opt/airflow/dags/hdfs_dag.py           1316  0.01s             1           0  0.12s           2024-05-30T03:43:57
+/opt/airflow/dags/bash_dag.py                                   1           0  0.10s           2024-05-30T03:43:57
+================================================================================
+[2024-05-30T03:44:58.668+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/entity_match_dag.py                           1           0  0.99s           2024-05-30T03:44:57
+/opt/airflow/dags/dump_load_dag.py                              1           0  0.27s           2024-05-30T03:44:29
+/opt/airflow/dags/email_dag.py                                  1           0  0.25s           2024-05-30T03:44:29
+/opt/airflow/dags/hello_world_dag.py    1363  0.00s             1           0  0.13s           2024-05-30T03:44:28
+/opt/airflow/dags/hdfs_dag.py           1360  0.01s             1           0  0.12s           2024-05-30T03:44:28
+/opt/airflow/dags/bash_dag.py                                   1           0  0.10s           2024-05-30T03:44:28
+================================================================================
+[2024-05-30T03:45:29.380+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/entity_match_dag.py                           1           0  0.96s           2024-05-30T03:45:29
+/opt/airflow/dags/email_dag.py                                  1           0  0.15s           2024-05-30T03:44:59
+/opt/airflow/dags/hello_world_dag.py    1407  0.00s             1           0  0.14s           2024-05-30T03:44:58
+/opt/airflow/dags/dump_load_dag.py                              1           0  0.14s           2024-05-30T03:44:59
+/opt/airflow/dags/hdfs_dag.py           1404  0.01s             1           0  0.14s           2024-05-30T03:44:58
+/opt/airflow/dags/bash_dag.py                                   1           0  0.11s           2024-05-30T03:44:58
+================================================================================
+[2024-05-30T03:46:00.022+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/entity_match_dag.py   1435  0.02s             1           0  0.96s           2024-05-30T03:45:29
+/opt/airflow/dags/dump_load_dag.py                              1           0  0.14s           2024-05-30T03:45:30
+/opt/airflow/dags/bash_dag.py                                   1           0  0.14s           2024-05-30T03:45:29
+/opt/airflow/dags/hello_world_dag.py                            1           0  0.14s           2024-05-30T03:45:29
+/opt/airflow/dags/email_dag.py                                  1           0  0.14s           2024-05-30T03:45:30
+/opt/airflow/dags/hdfs_dag.py           1438  0.01s             1           0  0.13s           2024-05-30T03:45:29
+================================================================================
+[2024-05-30T03:46:11.135+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2024-05-30T03:46:11.211+0000] {manager.py:740} INFO - There are 6 files in /opt/airflow/dags
+[2024-05-30T03:46:30.532+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/entity_match_dag.py                           1           0  1.02s           2024-05-30T03:46:01
+/opt/airflow/dags/email_dag.py                                  1           0  0.14s           2024-05-30T03:46:01
+/opt/airflow/dags/dump_load_dag.py                              1           0  0.14s           2024-05-30T03:46:01
+/opt/airflow/dags/hdfs_dag.py           1479  0.01s             1           0  0.13s           2024-05-30T03:46:00
+/opt/airflow/dags/hello_world_dag.py    1482  0.00s             1           0  0.13s           2024-05-30T03:46:00
+/opt/airflow/dags/bash_dag.py                                   1           0  0.12s           2024-05-30T03:46:00
+================================================================================
+[2024-05-30T03:47:01.141+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/entity_match_dag.py                           1           0  1.13s           2024-05-30T03:46:40
+/opt/airflow/dags/email_dag.py                                  1           0  0.15s           2024-05-30T03:46:32
+/opt/airflow/dags/hello_world_dag.py    1540  0.00s             1           0  0.14s           2024-05-30T03:46:30
+/opt/airflow/dags/dump_load_dag.py                              1           0  0.14s           2024-05-30T03:46:31
+/opt/airflow/dags/hdfs_dag.py           1537  0.01s             1           0  0.13s           2024-05-30T03:46:30
+/opt/airflow/dags/bash_dag.py                                   1           0  0.11s           2024-05-30T03:46:30
+================================================================================
+[2024-05-30T03:47:31.922+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/entity_match_dag.py                           1           0  1.17s           2024-05-30T03:47:12
+/opt/airflow/dags/dump_load_dag.py                              1           0  0.14s           2024-05-30T03:47:02
+/opt/airflow/dags/email_dag.py                                  1           0  0.13s           2024-05-30T03:47:02
+/opt/airflow/dags/hello_world_dag.py    1584  0.00s             1           0  0.13s           2024-05-30T03:47:01
+/opt/airflow/dags/hdfs_dag.py           1581  0.01s             1           0  0.12s           2024-05-30T03:47:01
+/opt/airflow/dags/bash_dag.py                                   1           0  0.10s           2024-05-30T03:47:01
+================================================================================
+[2024-05-30T03:48:02.585+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/entity_match_dag.py                           1           0  0.89s           2024-05-30T03:47:44
+/opt/airflow/dags/dump_load_dag.py                              1           0  0.15s           2024-05-30T03:47:33
+/opt/airflow/dags/hello_world_dag.py    1629  0.00s             1           0  0.14s           2024-05-30T03:47:32
+/opt/airflow/dags/hdfs_dag.py           1626  0.01s             1           0  0.13s           2024-05-30T03:47:32
+/opt/airflow/dags/email_dag.py                                  1           0  0.13s           2024-05-30T03:47:33
+/opt/airflow/dags/bash_dag.py                                   1           0  0.12s           2024-05-30T03:47:32
+================================================================================
+[2024-05-30T03:48:33.252+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/entity_match_dag.py                           1           0  0.92s           2024-05-30T03:48:15
+/opt/airflow/dags/hello_world_dag.py    1673  0.00s             1           0  0.13s           2024-05-30T03:48:02
+/opt/airflow/dags/dump_load_dag.py                              1           0  0.12s           2024-05-30T03:48:03
+/opt/airflow/dags/email_dag.py                                  1           0  0.12s           2024-05-30T03:48:03
+/opt/airflow/dags/hdfs_dag.py           1670  0.01s             1           0  0.12s           2024-05-30T03:48:02
+/opt/airflow/dags/bash_dag.py                                   1           0  0.10s           2024-05-30T03:48:02
+================================================================================
+[2024-05-30T03:49:03.990+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/entity_match_dag.py                           1           0  0.94s           2024-05-30T03:48:47
+/opt/airflow/dags/hdfs_dag.py           1714  0.01s             1           0  0.13s           2024-05-30T03:48:33
+/opt/airflow/dags/dump_load_dag.py                              1           0  0.12s           2024-05-30T03:48:34
+/opt/airflow/dags/email_dag.py                                  1           0  0.11s           2024-05-30T03:48:34
+/opt/airflow/dags/hello_world_dag.py    1717  0.00s             1           0  0.11s           2024-05-30T03:48:33
+/opt/airflow/dags/bash_dag.py                                   1           0  0.10s           2024-05-30T03:48:33
+================================================================================
+[2024-05-30T03:49:34.794+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/entity_match_dag.py                           1           0  0.99s           2024-05-30T03:49:19
+/opt/airflow/dags/dump_load_dag.py                              1           0  0.15s           2024-05-30T03:49:05
+/opt/airflow/dags/hello_world_dag.py    1761  0.00s             1           0  0.14s           2024-05-30T03:49:04
+/opt/airflow/dags/hdfs_dag.py           1758  0.02s             1           0  0.13s           2024-05-30T03:49:04
+/opt/airflow/dags/email_dag.py                                  1           0  0.13s           2024-05-30T03:49:05
+/opt/airflow/dags/bash_dag.py                                   1           0  0.12s           2024-05-30T03:49:04
+================================================================================
+[2024-05-30T03:50:05.472+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/entity_match_dag.py                           1           0  0.86s           2024-05-30T03:49:51
+/opt/airflow/dags/hdfs_dag.py           1802  0.01s             1           0  0.18s           2024-05-30T03:49:34
+/opt/airflow/dags/hello_world_dag.py    1805  0.00s             1           0  0.15s           2024-05-30T03:49:34
+/opt/airflow/dags/dump_load_dag.py                              1           0  0.13s           2024-05-30T03:49:36
+/opt/airflow/dags/email_dag.py                                  1           0  0.13s           2024-05-30T03:49:36
+/opt/airflow/dags/bash_dag.py                                   1           0  0.11s           2024-05-30T03:49:35
+================================================================================
+[2024-05-30T03:50:36.133+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/entity_match_dag.py                           1           0  0.87s           2024-05-30T03:50:22
+/opt/airflow/dags/hello_world_dag.py    1849  0.00s             1           0  0.15s           2024-05-30T03:50:05
+/opt/airflow/dags/hdfs_dag.py           1846  0.01s             1           0  0.14s           2024-05-30T03:50:05
+/opt/airflow/dags/dump_load_dag.py                              1           0  0.12s           2024-05-30T03:50:06
+/opt/airflow/dags/email_dag.py                                  1           0  0.12s           2024-05-30T03:50:06
+/opt/airflow/dags/bash_dag.py                                   1           0  0.11s           2024-05-30T03:50:05
+================================================================================
+[2024-05-30T03:51:06.894+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/entity_match_dag.py                           1           0  0.91s           2024-05-30T03:50:54
+/opt/airflow/dags/hello_world_dag.py    1893  0.00s             1           0  0.15s           2024-05-30T03:50:36
+/opt/airflow/dags/hdfs_dag.py           1890  0.01s             1           0  0.15s           2024-05-30T03:50:36
+/opt/airflow/dags/dump_load_dag.py                              1           0  0.15s           2024-05-30T03:50:37
+/opt/airflow/dags/email_dag.py                                  1           0  0.13s           2024-05-30T03:50:37
+/opt/airflow/dags/bash_dag.py                                   1           0  0.11s           2024-05-30T03:50:36
+================================================================================
+[2024-05-30T03:51:11.192+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2024-05-30T03:51:11.244+0000] {manager.py:740} INFO - There are 6 files in /opt/airflow/dags
+[2024-05-30T03:51:37.711+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/entity_match_dag.py                           1           0  0.91s           2024-05-30T03:51:26
+/opt/airflow/dags/hello_world_dag.py    1937  0.00s             1           0  0.15s           2024-05-30T03:51:07
+/opt/airflow/dags/hdfs_dag.py           1934  0.01s             1           0  0.14s           2024-05-30T03:51:07
+/opt/airflow/dags/email_dag.py                                  1           0  0.13s           2024-05-30T03:51:08
+/opt/airflow/dags/dump_load_dag.py                              1           0  0.12s           2024-05-30T03:51:08
+/opt/airflow/dags/bash_dag.py                                   1           0  0.11s           2024-05-30T03:51:07
+================================================================================
+[2024-05-30T03:52:08.474+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/entity_match_dag.py                           1           0  0.99s           2024-05-30T03:51:58
+/opt/airflow/dags/email_dag.py                                  1           0  0.13s           2024-05-30T03:51:38
+/opt/airflow/dags/dump_load_dag.py                              1           0  0.13s           2024-05-30T03:51:38
+/opt/airflow/dags/hdfs_dag.py           1978  0.01s             1           0  0.11s           2024-05-30T03:51:37
+/opt/airflow/dags/hello_world_dag.py    1981  0.00s             1           0  0.11s           2024-05-30T03:51:37
+/opt/airflow/dags/bash_dag.py                                   1           0  0.10s           2024-05-30T03:51:37
+================================================================================
+[2024-05-30T03:52:39.100+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/entity_match_dag.py                           1           0  0.95s           2024-05-30T03:52:29
+/opt/airflow/dags/dump_load_dag.py                              1           0  0.15s           2024-05-30T03:52:09
+/opt/airflow/dags/hdfs_dag.py           2023  0.01s             1           0  0.14s           2024-05-30T03:52:08
+/opt/airflow/dags/email_dag.py                                  1           0  0.13s           2024-05-30T03:52:09
+/opt/airflow/dags/hello_world_dag.py    2026  0.00s             1           0  0.12s           2024-05-30T03:52:08
+/opt/airflow/dags/bash_dag.py                                   1           0  0.11s           2024-05-30T03:52:08
+================================================================================
+[2024-05-30T03:53:09.676+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/entity_match_dag.py                           1           0  0.91s           2024-05-30T03:53:01
+/opt/airflow/dags/email_dag.py                                  1           0  0.16s           2024-05-30T03:52:40
+/opt/airflow/dags/dump_load_dag.py                              1           0  0.15s           2024-05-30T03:52:40
+/opt/airflow/dags/hdfs_dag.py           2067  0.02s             1           0  0.13s           2024-05-30T03:52:39
+/opt/airflow/dags/hello_world_dag.py    2070  0.00s             1           0  0.12s           2024-05-30T03:52:39
+/opt/airflow/dags/bash_dag.py                                   1           0  0.10s           2024-05-30T03:52:39
+================================================================================
+[2024-05-30T03:53:40.592+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/hdfs_dag.py                                   1           0  1.21s           2024-05-30T03:53:10
+/opt/airflow/dags/hello_world_dag.py                            1           0  1.21s           2024-05-30T03:53:10
+/opt/airflow/dags/entity_match_dag.py                           1           0  1.00s           2024-05-30T03:53:33
+/opt/airflow/dags/bash_dag.py                                   1           0  0.17s           2024-05-30T03:53:11
+/opt/airflow/dags/email_dag.py                                  1           0  0.15s           2024-05-30T03:53:11
+/opt/airflow/dags/dump_load_dag.py                              1           0  0.15s           2024-05-30T03:53:11
+================================================================================
+[2024-05-30T03:54:10.862+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/entity_match_dag.py                           1           0  1.02s           2024-05-30T03:54:04
+/opt/airflow/dags/dump_load_dag.py                              1           0  0.30s           2024-05-30T03:53:42
+/opt/airflow/dags/email_dag.py                                  1           0  0.29s           2024-05-30T03:53:42
+/opt/airflow/dags/hdfs_dag.py                                   1           0  0.24s           2024-05-30T03:53:41
+/opt/airflow/dags/hello_world_dag.py                            1           0  0.22s           2024-05-30T03:53:41
+/opt/airflow/dags/bash_dag.py                                   1           0  0.17s           2024-05-30T03:53:42
+================================================================================
+[2024-05-30T03:54:41.484+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/entity_match_dag.py                           1           0  0.94s           2024-05-30T03:54:36
+/opt/airflow/dags/hdfs_dag.py                                   1           0  0.14s           2024-05-30T03:54:12
+/opt/airflow/dags/dump_load_dag.py                              1           0  0.13s           2024-05-30T03:54:13
+/opt/airflow/dags/hello_world_dag.py                            1           0  0.12s           2024-05-30T03:54:12
+/opt/airflow/dags/bash_dag.py                                   1           0  0.12s           2024-05-30T03:54:13
+/opt/airflow/dags/email_dag.py                                  1           0  0.11s           2024-05-30T03:54:13
+================================================================================
+[2024-05-30T03:55:12.110+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/entity_match_dag.py                           1           0  0.94s           2024-05-30T03:55:08
+/opt/airflow/dags/dump_load_dag.py                              1           0  0.12s           2024-05-30T03:54:43
+/opt/airflow/dags/bash_dag.py                                   1           0  0.12s           2024-05-30T03:54:43
+/opt/airflow/dags/hdfs_dag.py                                   1           0  0.12s           2024-05-30T03:54:42
+/opt/airflow/dags/email_dag.py                                  1           0  0.12s           2024-05-30T03:54:43
+/opt/airflow/dags/hello_world_dag.py                            1           0  0.11s           2024-05-30T03:54:42
+================================================================================
+[2024-05-30T03:55:42.803+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/entity_match_dag.py                           1           0  0.94s           2024-05-30T03:55:39
+/opt/airflow/dags/dump_load_dag.py                              1           0  0.12s           2024-05-30T03:55:14
+/opt/airflow/dags/hello_world_dag.py                            1           0  0.12s           2024-05-30T03:55:13
+/opt/airflow/dags/hdfs_dag.py                                   1           0  0.12s           2024-05-30T03:55:13
+/opt/airflow/dags/email_dag.py                                  1           0  0.11s           2024-05-30T03:55:14
+/opt/airflow/dags/bash_dag.py                                   1           0  0.11s           2024-05-30T03:55:14
+================================================================================
+[2024-05-30T03:56:11.370+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2024-05-30T03:56:11.420+0000] {manager.py:740} INFO - There are 6 files in /opt/airflow/dags
+[2024-05-30T03:56:13.460+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/entity_match_dag.py                           1           0  0.95s           2024-05-30T03:56:11
+/opt/airflow/dags/hdfs_dag.py                                   1           0  0.15s           2024-05-30T03:55:43
+/opt/airflow/dags/hello_world_dag.py                            1           0  0.14s           2024-05-30T03:55:43
+/opt/airflow/dags/dump_load_dag.py                              1           0  0.12s           2024-05-30T03:55:45
+/opt/airflow/dags/email_dag.py                                  1           0  0.12s           2024-05-30T03:55:45
+/opt/airflow/dags/bash_dag.py                                   1           0  0.11s           2024-05-30T03:55:45
+================================================================================
+[2024-05-30T03:56:44.233+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/entity_match_dag.py                           1           0  0.92s           2024-05-30T03:56:43
+/opt/airflow/dags/hdfs_dag.py                                   1           0  0.18s           2024-05-30T03:56:14
+/opt/airflow/dags/hello_world_dag.py                            1           0  0.18s           2024-05-30T03:56:14
+/opt/airflow/dags/dump_load_dag.py                              1           0  0.15s           2024-05-30T03:56:15
+/opt/airflow/dags/email_dag.py                                  1           0  0.14s           2024-05-30T03:56:15
+/opt/airflow/dags/bash_dag.py                                   1           0  0.13s           2024-05-30T03:56:15
+================================================================================
+[2024-05-30T03:57:14.855+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/entity_match_dag.py                           1           0  0.93s           2024-05-30T03:57:14
+/opt/airflow/dags/dump_load_dag.py                              1           0  0.14s           2024-05-30T03:56:46
+/opt/airflow/dags/bash_dag.py                                   1           0  0.13s           2024-05-30T03:56:46
+/opt/airflow/dags/hdfs_dag.py                                   1           0  0.13s           2024-05-30T03:56:45
+/opt/airflow/dags/email_dag.py                                  1           0  0.13s           2024-05-30T03:56:46
+/opt/airflow/dags/hello_world_dag.py                            1           0  0.11s           2024-05-30T03:56:45
+================================================================================
+[2024-05-30T03:57:45.505+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/entity_match_dag.py   2457  0.00s             1           0  0.93s           2024-05-30T03:57:14
+/opt/airflow/dags/hello_world_dag.py                            1           0  0.12s           2024-05-30T03:57:16
+/opt/airflow/dags/hdfs_dag.py                                   1           0  0.12s           2024-05-30T03:57:16
+/opt/airflow/dags/dump_load_dag.py                              1           0  0.12s           2024-05-30T03:57:17
+/opt/airflow/dags/email_dag.py                                  1           0  0.11s           2024-05-30T03:57:17
+/opt/airflow/dags/bash_dag.py                                   1           0  0.11s           2024-05-30T03:57:17
+================================================================================
+[2024-05-30T03:58:16.101+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/entity_match_dag.py                           1           0  0.93s           2024-05-30T03:57:46
+/opt/airflow/dags/hdfs_dag.py                                   1           0  0.14s           2024-05-30T03:57:46
+/opt/airflow/dags/hello_world_dag.py                            1           0  0.12s           2024-05-30T03:57:46
+/opt/airflow/dags/dump_load_dag.py                              1           0  0.12s           2024-05-30T03:57:47
+/opt/airflow/dags/bash_dag.py                                   1           0  0.12s           2024-05-30T03:57:47
+/opt/airflow/dags/email_dag.py                                  1           0  0.11s           2024-05-30T03:57:47
+================================================================================
+[2024-05-30T03:58:46.845+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/entity_match_dag.py                           1           0  0.99s           2024-05-30T03:58:18
+/opt/airflow/dags/hello_world_dag.py                            1           0  0.13s           2024-05-30T03:58:17
+/opt/airflow/dags/dump_load_dag.py                              1           0  0.12s           2024-05-30T03:58:18
+/opt/airflow/dags/hdfs_dag.py                                   1           0  0.12s           2024-05-30T03:58:17
+/opt/airflow/dags/email_dag.py                                  1           0  0.11s           2024-05-30T03:58:18
+/opt/airflow/dags/bash_dag.py                                   1           0  0.11s           2024-05-30T03:58:18
+================================================================================
+[2024-05-30T03:59:17.435+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/entity_match_dag.py                           1           0  1.12s           2024-05-30T03:58:50
+/opt/airflow/dags/email_dag.py                                  1           0  0.19s           2024-05-30T03:58:49
+/opt/airflow/dags/dump_load_dag.py                              1           0  0.15s           2024-05-30T03:58:49
+/opt/airflow/dags/bash_dag.py                                   1           0  0.13s           2024-05-30T03:58:49
+/opt/airflow/dags/hdfs_dag.py                                   1           0  0.13s           2024-05-30T03:58:47
+/opt/airflow/dags/hello_world_dag.py                            1           0  0.12s           2024-05-30T03:58:47
+================================================================================
+[2024-05-30T03:59:39.161+0000] {manager.py:452} INFO - Exiting gracefully upon receiving signal 15
+[2024-05-30T04:02:45.138+0000] {manager.py:470} INFO - Processing files using up to 2 processes at a time 
+[2024-05-30T04:02:45.140+0000] {manager.py:471} INFO - Process each file at most once every 30 seconds
+[2024-05-30T04:02:45.141+0000] {manager.py:472} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2024-05-30T04:02:45.142+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2024-05-30T04:02:45.198+0000] {manager.py:740} INFO - There are 6 files in /opt/airflow/dags
+[2024-05-30T04:02:45.303+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  ----------
+/opt/airflow/dags/bash_dag.py                                   0           0
+/opt/airflow/dags/dump_load_dag.py                              0           0
+/opt/airflow/dags/email_dag.py                                  0           0
+/opt/airflow/dags/entity_match_dag.py    165  0.06s             0           0
+/opt/airflow/dags/hdfs_dag.py            168  0.04s             0           0
+/opt/airflow/dags/hello_world_dag.py                            0           0
+================================================================================
+[2024-05-30T04:21:13.070+0000] {manager.py:470} INFO - Processing files using up to 2 processes at a time 
+[2024-05-30T04:21:13.077+0000] {manager.py:471} INFO - Process each file at most once every 30 seconds
+[2024-05-30T04:21:13.078+0000] {manager.py:472} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2024-05-30T04:21:13.079+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2024-05-30T04:21:13.189+0000] {manager.py:740} INFO - There are 1 files in /opt/airflow/dags
+[2024-05-30T04:21:13.399+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------  -----  ---------  --------  ----------  --------------  ----------
+/opt/airflow/dags/dump_load_dag.py    164  0.09s             0           0
+================================================================================
+[2024-05-30T04:21:43.676+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                           PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dump_load_dag.py                           1           0  4.83s           2024-05-30T04:21:18
+================================================================================
+[2024-05-30T04:22:14.132+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dump_load_dag.py    190  24.69s            1           0  4.83s           2024-05-30T04:21:18
+================================================================================
+[2024-05-30T04:22:44.591+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                           PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dump_load_dag.py                           1           0  40.93s          2024-05-30T04:22:30
+================================================================================
+[2024-05-30T04:23:15.360+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dump_load_dag.py    215  13.31s            1           0  40.93s          2024-05-30T04:22:30
+================================================================================
+[2024-05-30T04:23:46.257+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dump_load_dag.py    254  0.03s             1           0  13.60s          2024-05-30T04:23:15
+================================================================================
+[2024-05-30T04:24:16.348+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                           PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dump_load_dag.py                           1           0  10.02s          2024-05-30T04:23:56
+================================================================================
+[2024-05-30T04:24:46.603+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                           PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dump_load_dag.py                           1           0  7.97s           2024-05-30T04:24:34
+================================================================================
+[2024-05-30T04:25:04.845+0000] {manager.py:452} INFO - Exiting gracefully upon receiving signal 15
