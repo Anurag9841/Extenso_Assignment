@@ -1,0 +1,51 @@
+[2024-05-31T10:23:08.028+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-05-31T10:23:08.173+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: extenso_assignment.output manual__2024-05-31T10:23:01.645899+00:00 [queued]>
+[2024-05-31T10:23:08.195+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: extenso_assignment.output manual__2024-05-31T10:23:01.645899+00:00 [queued]>
+[2024-05-31T10:23:08.197+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-05-31T10:23:08.234+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): output> on 2024-05-31 10:23:01.645899+00:00
+[2024-05-31T10:23:08.294+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61 DeprecationWarning: This process (pid=320) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-05-31T10:23:08.281+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'extenso_assignment', 'output', 'manual__2024-05-31T10:23:01.645899+00:00', '--job-id', '26', '--raw', '--subdir', 'DAGS_FOLDER/Entity_matching_dag.py', '--cfg-path', '/tmp/tmp7deun62s']
+[2024-05-31T10:23:08.301+0000] {standard_task_runner.py:63} INFO - Started process 336 to run task
+[2024-05-31T10:23:08.302+0000] {standard_task_runner.py:91} INFO - Job 26: Subtask output
+[2024-05-31T10:23:08.581+0000] {task_command.py:426} INFO - Running <TaskInstance: extenso_assignment.output manual__2024-05-31T10:23:01.645899+00:00 [running]> on host d78d325bbf3e
+[2024-05-31T10:23:08.802+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='extenso_assignment' AIRFLOW_CTX_TASK_ID='output' AIRFLOW_CTX_EXECUTION_DATE='2024-05-31T10:23:01.645899+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-05-31T10:23:01.645899+00:00'
+[2024-05-31T10:23:08.806+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-05-31T10:23:08.996+0000] {logging_mixin.py:188} WARNING - /opt/***/dags/Load_DF.py:6 FutureWarning: DataFrame.applymap has been deprecated. Use DataFrame.map instead.
+[2024-05-31T10:23:09.027+0000] {logging_mixin.py:188} WARNING - /opt/***/dags/Load_DF.py:6 FutureWarning: DataFrame.applymap has been deprecated. Use DataFrame.map instead.
+[2024-05-31T10:23:09.035+0000] {logging_mixin.py:188} WARNING - /opt/***/dags/Load_DF.py:6 FutureWarning: DataFrame.applymap has been deprecated. Use DataFrame.map instead.
+[2024-05-31T10:23:09.044+0000] {logging_mixin.py:188} WARNING - /opt/***/dags/Load_DF.py:6 FutureWarning: DataFrame.applymap has been deprecated. Use DataFrame.map instead.
+[2024-05-31T10:23:09.050+0000] {logging_mixin.py:188} WARNING - /opt/***/dags/Load_DF.py:6 FutureWarning: DataFrame.applymap has been deprecated. Use DataFrame.map instead.
+[2024-05-31T10:23:09.360+0000] {python.py:237} INFO - Done. Returned value was:         Mother Name  ...           uuid
+0       Laxmi Thapa  ...  8130816101990
+1      Radha Sharma  ...  9901988590810
+2     Gita Adhikari  ...  8189718147019
+3          Mina Rai  ...  7901013147019
+4     Kalpana Karki  ...  3581421310199
+5       Nima Gurung  ...  8148131718019
+6     Saru Shrestha  ...  1899841819019
+7     Nanu Maharjan  ...  9189019858610
+8      Lhamu Tamang  ...  2911981181901
+9           Lila KC  ...  4998128144189
+10   Chandra Khadka  ...  1181214891189
+11     Tulasa Magar  ...  9458105989020
+12      Ganga Yadav  ...  6810919818901
+13     Sunita Bista  ...  1401281001819
+14      Gita Dhakal  ...  3149983181801
+15       Laxmi Pant  ...  6101130198600
+16     Sarita Joshi  ...  1492181411019
+17  Meena Bhattarai  ...  8901893120198
+18     Manju Gurung  ...  6810919814181
+19        Rita Lama  ...  4965986518185
+20              NaN  ...  3581421310018
+21              NaN  ...  1899841819000
+22              NaN  ...  2911981181900
+23              NaN  ...  3149983181801
+24              NaN  ...  1492181411000
+25              NaN  ...  4965986518185
+
+[26 rows x 23 columns]
+[2024-05-31T10:23:09.393+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-05-31T10:23:09.638+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=extenso_assignment, task_id=output, run_id=manual__2024-05-31T10:23:01.645899+00:00, execution_date=20240531T102301, start_date=20240531T102308, end_date=20240531T102309
+[2024-05-31T10:23:09.698+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-05-31T10:23:09.731+0000] {taskinstance.py:3498} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-05-31T10:23:09.733+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

@@ -1,0 +1,106 @@
+[2024-05-31T10:18:57.869+0000] {processor.py:161} INFO - Started process (PID=166) to work on /opt/airflow/dags/Entity_matching_dag.py
+[2024-05-31T10:18:57.872+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/Entity_matching_dag.py for tasks to queue
+[2024-05-31T10:18:57.874+0000] {logging_mixin.py:188} INFO - [2024-05-31T10:18:57.874+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/Entity_matching_dag.py
+[2024-05-31T10:19:00.356+0000] {processor.py:840} INFO - DAG(s) 'extenso_assignment' retrieved from /opt/airflow/dags/Entity_matching_dag.py
+[2024-05-31T10:19:00.561+0000] {logging_mixin.py:188} INFO - [2024-05-31T10:19:00.561+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-31T10:19:00.583+0000] {logging_mixin.py:188} INFO - [2024-05-31T10:19:00.583+0000] {dag.py:3954} INFO - Setting next_dagrun for extenso_assignment to None, run_after=None
+[2024-05-31T10:19:00.608+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/Entity_matching_dag.py took 2.746 seconds
+[2024-05-31T10:19:30.785+0000] {processor.py:161} INFO - Started process (PID=185) to work on /opt/airflow/dags/Entity_matching_dag.py
+[2024-05-31T10:19:30.786+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/Entity_matching_dag.py for tasks to queue
+[2024-05-31T10:19:30.789+0000] {logging_mixin.py:188} INFO - [2024-05-31T10:19:30.789+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/Entity_matching_dag.py
+[2024-05-31T10:19:32.001+0000] {processor.py:840} INFO - DAG(s) 'extenso_assignment' retrieved from /opt/airflow/dags/Entity_matching_dag.py
+[2024-05-31T10:19:32.043+0000] {logging_mixin.py:188} INFO - [2024-05-31T10:19:32.042+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-31T10:19:32.073+0000] {logging_mixin.py:188} INFO - [2024-05-31T10:19:32.073+0000] {dag.py:3954} INFO - Setting next_dagrun for extenso_assignment to None, run_after=None
+[2024-05-31T10:19:32.101+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/Entity_matching_dag.py took 1.321 seconds
+[2024-05-31T10:20:02.243+0000] {processor.py:161} INFO - Started process (PID=204) to work on /opt/airflow/dags/Entity_matching_dag.py
+[2024-05-31T10:20:02.247+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/Entity_matching_dag.py for tasks to queue
+[2024-05-31T10:20:02.253+0000] {logging_mixin.py:188} INFO - [2024-05-31T10:20:02.253+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/Entity_matching_dag.py
+[2024-05-31T10:20:03.588+0000] {processor.py:840} INFO - DAG(s) 'extenso_assignment' retrieved from /opt/airflow/dags/Entity_matching_dag.py
+[2024-05-31T10:20:03.612+0000] {logging_mixin.py:188} INFO - [2024-05-31T10:20:03.612+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-31T10:20:03.636+0000] {logging_mixin.py:188} INFO - [2024-05-31T10:20:03.635+0000] {dag.py:3954} INFO - Setting next_dagrun for extenso_assignment to None, run_after=None
+[2024-05-31T10:20:03.655+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/Entity_matching_dag.py took 1.429 seconds
+[2024-05-31T10:20:33.929+0000] {processor.py:161} INFO - Started process (PID=223) to work on /opt/airflow/dags/Entity_matching_dag.py
+[2024-05-31T10:20:33.937+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/Entity_matching_dag.py for tasks to queue
+[2024-05-31T10:20:33.961+0000] {logging_mixin.py:188} INFO - [2024-05-31T10:20:33.961+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/Entity_matching_dag.py
+[2024-05-31T10:20:36.483+0000] {processor.py:840} INFO - DAG(s) 'extenso_assignment' retrieved from /opt/airflow/dags/Entity_matching_dag.py
+[2024-05-31T10:20:36.535+0000] {logging_mixin.py:188} INFO - [2024-05-31T10:20:36.534+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-31T10:20:36.566+0000] {logging_mixin.py:188} INFO - [2024-05-31T10:20:36.566+0000] {dag.py:3954} INFO - Setting next_dagrun for extenso_assignment to None, run_after=None
+[2024-05-31T10:20:36.590+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/Entity_matching_dag.py took 2.719 seconds
+[2024-05-31T10:21:06.644+0000] {processor.py:161} INFO - Started process (PID=242) to work on /opt/airflow/dags/Entity_matching_dag.py
+[2024-05-31T10:21:06.645+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/Entity_matching_dag.py for tasks to queue
+[2024-05-31T10:21:06.647+0000] {logging_mixin.py:188} INFO - [2024-05-31T10:21:06.647+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/Entity_matching_dag.py
+[2024-05-31T10:21:07.693+0000] {processor.py:840} INFO - DAG(s) 'extenso_assignment' retrieved from /opt/airflow/dags/Entity_matching_dag.py
+[2024-05-31T10:21:07.778+0000] {logging_mixin.py:188} INFO - [2024-05-31T10:21:07.778+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-31T10:21:07.794+0000] {logging_mixin.py:188} INFO - [2024-05-31T10:21:07.794+0000] {dag.py:3954} INFO - Setting next_dagrun for extenso_assignment to None, run_after=None
+[2024-05-31T10:21:07.809+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/Entity_matching_dag.py took 1.170 seconds
+[2024-05-31T10:21:38.008+0000] {processor.py:161} INFO - Started process (PID=261) to work on /opt/airflow/dags/Entity_matching_dag.py
+[2024-05-31T10:21:38.009+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/Entity_matching_dag.py for tasks to queue
+[2024-05-31T10:21:38.011+0000] {logging_mixin.py:188} INFO - [2024-05-31T10:21:38.010+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/Entity_matching_dag.py
+[2024-05-31T10:21:39.149+0000] {processor.py:840} INFO - DAG(s) 'extenso_assignment' retrieved from /opt/airflow/dags/Entity_matching_dag.py
+[2024-05-31T10:21:39.180+0000] {logging_mixin.py:188} INFO - [2024-05-31T10:21:39.180+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-31T10:21:39.206+0000] {logging_mixin.py:188} INFO - [2024-05-31T10:21:39.206+0000] {dag.py:3954} INFO - Setting next_dagrun for extenso_assignment to None, run_after=None
+[2024-05-31T10:21:39.225+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/Entity_matching_dag.py took 1.223 seconds
+[2024-05-31T10:22:09.306+0000] {processor.py:161} INFO - Started process (PID=280) to work on /opt/airflow/dags/Entity_matching_dag.py
+[2024-05-31T10:22:09.307+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/Entity_matching_dag.py for tasks to queue
+[2024-05-31T10:22:09.312+0000] {logging_mixin.py:188} INFO - [2024-05-31T10:22:09.311+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/Entity_matching_dag.py
+[2024-05-31T10:22:10.275+0000] {processor.py:840} INFO - DAG(s) 'extenso_assignment' retrieved from /opt/airflow/dags/Entity_matching_dag.py
+[2024-05-31T10:22:10.302+0000] {logging_mixin.py:188} INFO - [2024-05-31T10:22:10.302+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-31T10:22:10.325+0000] {logging_mixin.py:188} INFO - [2024-05-31T10:22:10.325+0000] {dag.py:3954} INFO - Setting next_dagrun for extenso_assignment to None, run_after=None
+[2024-05-31T10:22:10.351+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/Entity_matching_dag.py took 1.052 seconds
+[2024-05-31T10:22:40.617+0000] {processor.py:161} INFO - Started process (PID=305) to work on /opt/airflow/dags/Entity_matching_dag.py
+[2024-05-31T10:22:40.624+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/Entity_matching_dag.py for tasks to queue
+[2024-05-31T10:22:40.652+0000] {logging_mixin.py:188} INFO - [2024-05-31T10:22:40.644+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/Entity_matching_dag.py
+[2024-05-31T10:22:45.170+0000] {processor.py:840} INFO - DAG(s) 'extenso_assignment' retrieved from /opt/airflow/dags/Entity_matching_dag.py
+[2024-05-31T10:22:45.701+0000] {logging_mixin.py:188} INFO - [2024-05-31T10:22:45.688+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-31T10:22:45.763+0000] {logging_mixin.py:188} INFO - [2024-05-31T10:22:45.762+0000] {dag.py:3118} INFO - Creating ORM DAG for extenso_assignment
+[2024-05-31T10:22:45.818+0000] {logging_mixin.py:188} INFO - [2024-05-31T10:22:45.818+0000] {dag.py:3954} INFO - Setting next_dagrun for extenso_assignment to 2024-03-14 00:00:00+00:00, run_after=2024-03-14 00:00:00+00:00
+[2024-05-31T10:22:45.890+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/Entity_matching_dag.py took 5.343 seconds
+[2024-05-31T10:23:16.371+0000] {processor.py:161} INFO - Started process (PID=344) to work on /opt/airflow/dags/Entity_matching_dag.py
+[2024-05-31T10:23:16.374+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/Entity_matching_dag.py for tasks to queue
+[2024-05-31T10:23:16.384+0000] {logging_mixin.py:188} INFO - [2024-05-31T10:23:16.382+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/Entity_matching_dag.py
+[2024-05-31T10:23:17.654+0000] {processor.py:840} INFO - DAG(s) 'extenso_assignment' retrieved from /opt/airflow/dags/Entity_matching_dag.py
+[2024-05-31T10:23:17.675+0000] {logging_mixin.py:188} INFO - [2024-05-31T10:23:17.674+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-31T10:23:17.692+0000] {logging_mixin.py:188} INFO - [2024-05-31T10:23:17.692+0000] {dag.py:3954} INFO - Setting next_dagrun for extenso_assignment to None, run_after=None
+[2024-05-31T10:23:17.708+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/Entity_matching_dag.py took 1.361 seconds
+[2024-05-31T10:23:47.959+0000] {processor.py:161} INFO - Started process (PID=363) to work on /opt/airflow/dags/Entity_matching_dag.py
+[2024-05-31T10:23:47.961+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/Entity_matching_dag.py for tasks to queue
+[2024-05-31T10:23:47.962+0000] {logging_mixin.py:188} INFO - [2024-05-31T10:23:47.962+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/Entity_matching_dag.py
+[2024-05-31T10:23:48.954+0000] {processor.py:840} INFO - DAG(s) 'extenso_assignment' retrieved from /opt/airflow/dags/Entity_matching_dag.py
+[2024-05-31T10:23:48.975+0000] {logging_mixin.py:188} INFO - [2024-05-31T10:23:48.975+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-31T10:23:48.993+0000] {logging_mixin.py:188} INFO - [2024-05-31T10:23:48.992+0000] {dag.py:3954} INFO - Setting next_dagrun for extenso_assignment to None, run_after=None
+[2024-05-31T10:23:49.011+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/Entity_matching_dag.py took 1.058 seconds
+[2024-05-31T10:24:19.254+0000] {processor.py:161} INFO - Started process (PID=382) to work on /opt/airflow/dags/Entity_matching_dag.py
+[2024-05-31T10:24:19.255+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/Entity_matching_dag.py for tasks to queue
+[2024-05-31T10:24:19.258+0000] {logging_mixin.py:188} INFO - [2024-05-31T10:24:19.257+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/Entity_matching_dag.py
+[2024-05-31T10:24:20.278+0000] {processor.py:840} INFO - DAG(s) 'extenso_assignment' retrieved from /opt/airflow/dags/Entity_matching_dag.py
+[2024-05-31T10:24:20.303+0000] {logging_mixin.py:188} INFO - [2024-05-31T10:24:20.302+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-31T10:24:20.325+0000] {logging_mixin.py:188} INFO - [2024-05-31T10:24:20.325+0000] {dag.py:3954} INFO - Setting next_dagrun for extenso_assignment to None, run_after=None
+[2024-05-31T10:24:20.342+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/Entity_matching_dag.py took 1.094 seconds
+[2024-05-31T10:24:50.475+0000] {processor.py:161} INFO - Started process (PID=401) to work on /opt/airflow/dags/Entity_matching_dag.py
+[2024-05-31T10:24:50.476+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/Entity_matching_dag.py for tasks to queue
+[2024-05-31T10:24:50.478+0000] {logging_mixin.py:188} INFO - [2024-05-31T10:24:50.477+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/Entity_matching_dag.py
+[2024-05-31T10:24:52.177+0000] {processor.py:840} INFO - DAG(s) 'extenso_assignment' retrieved from /opt/airflow/dags/Entity_matching_dag.py
+[2024-05-31T10:24:52.213+0000] {logging_mixin.py:188} INFO - [2024-05-31T10:24:52.212+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-31T10:24:52.248+0000] {logging_mixin.py:188} INFO - [2024-05-31T10:24:52.248+0000] {dag.py:3954} INFO - Setting next_dagrun for extenso_assignment to None, run_after=None
+[2024-05-31T10:24:52.277+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/Entity_matching_dag.py took 1.809 seconds
+[2024-05-31T10:25:22.516+0000] {processor.py:161} INFO - Started process (PID=430) to work on /opt/airflow/dags/Entity_matching_dag.py
+[2024-05-31T10:25:22.517+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/Entity_matching_dag.py for tasks to queue
+[2024-05-31T10:25:22.520+0000] {logging_mixin.py:188} INFO - [2024-05-31T10:25:22.520+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/Entity_matching_dag.py
+[2024-05-31T10:25:23.566+0000] {processor.py:840} INFO - DAG(s) 'extenso_assignment' retrieved from /opt/airflow/dags/Entity_matching_dag.py
+[2024-05-31T10:25:23.592+0000] {logging_mixin.py:188} INFO - [2024-05-31T10:25:23.592+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-31T10:25:23.614+0000] {logging_mixin.py:188} INFO - [2024-05-31T10:25:23.613+0000] {dag.py:3954} INFO - Setting next_dagrun for extenso_assignment to None, run_after=None
+[2024-05-31T10:25:23.635+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/Entity_matching_dag.py took 1.126 seconds
+[2024-05-31T10:25:53.755+0000] {processor.py:161} INFO - Started process (PID=449) to work on /opt/airflow/dags/Entity_matching_dag.py
+[2024-05-31T10:25:53.756+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/Entity_matching_dag.py for tasks to queue
+[2024-05-31T10:25:53.759+0000] {logging_mixin.py:188} INFO - [2024-05-31T10:25:53.759+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/Entity_matching_dag.py
+[2024-05-31T10:25:54.780+0000] {processor.py:840} INFO - DAG(s) 'extenso_assignment' retrieved from /opt/airflow/dags/Entity_matching_dag.py
+[2024-05-31T10:25:54.799+0000] {logging_mixin.py:188} INFO - [2024-05-31T10:25:54.799+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-31T10:25:54.817+0000] {logging_mixin.py:188} INFO - [2024-05-31T10:25:54.816+0000] {dag.py:3954} INFO - Setting next_dagrun for extenso_assignment to None, run_after=None
+[2024-05-31T10:25:54.832+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/Entity_matching_dag.py took 1.084 seconds
+[2024-05-31T10:26:24.948+0000] {processor.py:161} INFO - Started process (PID=468) to work on /opt/airflow/dags/Entity_matching_dag.py
+[2024-05-31T10:26:24.949+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/Entity_matching_dag.py for tasks to queue
+[2024-05-31T10:26:24.953+0000] {logging_mixin.py:188} INFO - [2024-05-31T10:26:24.952+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/Entity_matching_dag.py
+[2024-05-31T10:26:26.049+0000] {processor.py:840} INFO - DAG(s) 'extenso_assignment' retrieved from /opt/airflow/dags/Entity_matching_dag.py
+[2024-05-31T10:26:26.067+0000] {logging_mixin.py:188} INFO - [2024-05-31T10:26:26.067+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-31T10:26:26.083+0000] {logging_mixin.py:188} INFO - [2024-05-31T10:26:26.083+0000] {dag.py:3954} INFO - Setting next_dagrun for extenso_assignment to None, run_after=None
+[2024-05-31T10:26:26.098+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/Entity_matching_dag.py took 1.156 seconds
