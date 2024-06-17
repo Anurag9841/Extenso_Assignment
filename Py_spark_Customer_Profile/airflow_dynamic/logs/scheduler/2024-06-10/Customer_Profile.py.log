@@ -1,0 +1,256 @@
+[2024-06-10T12:03:02.150+0000] {processor.py:161} INFO - Started process (PID=206) to work on /opt/airflow/dags/Customer_Profile.py
+[2024-06-10T12:03:02.155+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/Customer_Profile.py for tasks to queue
+[2024-06-10T12:03:02.159+0000] {logging_mixin.py:188} INFO - [2024-06-10T12:03:02.158+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/Customer_Profile.py
+[2024-06-10T12:03:04.189+0000] {logging_mixin.py:188} WARNING - <unknown>:1 SyntaxWarning: invalid escape sequence '\s'
+[2024-06-10T12:03:04.226+0000] {logging_mixin.py:188} INFO - [2024-06-10T12:03:04.034+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/Customer_Profile.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/Customer_Profile.py", line 6, in <module>
+    from final_table import main
+  File "/opt/airflow/python_files/final_table.py", line 1, in <module>
+    from aggregate_function import table,config,get_start_last_transaction_date,new_data,Schema,df
+  File "/opt/airflow/python_files/aggregate_function.py", line 6, in <module>
+    spark = SparkSession.builder.appName("spark_dataframe_py").config("spark.jars", "C:\spark-3.5.1-bin-hadoop3\jars\mysql-connector-j-8.4.0.jar").getOrCreate()
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pyspark/sql/session.py", line 497, in getOrCreate
+    sc = SparkContext.getOrCreate(sparkConf)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pyspark/context.py", line 515, in getOrCreate
+    SparkContext(conf=conf or SparkConf())
+  File "/home/airflow/.local/lib/python3.12/site-packages/pyspark/context.py", line 201, in __init__
+    SparkContext._ensure_initialized(self, gateway=gateway, conf=conf)
+  File "/home/airflow/.local/lib/python3.12/site-packages/pyspark/context.py", line 436, in _ensure_initialized
+    SparkContext._gateway = gateway or launch_gateway(conf)
+                                       ^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pyspark/java_gateway.py", line 107, in launch_gateway
+    raise PySparkRuntimeError(
+pyspark.errors.exceptions.base.PySparkRuntimeError: [JAVA_GATEWAY_EXITED] Java gateway process exited before sending its port number.
+[2024-06-10T12:03:04.232+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/Customer_Profile.py
+[2024-06-10T12:03:04.353+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/Customer_Profile.py took 2.237 seconds
+[2024-06-10T12:03:35.804+0000] {processor.py:161} INFO - Started process (PID=229) to work on /opt/airflow/dags/Customer_Profile.py
+[2024-06-10T12:03:35.812+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/Customer_Profile.py for tasks to queue
+[2024-06-10T12:03:35.961+0000] {logging_mixin.py:188} INFO - [2024-06-10T12:03:35.938+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/Customer_Profile.py
+[2024-06-10T12:03:38.772+0000] {logging_mixin.py:188} WARNING - <unknown>:1 SyntaxWarning: invalid escape sequence '\s'
+[2024-06-10T12:03:38.778+0000] {logging_mixin.py:188} INFO - [2024-06-10T12:03:38.679+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/Customer_Profile.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/Customer_Profile.py", line 6, in <module>
+    from final_table import main
+  File "/opt/airflow/python_files/final_table.py", line 1, in <module>
+    from aggregate_function import table,config,get_start_last_transaction_date,new_data,Schema,df
+  File "/opt/airflow/python_files/aggregate_function.py", line 6, in <module>
+    spark = SparkSession.builder.appName("spark_dataframe_py").config("spark.jars", "C:\spark-3.5.1-bin-hadoop3\jars\mysql-connector-j-8.4.0.jar").getOrCreate()
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pyspark/sql/session.py", line 497, in getOrCreate
+    sc = SparkContext.getOrCreate(sparkConf)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pyspark/context.py", line 515, in getOrCreate
+    SparkContext(conf=conf or SparkConf())
+  File "/home/airflow/.local/lib/python3.12/site-packages/pyspark/context.py", line 201, in __init__
+    SparkContext._ensure_initialized(self, gateway=gateway, conf=conf)
+  File "/home/airflow/.local/lib/python3.12/site-packages/pyspark/context.py", line 436, in _ensure_initialized
+    SparkContext._gateway = gateway or launch_gateway(conf)
+                                       ^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pyspark/java_gateway.py", line 107, in launch_gateway
+    raise PySparkRuntimeError(
+pyspark.errors.exceptions.base.PySparkRuntimeError: [JAVA_GATEWAY_EXITED] Java gateway process exited before sending its port number.
+[2024-06-10T12:03:38.784+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/Customer_Profile.py
+[2024-06-10T12:03:39.077+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/Customer_Profile.py took 3.302 seconds
+[2024-06-10T12:14:43.503+0000] {processor.py:161} INFO - Started process (PID=165) to work on /opt/airflow/dags/Customer_Profile.py
+[2024-06-10T12:14:43.505+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/Customer_Profile.py for tasks to queue
+[2024-06-10T12:14:43.507+0000] {logging_mixin.py:188} INFO - [2024-06-10T12:14:43.507+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/Customer_Profile.py
+[2024-06-10T12:14:44.018+0000] {logging_mixin.py:188} WARNING - <unknown>:1 SyntaxWarning: invalid escape sequence '\s'
+[2024-06-10T12:14:44.021+0000] {logging_mixin.py:188} INFO - [2024-06-10T12:14:44.000+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/Customer_Profile.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/Customer_Profile.py", line 6, in <module>
+    from final_table import main
+  File "/opt/airflow/python_files/final_table.py", line 1, in <module>
+    from aggregate_function import table,config,get_start_last_transaction_date,new_data,Schema,df
+  File "/opt/airflow/python_files/aggregate_function.py", line 6, in <module>
+    spark = SparkSession.builder.appName("spark_dataframe_py").config("spark.jars", "C:\spark-3.5.1-bin-hadoop3\jars\mysql-connector-j-8.4.0.jar").getOrCreate()
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pyspark/sql/session.py", line 497, in getOrCreate
+    sc = SparkContext.getOrCreate(sparkConf)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pyspark/context.py", line 515, in getOrCreate
+    SparkContext(conf=conf or SparkConf())
+  File "/home/airflow/.local/lib/python3.12/site-packages/pyspark/context.py", line 201, in __init__
+    SparkContext._ensure_initialized(self, gateway=gateway, conf=conf)
+  File "/home/airflow/.local/lib/python3.12/site-packages/pyspark/context.py", line 436, in _ensure_initialized
+    SparkContext._gateway = gateway or launch_gateway(conf)
+                                       ^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pyspark/java_gateway.py", line 107, in launch_gateway
+    raise PySparkRuntimeError(
+pyspark.errors.exceptions.base.PySparkRuntimeError: [JAVA_GATEWAY_EXITED] Java gateway process exited before sending its port number.
+[2024-06-10T12:14:44.024+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/Customer_Profile.py
+[2024-06-10T12:14:44.071+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/Customer_Profile.py took 0.575 seconds
+[2024-06-10T12:15:15.608+0000] {processor.py:161} INFO - Started process (PID=188) to work on /opt/airflow/dags/Customer_Profile.py
+[2024-06-10T12:15:15.626+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/Customer_Profile.py for tasks to queue
+[2024-06-10T12:15:15.714+0000] {logging_mixin.py:188} INFO - [2024-06-10T12:15:15.703+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/Customer_Profile.py
+[2024-06-10T12:15:16.837+0000] {logging_mixin.py:188} WARNING - <unknown>:1 SyntaxWarning: invalid escape sequence '\s'
+[2024-06-10T12:15:16.839+0000] {logging_mixin.py:188} INFO - [2024-06-10T12:15:16.811+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/Customer_Profile.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/Customer_Profile.py", line 6, in <module>
+    from final_table import main
+  File "/opt/airflow/python_files/final_table.py", line 1, in <module>
+    from aggregate_function import table,config,get_start_last_transaction_date,new_data,Schema,df
+  File "/opt/airflow/python_files/aggregate_function.py", line 6, in <module>
+    spark = SparkSession.builder.appName("spark_dataframe_py").config("spark.jars", "C:\spark-3.5.1-bin-hadoop3\jars\mysql-connector-j-8.4.0.jar").getOrCreate()
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pyspark/sql/session.py", line 497, in getOrCreate
+    sc = SparkContext.getOrCreate(sparkConf)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pyspark/context.py", line 515, in getOrCreate
+    SparkContext(conf=conf or SparkConf())
+  File "/home/airflow/.local/lib/python3.12/site-packages/pyspark/context.py", line 201, in __init__
+    SparkContext._ensure_initialized(self, gateway=gateway, conf=conf)
+  File "/home/airflow/.local/lib/python3.12/site-packages/pyspark/context.py", line 436, in _ensure_initialized
+    SparkContext._gateway = gateway or launch_gateway(conf)
+                                       ^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pyspark/java_gateway.py", line 107, in launch_gateway
+    raise PySparkRuntimeError(
+pyspark.errors.exceptions.base.PySparkRuntimeError: [JAVA_GATEWAY_EXITED] Java gateway process exited before sending its port number.
+[2024-06-10T12:15:16.841+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/Customer_Profile.py
+[2024-06-10T12:15:16.980+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/Customer_Profile.py took 1.678 seconds
+[2024-06-10T12:15:47.429+0000] {processor.py:161} INFO - Started process (PID=210) to work on /opt/airflow/dags/Customer_Profile.py
+[2024-06-10T12:15:47.431+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/Customer_Profile.py for tasks to queue
+[2024-06-10T12:15:47.435+0000] {logging_mixin.py:188} INFO - [2024-06-10T12:15:47.434+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/Customer_Profile.py
+[2024-06-10T12:15:47.844+0000] {logging_mixin.py:188} WARNING - <unknown>:1 SyntaxWarning: invalid escape sequence '\s'
+[2024-06-10T12:15:47.847+0000] {logging_mixin.py:188} INFO - [2024-06-10T12:15:47.812+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/Customer_Profile.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/Customer_Profile.py", line 6, in <module>
+    from final_table import main
+  File "/opt/airflow/python_files/final_table.py", line 1, in <module>
+    from aggregate_function import table,config,get_start_last_transaction_date,new_data,Schema,df
+  File "/opt/airflow/python_files/aggregate_function.py", line 6, in <module>
+    spark = SparkSession.builder.appName("spark_dataframe_py").config("spark.jars", "C:\spark-3.5.1-bin-hadoop3\jars\mysql-connector-j-8.4.0.jar").getOrCreate()
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pyspark/sql/session.py", line 497, in getOrCreate
+    sc = SparkContext.getOrCreate(sparkConf)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pyspark/context.py", line 515, in getOrCreate
+    SparkContext(conf=conf or SparkConf())
+  File "/home/airflow/.local/lib/python3.12/site-packages/pyspark/context.py", line 201, in __init__
+    SparkContext._ensure_initialized(self, gateway=gateway, conf=conf)
+  File "/home/airflow/.local/lib/python3.12/site-packages/pyspark/context.py", line 436, in _ensure_initialized
+    SparkContext._gateway = gateway or launch_gateway(conf)
+                                       ^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pyspark/java_gateway.py", line 107, in launch_gateway
+    raise PySparkRuntimeError(
+pyspark.errors.exceptions.base.PySparkRuntimeError: [JAVA_GATEWAY_EXITED] Java gateway process exited before sending its port number.
+[2024-06-10T12:15:47.852+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/Customer_Profile.py
+[2024-06-10T12:15:47.928+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/Customer_Profile.py took 0.517 seconds
+[2024-06-10T12:16:18.323+0000] {processor.py:161} INFO - Started process (PID=233) to work on /opt/airflow/dags/Customer_Profile.py
+[2024-06-10T12:16:18.324+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/Customer_Profile.py for tasks to queue
+[2024-06-10T12:16:18.327+0000] {logging_mixin.py:188} INFO - [2024-06-10T12:16:18.326+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/Customer_Profile.py
+[2024-06-10T12:16:18.676+0000] {logging_mixin.py:188} WARNING - <unknown>:1 SyntaxWarning: invalid escape sequence '\s'
+[2024-06-10T12:16:18.678+0000] {logging_mixin.py:188} INFO - [2024-06-10T12:16:18.663+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/Customer_Profile.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/Customer_Profile.py", line 6, in <module>
+    from final_table import main
+  File "/opt/airflow/python_files/final_table.py", line 1, in <module>
+    from aggregate_function import table,config,get_start_last_transaction_date,new_data,Schema,df
+  File "/opt/airflow/python_files/aggregate_function.py", line 6, in <module>
+    spark = SparkSession.builder.appName("spark_dataframe_py").config("spark.jars", "C:\spark-3.5.1-bin-hadoop3\jars\mysql-connector-j-8.4.0.jar").getOrCreate()
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pyspark/sql/session.py", line 497, in getOrCreate
+    sc = SparkContext.getOrCreate(sparkConf)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pyspark/context.py", line 515, in getOrCreate
+    SparkContext(conf=conf or SparkConf())
+  File "/home/airflow/.local/lib/python3.12/site-packages/pyspark/context.py", line 201, in __init__
+    SparkContext._ensure_initialized(self, gateway=gateway, conf=conf)
+  File "/home/airflow/.local/lib/python3.12/site-packages/pyspark/context.py", line 436, in _ensure_initialized
+    SparkContext._gateway = gateway or launch_gateway(conf)
+                                       ^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pyspark/java_gateway.py", line 107, in launch_gateway
+    raise PySparkRuntimeError(
+pyspark.errors.exceptions.base.PySparkRuntimeError: [JAVA_GATEWAY_EXITED] Java gateway process exited before sending its port number.
+[2024-06-10T12:16:18.680+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/Customer_Profile.py
+[2024-06-10T12:16:18.723+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/Customer_Profile.py took 0.409 seconds
+[2024-06-10T12:16:49.149+0000] {processor.py:161} INFO - Started process (PID=255) to work on /opt/airflow/dags/Customer_Profile.py
+[2024-06-10T12:16:49.153+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/Customer_Profile.py for tasks to queue
+[2024-06-10T12:16:49.162+0000] {logging_mixin.py:188} INFO - [2024-06-10T12:16:49.160+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/Customer_Profile.py
+[2024-06-10T12:16:49.583+0000] {logging_mixin.py:188} WARNING - <unknown>:1 SyntaxWarning: invalid escape sequence '\s'
+[2024-06-10T12:16:49.586+0000] {logging_mixin.py:188} INFO - [2024-06-10T12:16:49.548+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/Customer_Profile.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/Customer_Profile.py", line 6, in <module>
+    from final_table import main
+  File "/opt/airflow/python_files/final_table.py", line 1, in <module>
+    from aggregate_function import table,config,get_start_last_transaction_date,new_data,Schema,df
+  File "/opt/airflow/python_files/aggregate_function.py", line 6, in <module>
+    spark = SparkSession.builder.appName("spark_dataframe_py").config("spark.jars", "C:\spark-3.5.1-bin-hadoop3\jars\mysql-connector-j-8.4.0.jar").getOrCreate()
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pyspark/sql/session.py", line 497, in getOrCreate
+    sc = SparkContext.getOrCreate(sparkConf)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pyspark/context.py", line 515, in getOrCreate
+    SparkContext(conf=conf or SparkConf())
+  File "/home/airflow/.local/lib/python3.12/site-packages/pyspark/context.py", line 201, in __init__
+    SparkContext._ensure_initialized(self, gateway=gateway, conf=conf)
+  File "/home/airflow/.local/lib/python3.12/site-packages/pyspark/context.py", line 436, in _ensure_initialized
+    SparkContext._gateway = gateway or launch_gateway(conf)
+                                       ^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pyspark/java_gateway.py", line 107, in launch_gateway
+    raise PySparkRuntimeError(
+pyspark.errors.exceptions.base.PySparkRuntimeError: [JAVA_GATEWAY_EXITED] Java gateway process exited before sending its port number.
+[2024-06-10T12:16:49.593+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/Customer_Profile.py
+[2024-06-10T12:16:49.662+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/Customer_Profile.py took 0.539 seconds
+[2024-06-10T12:17:20.039+0000] {processor.py:161} INFO - Started process (PID=277) to work on /opt/airflow/dags/Customer_Profile.py
+[2024-06-10T12:17:20.043+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/Customer_Profile.py for tasks to queue
+[2024-06-10T12:17:20.050+0000] {logging_mixin.py:188} INFO - [2024-06-10T12:17:20.049+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/Customer_Profile.py
+[2024-06-10T12:17:20.533+0000] {logging_mixin.py:188} WARNING - <unknown>:1 SyntaxWarning: invalid escape sequence '\s'
+[2024-06-10T12:17:20.536+0000] {logging_mixin.py:188} INFO - [2024-06-10T12:17:20.504+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/Customer_Profile.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/Customer_Profile.py", line 6, in <module>
+    from final_table import main
+  File "/opt/airflow/python_files/final_table.py", line 1, in <module>
+    from aggregate_function import table,config,get_start_last_transaction_date,new_data,Schema,df
+  File "/opt/airflow/python_files/aggregate_function.py", line 6, in <module>
+    spark = SparkSession.builder.appName("spark_dataframe_py").config("spark.jars", "C:\spark-3.5.1-bin-hadoop3\jars\mysql-connector-j-8.4.0.jar").getOrCreate()
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pyspark/sql/session.py", line 497, in getOrCreate
+    sc = SparkContext.getOrCreate(sparkConf)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pyspark/context.py", line 515, in getOrCreate
+    SparkContext(conf=conf or SparkConf())
+  File "/home/airflow/.local/lib/python3.12/site-packages/pyspark/context.py", line 201, in __init__
+    SparkContext._ensure_initialized(self, gateway=gateway, conf=conf)
+  File "/home/airflow/.local/lib/python3.12/site-packages/pyspark/context.py", line 436, in _ensure_initialized
+    SparkContext._gateway = gateway or launch_gateway(conf)
+                                       ^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pyspark/java_gateway.py", line 107, in launch_gateway
+    raise PySparkRuntimeError(
+pyspark.errors.exceptions.base.PySparkRuntimeError: [JAVA_GATEWAY_EXITED] Java gateway process exited before sending its port number.
+[2024-06-10T12:17:20.541+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/Customer_Profile.py
+[2024-06-10T12:17:20.612+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/Customer_Profile.py took 0.595 seconds
