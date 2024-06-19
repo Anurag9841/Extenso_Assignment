@@ -21,7 +21,7 @@ alter table combined_rtd_pcm add column Months int;
 update combined_rtd_pcm
 set Months = month(last_modified_date);
 
-select count(*) from combined_rtd_pcm;
+select * from combined_rtd_pcm;
 
 drop table joinedtc;
 
