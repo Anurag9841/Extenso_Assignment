@@ -1,6 +1,6 @@
 use extenso_config;
 -- Clearing all the table
-drop table customer_mapping;
+drop table if exists customer_mapping;
 drop table months;
 drop table joined_rw_pcm;
 drop table most_used_prod;
