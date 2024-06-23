@@ -1,13 +1,15 @@
 use extenso_config;
+
+select * from most_used_prod;
 -- Clearing all the table
 drop table if exists customer_mapping;
-drop table months;
-drop table joined_rw_pcm;
-drop table most_used_prod;
-drop table filtered;
-drop table mapping;
-drop table customer_mapping;
-drop table final_customer_mapping;
+drop table if exists months;
+drop table if exists joined_rw_pcm;
+drop table if exists most_used_prod;
+drop table if exists filtered;
+drop table if exists mapping;
+drop table if exists customer_mapping;
+drop table if exists final_customer_mapping;
 
 -- Creating join of rw_transaction_data and product_category_map 
 create table joined_rw_pcm as
