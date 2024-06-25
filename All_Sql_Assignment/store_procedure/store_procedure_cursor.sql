@@ -17,7 +17,7 @@ begin
 	end if;
 	SET num= CONCAT(num,";",numlist);
 	END LOOP;
-    close cur;    
+    close cur;   
 end //
 delimiter ;
 

@@ -71,21 +71,25 @@ def etl(url, table_name, properties):
     for row in rows:
         is_inc = row['is_incremental']
         location,hdfs_file_name,inc_field,database_name,table_name = row['location'],row['hdfs_file_name'],row['inc_field'],row['Schema_names'],row['Table_names']
+        jdbc_url = f"jdbc:mysql://localhost:3306/{database_name}"
+        hdfs_path = f'{location}{hdfs_file_name}'
         if is_inc:
             # If the row is incremental, construct the query and read the specific data
             start_date,end_date= row['start_date_time'],row['end_date_time']
-            hdfs_path = f'{location}{hdfs_file_name}'
-            jdbc_url = f"jdbc:mysql://localhost:3306/{database_name}"
             query = f"(SELECT * FROM {database_name}.{table_name} WHERE {inc_field} BETWEEN '{start_date}' AND '{end_date}') as selected_data"
             dataframe = spark.read.jdbc(url=jdbc_url, table=query, properties=properties)
-            dataframe.write.mode('append').parquet(hdfs_path)
+            try:
+                dataframe.write.mode('append').parquet(hdfs_path)
+            except Exception as e:
+                print(f"Error appending to HDFS: {e}")
             sql_table_updater(rows.index(row))
         else:
             # If the row is not incremental, read the entire table
-            jdbc_url = f"jdbc:mysql://localhost:3306/{database_name}"
             dataframe = spark.read.jdbc(url=jdbc_url, table=table_name, properties=properties)
-            hdfs_path = f'{location}{hdfs_file_name}'
-            dataframe.write.mode("overwrite").parquet(hdfs_path)
+            try:
+                dataframe.write.mode("overwrite").parquet(hdfs_path)
+            except Exception as e:
+                print(f"Error overwriting to HDFS: {e}")
 
 etl(url,'cf_etl_table',properties)
 

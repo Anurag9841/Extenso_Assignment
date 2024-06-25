@@ -1,6 +1,6 @@
 use extenso_config;
 
-select * from most_used_prod;
+-- select * from most_used_prod;
 -- Clearing all the table
 drop table if exists customer_mapping;
 drop table if exists months;
@@ -79,8 +79,12 @@ FROM months;
 
 SET @sql_query = CONCAT('create table final_customer_mapping as SELECT customer_mapping.*, CONCAT(', @distinct_month, ') AS sequence FROM customer_mapping');
 
+select @sql_query;
+
 PREPARE stmt FROM @sql_query;
 EXECUTE stmt;
 DEALLOCATE PREPARE stmt;
 
 select * from final_customer_mapping;
+
+
