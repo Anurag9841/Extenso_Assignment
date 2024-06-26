@@ -71,18 +71,26 @@ def mapping(url,table_name,properties):
         interval_by,id,location,hdfs_file_name,inc_field,database_name,table_name,start_date,end_date,partition_by,is_inc =row['interval_days'],row['id'],row['location'],row['hdfs_file_name'],row['inc_field'],row['Schema_names'],row['Table_names'],row['start_date_time'],row['end_date_time'],row['partition_by'],row['is_incremental']
         hdfs_path = f'{location}{hdfs_file_name}'
         cursor = connection.cursor()
-        cursor.callproc('main_database.executor_mappings_without_cursor',[id])
+        cursor.callproc('main_database.executor_mappings_without_cursor', [id])
         result = cursor.fetchone()[0]
         jdbc_url = f"jdbc:mysql://localhost:3306/{database_name}"
         if is_inc:
             query = f"(SELECT {result} FROM {database_name}.{table_name} WHERE {inc_field} BETWEEN '{start_date}' AND '{end_date}') as selected_data"
-            dataframe = spark.read.jdbc(url=jdbc_url, table=query, properties=properties)
-            dataframe.write.mode('append').parquet(hdfs_path,partitionBy=[partition_by])
-            sql_table_updater(rows.index(row),interval_by)
+            hadoop_conf = spark._jsc.hadoopConfiguration()
+            fs = spark._jvm.org.apache.hadoop.fs.FileSystem.get(hadoop_conf)
+            path = spark._jvm.org.apache.hadoop.fs.Path(hdfs_path)
+            if fs.exists(path):
+                existing_data = spark.read.parquet(hdfs_path)
+                dataframe = spark.read.jdbc(url=jdbc_url, table=query, properties=properties)
+                merged_data = dataframe.unionByName(existing_data).dropDuplicates([partition_by])
+                merged_data.write.mode('overwrite').parquet(hdfs_path,partitionBy=[partition_by])
+            else:
+                dataframe.write.mode('overwrite').parquet(hdfs_path,partitionBy=[partition_by])
+            sql_table_updater(rows.index(row), interval_by)
         else:
             query = f"(SELECT {result} FROM {database_name}.{table_name}) as selected_data"
             dataframe = spark.read.jdbc(url=jdbc_url, table=query, properties=properties)
-            dataframe.write.mode('overwrite').parquet(hdfs_path)
+            dataframe.write.mode('overwrite').parquet(hdfs_path) 
 
 mapping(url,'cf_etl_table',properties)
 
