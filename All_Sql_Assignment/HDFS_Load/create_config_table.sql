@@ -19,7 +19,7 @@ interval_days int
 
 insert into cf_etl_table(Schema_names,Table_names,location,hdfs_file_name,start_date_time,
 end_date_time,is_incremental,inc_field,partition_by,interval_days)
-values ('test_database1','sample_data','hdfs://localhost:19000//airflow/','sample_data','2023-06-23 00:00:00','2023-06-25 23:59:59',1,'Tnx_date','Dates',1),
+values ('test_database1','sample_data','hdfs://localhost:19000//airflow/','sample_data','2023-06-23 00:00:00','2023-06-23 23:59:59',1,'Tnx_date','Dates',1),
 ('test_database2','sample_data1','hdfs://localhost:19000//airflow/','sample_data1',Null,Null,0,Null,Null,Null);
 
 -- DELETE FROM cf_etl_table WHERE id = 1;
