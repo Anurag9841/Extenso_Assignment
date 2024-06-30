@@ -83,6 +83,12 @@ def sql_table_updater(index,interval_by):
 
 
 def mapping(url,table_name,properties):
+    '''
+    :param url: url for jdbc
+    :param table_name: name of the config table
+    :param properties: properties to connect to sql from pyspark
+    :return:
+    '''
     config_table = spark.read.jdbc(url=url, table=table_name, properties=properties)
     field_mapping_query = spark.read.jdbc(url=url, table='field_mapping_query', properties=properties)
     rows = config_table.collect()
