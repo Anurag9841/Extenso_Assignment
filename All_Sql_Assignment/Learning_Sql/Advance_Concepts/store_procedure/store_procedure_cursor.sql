@@ -1,5 +1,5 @@
 -- use store_procedure;
-
+use store_procedure;
 delimiter //
 create procedure cursors(inout num text)
 begin

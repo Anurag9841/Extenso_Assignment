@@ -4,10 +4,25 @@ from pyspark.sql.types import *
 from pyspark.sql.window import *
 import pymysql
 
+'''
+-> Database used:
+    1. main_database 
+        a) Contains "Config_Table" with table name saved as main_database.cf_etl_table.
+        b) Contains "field_mapping" table saved as main_database.field_mapping.
+        c) Contains "field_maping_query" table saved as main_database.field_maping_query.
+            'filed_mapping_query contains sub query for field_mapping'
+    2. test_database1
+        a) Contains "incremental" table name saved as test_database1.sample_data.
+    3. test_database2
+        a) Contains "non_incremental" table name saved as test_database2.sample_data1.
+'''
+
 spark = SparkSession.builder \
     .appName('Field_mapping_modified') \
     .config("spark.hadoop.fs.defaultFS", "hdfs://localhost:19000") \
     .getOrCreate()
+
+
 
 def connection_properties():
     """

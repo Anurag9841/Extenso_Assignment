@@ -12,5 +12,12 @@ DELIMITER ;
 call main_database.executor_mappings_without_cursor(1);
 
 
--- tnxid AS Transaction_id,Tnx_date AS Transaction_date,acc_id AS Account_id,product AS Products,Date(Tnx_date) AS Dates
--- tnxid AS Transaction_id_ni,Tnx_date AS Transaction_date_ni,acc_id AS Account_id_ni,product AS Products_ni,Date(Tnx_date) AS Dates_ni
+-- Code from mentor 
+
+create table main_database.field_mapping_query
+select a.id, CONCAT('SELECT ',group_concat(concat(source_name,' AS ',destination_name) separator ','),' from ',schema_names,'.',table_names) as field_mapping_query 
+from   main_database.cf_etl_table a
+JOIN main_database.field_mapping b on a.id=b.id
+group by a.id;
+
+select * from main_database.field_mapping_query;

@@ -4,6 +4,7 @@ from pyspark.sql.types import *
 from pyspark.sql.window import *
 import pymysql
 
+
 # Establish a connection to the MySQL database
 connection = pymysql.connect(
         host='localhost',
