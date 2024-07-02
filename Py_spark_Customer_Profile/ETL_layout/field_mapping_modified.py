@@ -82,7 +82,7 @@ def sql_table_updater(index,interval_by):
         print(f"Error in SQL updater: {e}")
 
 
-def mapping(url,table_name,properties):
+def field_mapping(url,table_name,properties):
     '''
     :param url: url for jdbc
     :param table_name: name of the config table
@@ -117,7 +117,7 @@ def mapping(url,table_name,properties):
             dataframe.write.mode('overwrite').parquet(hdfs_path)
         return ("sucess")
 
-mapping(url,'cf_etl_table',properties)
+field_mapping(url,'cf_etl_table',properties)
 
 def data_show(hdfs_file_name):
     """
