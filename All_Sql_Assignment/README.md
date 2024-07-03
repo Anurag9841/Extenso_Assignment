@@ -38,3 +38,4 @@ This folder provides additional practice exercises to reinforce the SQL skills l
 
 This section includes scripts and instructions for loading data into HDFS (Hadoop Distributed File System) using SQL.
 
+---
